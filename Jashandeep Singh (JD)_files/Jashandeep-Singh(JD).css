@@ -165,10 +165,30 @@
 
 .u-section-2 .u-text-3 {
   font-size: 1.5rem;
-  margin: 0 -222px 0 12px;
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: -32px 6px 0 auto;
 }
 
 .u-section-2 .u-text-4 {
+  font-size: 1.5rem;
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: -26px auto 0 7px;
+}
+
+.u-section-2 .u-text-5 {
+  font-size: 1.5rem;
+  margin: 6px -222px 0 12px;
+}
+
+.u-section-2 .u-text-6 {
   font-style: italic;
   line-height: 1.2;
   text-align: left;
@@ -177,7 +197,7 @@
   margin: 109px auto 0 3px;
 }
 
-.u-section-2 .u-text-5 {
+.u-section-2 .u-text-7 {
   text-align: justify;
   font-size: 1.5rem;
   margin: 135px 0 0;
@@ -228,42 +248,32 @@
   padding: 1px 0;
 }
 
-.u-section-2 .u-text-6 {
+.u-section-2 .u-text-8 {
   font-size: 3rem;
   font-weight: 700;
   width: 143px;
   margin: 30px auto 0;
 }
 
-.u-section-2 .u-text-7 {
+.u-section-2 .u-text-9 {
   font-size: 1rem;
   text-align: justify;
   width: 87px;
   margin: 0 auto;
 }
 
-.u-section-2 .u-text-8 {
+.u-section-2 .u-text-10 {
   font-size: 3rem;
   font-weight: 700;
   width: 158px;
   margin: 0 auto;
 }
 
-.u-section-2 .u-text-9 {
+.u-section-2 .u-text-11 {
   font-size: 1rem;
   text-align: justify;
   width: 174px;
   margin: 0 auto;
-}
-
-.u-section-2 .u-text-10 {
-  font-size: 1.5rem;
-  --animation-custom_in-translate_x: -200px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: -414px auto 388px -558px;
 }
 
 @media (max-width: 1199px) {
@@ -288,12 +298,8 @@
     margin-left: 0;
   }
 
-  .u-section-2 .u-text-3 {
+  .u-section-2 .u-text-5 {
     margin-right: 0;
-    margin-left: 0;
-  }
-
-  .u-section-2 .u-text-4 {
     margin-left: 0;
   }
 
@@ -307,11 +313,6 @@
 
   .u-section-2 .u-group-1 {
     height: auto;
-  }
-
-  .u-section-2 .u-text-10 {
-    margin-top: -375px;
-    margin-left: 0;
   }
 }
 
@@ -360,11 +361,11 @@
     font-size: 1.875rem;
   }
 
-  .u-section-2 .u-text-6 {
+  .u-section-2 .u-text-8 {
     font-size: 4.5rem;
   }
 
-  .u-section-2 .u-text-8 {
+  .u-section-2 .u-text-10 {
     font-size: 1.5rem;
   }
 } .u-section-3 {
