@@ -10,6 +10,7 @@
     justify-content: space-between;
     position: fixed;
     opacity: 100;
+    transition: all .7s ease-out; 
 }
 .nav-bar-txt{
     top: 0;
@@ -21,6 +22,21 @@
     align-items: center;
     position: fixed;
     justify-content: space-between;
+    transition: all 1s ease-out; 
+}
+
+
+
+.nav-bar-txt:hover{
+  top: 1.5vh;
+  width:90vw;
+  margin-left: 5vw;
+  height: 9vh;
+  transition: all .45s ease-out; 
+  border-radius: 1vw;
+  background: rgba(0, 0, 0, 0.818);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(21.2px);
 }
 
 
