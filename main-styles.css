@@ -22,12 +22,14 @@
     align-items: center;
     vertical-align: middle;
     background-color: #000000;
+    
   
 }
 .main-container-alt{
+  transition: visibility 0s, opacity 0.5s linear;
   height: 0%;
   display: none;
- visibility: hidden;
+  visibility: hidden;
 }
 
 .jack-container{
@@ -160,7 +162,7 @@ border: 1px solid rgba(255, 255, 255, 1);
     align-items: center;
     background-color: #ffffff;
     color: #000000;
-    transition: all 1.5s ease-out;
+    transition: visibility 0s, opacity 0.5s linear;
   
 }
 
@@ -173,7 +175,6 @@ border: 1px solid rgba(255, 255, 255, 1);
   transform: translate(-50%, -50%); 
   z-index: 0;
   color: #000000;
-  
    
 }
 .text-one-alt{
