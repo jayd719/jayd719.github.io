@@ -1,0 +1,51 @@
+.second-container{
+    width:100vw;
+    height: 99vh;
+    display: grid;
+    place-content: center;
+    background-color:aliceblue;
+    color: #000000;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .second-container1{
+    width:100vw;
+    height: 95vh;
+    display: grid;
+    place-content: center;
+    background-color:azure;
+    color: #000000;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  .text-one{
+    font-size: 10vw;
+    color: #000000;  
+    
+  }
+  .text-one-alt{
+    visibility: hidden;
+    display: none;
+  }
+  
+
+  .jacks{
+    width: 30vw;
+    height: 40vh;
+    display: flex;
+    place-content: center;
+    justify-content: space-between;
+    padding-left: 6vw;
+    padding-right: 10vw;
+    padding-top: 8vh;
+ }
+
+  .jacks-image{
+    width: 25vh;
+    transition: all 1s ease-out; 
+
+  }
+
+  #image1:hover{
+    scale: 1.1;
+  }

@@ -3,7 +3,7 @@
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 10) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 1) {
         var header = $(".nav-bar");
         var an1 = $(".main-container");
         var an2 = $(".text-one-alt");
@@ -15,8 +15,8 @@
         an2.removeClass('text-one-alt') .addClass("text-one");
     } else {
         var header = $(".nav-bar-txt"); 
-        var an1 = $(".main-container-alt");
-        var an2 = $(".text-one");
+        var an1 = $(".main-container-alt1");
+        var an2 = $(".textone");
         
         document.getElementById("header").style.fontSize = "2.5vh";
         header.removeClass("nav-bar-txt") .addClass('nav-bar'); 

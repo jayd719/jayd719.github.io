@@ -11,6 +11,12 @@
     position: fixed;
     opacity: 100;
     transition: all .7s ease-out; 
+    background-color: aliceblue;
+    border-radius: 1px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 .nav-bar-txt{
     top: 0;
@@ -26,8 +32,12 @@
 }
 
 
+
+
 .nav-bar-txt:hover ~.menu{
-  color: #ff0000;
+  background-color: aquamarine;
+  height: 4vh;
+  display: inline-flex;
  }
 
 .nav-bar-txt:hover{
