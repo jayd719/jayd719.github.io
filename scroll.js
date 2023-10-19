@@ -18,7 +18,7 @@
         var an1 = $(".main-container-alt1");
         var an2 = $(".textone");
         
-        document.getElementById("header").style.fontSize = "2.5vh";
+        document.getElementById("header").style.fontSize = "2.25vh";
         header.removeClass("nav-bar-txt") .addClass('nav-bar'); 
         an1.removeClass('main-container-alt') .addClass("main-container");
         an2.removeClass('text-one') .addClass("text-one-alt");

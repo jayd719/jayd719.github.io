@@ -56,7 +56,7 @@ body{
 
 
 .jack-image{
-  width: 25vw;
+  width: 15vw;
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -67,7 +67,7 @@ body{
 }
 
 .jack-image2{
-  width: 25vw;
+  width: 15vw;
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -76,7 +76,7 @@ body{
   transition: all .6s ease-out; 
 }
 .jack-image3{
-  width: 25vw;
+  width: 15vw;
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -86,7 +86,7 @@ body{
   
 }
 .jack-image4{
-  width: 25vw;
+  width: 15vw;
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -97,9 +97,9 @@ body{
 }
 
 .jack-image5{
-  width: 25vw;
+  width: 15vw;
   position: absolute; 
-  top: 70%; 
+  top: 75%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   z-index: 1;  
