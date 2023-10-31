@@ -34,23 +34,21 @@
 
 
 
-.nav-bar-txt:hover ~.menu{
-  background-color: aquamarine;
-  height: 4vh;
-  display: inline-flex;
- }
-
 .nav-bar-txt:hover{
   top: 1.5vh;
+  display: inline-flex;
+  align-items: start;
   width:90vw;
   margin-left: 5vw;
-  height: 9vh;
+  height: 40vh;
   transition: all .45s ease-out; 
   border-radius: 1vw;
-  background: rgba(0, 0, 0, 0.636);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.2px);
+  background: rgba(0, 0, 0, 0.586);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.606);
+  backdrop-filter: blur(20.2px);
+  padding-top: 4vh;
   z-index: 10;
+  transition: all .75s ease-out; 
 }
 
 .nav-bar-txt:hover,.heading1{
