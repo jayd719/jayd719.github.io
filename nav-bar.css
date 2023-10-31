@@ -47,11 +47,15 @@
   height: 9vh;
   transition: all .45s ease-out; 
   border-radius: 1vw;
-  background: rgba(0, 0, 0, 0.818);
+  background: rgba(0, 0, 0, 0.636);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(21.2px);
+  backdrop-filter: blur(10.2px);
+  z-index: 10;
 }
 
+.nav-bar-txt:hover,.heading1{
+  font-size: xx-large;
+}
 
 
 
@@ -97,4 +101,26 @@ li{
  #header:hover{
    scale: 1.05;
    cursor: pointer;
+ }
+
+
+
+ .menu{
+  visibility: visible;
+  display: block;
+ }
+ .menu-alt{
+  visibility: hidden;
+  display: none;
+ }
+
+
+ .menu-two{
+  visibility: visible;
+  display: block;
+  padding-right: 5vw;
+ }
+ .menu-two-alt{
+  visibility: hidden;
+  display: none;
  }

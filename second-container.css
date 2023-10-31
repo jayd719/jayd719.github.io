@@ -18,8 +18,21 @@
     transition: visibility 0s, opacity 0.5s linear;
   }
   
+  .jacks{
+    display: flex;
+    place-content: center;
+    padding-left: 6vw;
+    padding-right: 10vw;
+    padding: 5vh;
+    background-color: gainsboro;
+    
+ }
+
+
+
+
   .text-one{
-    font-size: 10vw;
+    font-size: 10vh;
     color: #000000;  
     
   }
@@ -29,22 +42,22 @@
   }
   
 
-  .jacks{
-    width: 30vw;
-    height: 40vh;
-    display: flex;
-    place-content: center;
-    justify-content: space-between;
-    padding-left: 6vw;
-    padding-right: 10vw;
-    padding-top: 8vh;
- }
 
-  .jacks-image{
-    width: 14vw;
-    transition: all 1s ease-out; 
 
+  .jack-image-section2{
+    width: 15vw;
+    min-width: 190px;
+    transition: all 1s ease-out;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    transition: ease-out 3s;
+    -webkit-animation: cssAnimation 3s forwards; 
+    animation: cssAnimation 3s forwards;
+   
   }
+
+
+  
 
   #image1:hover{
     scale: 1.1;

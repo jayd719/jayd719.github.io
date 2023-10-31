@@ -57,6 +57,7 @@ body{
 
 .jack-image{
   width: 15vw;
+  min-width: 140px;
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -68,6 +69,7 @@ body{
 
 .jack-image2{
   width: 15vw;
+  min-width: 140px;
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -77,6 +79,7 @@ body{
 }
 .jack-image3{
   width: 15vw;
+  min-width: 140px;
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -87,6 +90,7 @@ body{
 }
 .jack-image4{
   width: 15vw;
+  min-width: 140px;
   position: absolute; 
   top: 50%; 
   left: 50%; 
@@ -97,7 +101,8 @@ body{
 }
 
 .jack-image5{
-  width: 15vw;
+  width: 50vw;
+  min-width: 145px;
   position: absolute; 
   top: 75%; 
   left: 50%; 
@@ -146,7 +151,7 @@ body{
 
 #glass-like{
 background: rgba(255, 255, 255, 0.14);
-border-radius: 16px;
+border-radius: .75vw;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(0.6px);
 -webkit-backdrop-filter: blur(0.6px);
