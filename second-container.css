@@ -1,31 +1,20 @@
 .second-container{
     width:100vw;
-    height: 99vh;
+    min-height: 99vh;
     display: grid;
     place-content: center;
-    background-color:aliceblue;
+    background-color:rgb(255, 255, 255);
     color: #000000;
     transition: visibility 0s, opacity 0.5s linear;
+    overflow-y: scroll;
   }
 
-  .second-container1{
-    width:100vw;
-    height: 95vh;
-    display: grid;
-    place-content: center;
-    background-color:azure;
-    color: #000000;
-    transition: visibility 0s, opacity 0.5s linear;
-  }
+
   
   .jacks{
     display: flex;
     place-content: center;
-    padding-left: 6vw;
-    padding-right: 10vw;
-    padding: 5vh;
-    
-    
+    padding: 5vh; 
  }
 
 
@@ -44,21 +33,30 @@
 
 
 
-  .jack-image-section2{
-    width: 15vw;
-    min-width: 190px;
-    transition: all 1s ease-out;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    transition: ease-out 3s;
-    -webkit-animation: cssAnimation 3s forwards; 
-    animation: cssAnimation 3s forwards;
-   
+.jack-image-section2{
+  width: 15vw;
+  min-width: 190px;
+  transition: all 1s ease-out;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  animation-delay: 1s;
+  animation: fly-out2 3s forwards; 
+}
+
+@keyframes fly-out2 {
+  0% {
+    margin-top: 0%;
   }
-
-
-  
-
-  #image1:hover{
-    scale: 1.1;
+  100%{
+    margin-top: 0%;
   }
+}
+
+.center-text{
+  text-align: justify;
+}
+#center-text{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-size: 2.25vh;
+}

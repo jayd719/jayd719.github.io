@@ -1,10 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
 *{
   margin: 0%;
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-
+  font-family: 'Assistant', sans-serif;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -64,6 +63,7 @@ body{
   transform: translate(-50%, -50%); 
   z-index: 5; 
   transition: all .5s ease-out; 
+  animation: fly-out1 4s forwards;
   
 }
 
@@ -75,7 +75,10 @@ body{
   left: 50%; 
   transform: translate(-50%, -50%); 
   z-index: 4; 
+  rotate: 15deg;
   transition: all .6s ease-out; 
+  animation: fly-out1 3s forwards;
+  
 }
 .jack-image3{
   width: 15vw;
@@ -84,8 +87,10 @@ body{
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
-  z-index: 3;  
+  z-index: 3; 
+  rotate: -30deg; 
   transition: all .7s ease-out; 
+  animation: fly-out1 2s forwards;
   
 }
 .jack-image4{
@@ -97,6 +102,8 @@ body{
   transform: translate(-50%, -50%); 
   z-index: 2;  
   transition: all .8s ease-out; 
+  animation: fly-out1 1.25s forwards;
+  rotate: 25deg;
   
 }
 
@@ -165,4 +172,24 @@ border: 1px solid rgba(255, 255, 255, 1);
 #inf-text {
   height: 2000px;
   color: black;
+}
+
+
+
+@keyframes fly-out1 {
+  0% {
+    margin-top: 100%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 0deg;
+  }
 }
