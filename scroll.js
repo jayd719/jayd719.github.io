@@ -9,7 +9,7 @@
         var an2 = $(".text-one-alt");
         var an3 = $(".menu-two-alt");
         var an4 = $(".menu");
-        document.getElementById("header").style.fontSize = "1.75vh";
+        document.getElementById("header").style.fontSize = "1.5vh";
         header.removeClass('nav-bar') .addClass("nav-bar-txt");
         an1.removeClass('main-container') .addClass("main-container-alt");
         an2.removeClass('text-one-alt') .addClass("text-one");
@@ -22,7 +22,7 @@
         var an3 = $(".menu-two");
         var an4 = $(".menu-alt");
         
-        document.getElementById("header").style.fontSize = "2.25vh";
+        document.getElementById("header").style.fontSize = "2.0vh";
         header.removeClass("nav-bar-txt") .addClass('nav-bar'); 
         an1.removeClass('main-container-alt') .addClass("main-container");
         an2.removeClass('text-one') .addClass("text-one-alt");
