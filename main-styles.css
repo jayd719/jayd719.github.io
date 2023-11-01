@@ -55,7 +55,7 @@ body{
 
 
 .jack-image{
-  width: 15vw;
+  width: 12vw;
   min-width: 140px;
   position: absolute; 
   top: 50%; 
@@ -63,12 +63,12 @@ body{
   transform: translate(-50%, -50%); 
   z-index: 5; 
   transition: all .5s ease-out; 
-  animation: fly-out1 4s forwards;
+  animation: fly-out1 3s forwards;
   
 }
 
 .jack-image2{
-  width: 15vw;
+  width: 12vw;
   min-width: 140px;
   position: absolute; 
   top: 50%; 
@@ -77,11 +77,11 @@ body{
   z-index: 4; 
   rotate: 15deg;
   transition: all .6s ease-out; 
-  animation: fly-out1 3s forwards;
+  animation: fly-out1 2.25s forwards;
   
 }
 .jack-image3{
-  width: 15vw;
+  width: 12vw;
   min-width: 140px;
   position: absolute; 
   top: 50%; 
@@ -90,11 +90,11 @@ body{
   z-index: 3; 
   rotate: -30deg; 
   transition: all .7s ease-out; 
-  animation: fly-out1 2s forwards;
+  animation: fly-out1 1.65s forwards;
   
 }
 .jack-image4{
-  width: 15vw;
+  width: 12vw;
   min-width: 140px;
   position: absolute; 
   top: 50%; 
@@ -102,7 +102,7 @@ body{
   transform: translate(-50%, -50%); 
   z-index: 2;  
   transition: all .8s ease-out; 
-  animation: fly-out1 1.25s forwards;
+  animation: fly-out1 1.0s forwards;
   rotate: 25deg;
   
 }
