@@ -1,6 +1,6 @@
 .second-container{
     width:100vw;
-    height: 50vh;
+    height: 40vh;
     display: grid;
     place-content: center;
     background-color:rgb(255, 255, 255);

@@ -1,6 +1,6 @@
-.section-container{
+.section-project{
     width:70vw;
-    min-height: 35vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -51,6 +51,7 @@ overflow: hidden;
   display:inline-block;
   margin-left: 5vw;
   border-radius: 5px;
+  backdrop-filter: blur(10px);
   background: rgba(0, 0, 0, 0.586);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.606);
   z-index: 10;
