@@ -1,9 +1,10 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
 
 *{
   margin: 0%;
   font-family: 'Assistant', sans-serif;
+  
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -15,7 +16,6 @@ a{
 }
 body{
   background-color: #ffffff;
-  
 }
 .main-container{
   margin-top: 6vh;
@@ -28,11 +28,25 @@ body{
   animation: appear 3s forwards;
 }
 .main-container-alt{
-  transition: visibility 0s, opacity 0.5s linear;
-  height: 0%;
-  display: none;
-  visibility: hidden;
+  animation: 3s forwards .2s explode;
+  
 }
+
+@keyframes explode {
+  
+  0% {
+    opacity: 100%;
+    zoom: 1.50;
+  }
+  100%{
+    zoom: 4.0;
+    opacity: 0%;
+    visibility: hidden;
+    width: 0%;
+    height: 0vh;
+  }
+}
+
 
 #jack-container{
   width: 20vw;
@@ -109,11 +123,14 @@ body{
   left: 50%; 
   transform: translate(-50%, -50%); 
   z-index: 1; 
-  animation: appear 3.5s forwards;
+  animation: 3s forwards 0s appear;
+  background-color: transparent;
 }
-
-
-
+.spiral-image-alt{
+  visibility: hidden;
+  height: 0vh;
+  display: block;
+}
 
 .jack-image:hover{
   rotate: 10deg;  
