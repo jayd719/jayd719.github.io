@@ -1,21 +1,30 @@
 
 .nav-bar{
-    top: 0;
-    width:100vw;
-    height: 6vh;
-    font-size: 1.25vh;
-    background-color: #ffffff;
-    color: rgb(0, 18, 34);
-    position: fixed;
-    opacity: 100;
-    transition: all .7s ease-out; 
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0.6px);
-    -webkit-backdrop-filter: blur(0.6px);
-    border: 1px solid rgba(255, 255, 255, 1);
-    overflow: hidden;
-    
+top: 0;
+width:100vw;
+height: 6vh;
+font-size: 1.25vh;
+background-color: #ffffff;
+color: rgb(0, 18, 34);
+position: fixed;
+opacity: 100;
+transition: all .7s ease-out; 
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.6px);
+-webkit-backdrop-filter: blur(0.6px);
+border: 1px solid rgba(255, 255, 255, 1);
+animation: nav-bar-appear 3s forwards normal;
+overflow: hidden;
 }
+@keyframes nav-bar-appear{
+  0%{
+    background-color: #000000;
+  }
+  100%{
+    background-color: #ffffff;
+  }
+}
+
 .header-visible-section{
   width: 100%;
   height: 6vh;
@@ -26,14 +35,14 @@
 
 
 .nav-bar-txt{
-    top: 0;
-    width:100vw;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    height: 5vh;
-    position: fixed;
-    transition: all 1s ease-out;
-    overflow: hidden; 
+  top: 0;
+  width:100vw;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  height: 5vh;
+  position: fixed;
+  transition: all 1s ease-out;
+  overflow: hidden; 
 }
 .nav-bar-txt:hover{
   top: 1.5vh;
@@ -44,7 +53,6 @@
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.586);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.606);
-  backdrop-filter: blur(20.2px);
   z-index: 10;
   transition: all .5s ease-out; 
   overflow:visible;
@@ -74,13 +82,13 @@
   text-align: center;
   padding-top: 1vh;
   font-size: 1.0vh;
+  transition: .6s ease-out;
 }
 #hidden-menu-item:hover {
-  color: #fff;
-  background-color: #1A1A1A;
-  border: 1px solid #000000;
-  box-shadow: rgba(0, 0, 0, 0.25) 15px;
+  box-shadow: rgba(245, 245, 245, 0.7) 0 0px 0px 40px inset;
+  scale: 1.35;
 }
+
 
 .projects-title{
   width: 60%;
@@ -101,7 +109,6 @@
   display: inline-flex;
   justify-content: center;
   margin-right: 2vw;
-  
 }
 
 #top-menu-item{
@@ -120,7 +127,6 @@
 li{
   list-style-type: none;
   margin-right: 1vw;
- 
 }
 
 
@@ -136,15 +142,14 @@ li{
  
 
  #header:hover{
-   scale: 1.05;
-   cursor: pointer;
+  scale: 1.05;
+  cursor: pointer;
  }
 
 
-
+/* CSS for Menu Sytle One */
  .menu{
   visibility: visible;
-  display: block;
  }
  .menu-alt{
   visibility: hidden;
@@ -152,11 +157,19 @@ li{
  }
 
 
+.menu-one{
+  color: aqua;
+}
+.menu-one-alt{
+  visibility: hidden;
+}
+
  .menu-two{
   visibility: visible;
   display: block;
   padding-right: 5vw;
  }
+
  .menu-two-alt{
   visibility: hidden;
   display: none;

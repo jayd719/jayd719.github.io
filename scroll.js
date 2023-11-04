@@ -9,12 +9,16 @@
         var an2 = $(".text-one-alt");
         var an3 = $(".menu-two-alt");
         var an4 = $(".menu");
+        var an5 = $(".menu-one");
+
         document.getElementById("header").style.fontSize = "1.5vh";
         header.removeClass('nav-bar') .addClass("nav-bar-txt");
         an1.removeClass('main-container') .addClass("main-container-alt");
         an2.removeClass('text-one-alt') .addClass("text-one");
         an3.removeClass("menu-two-alt").addClass("menu-two");
         an4.removeClass("menu").addClass("menu-alt")
+        an5.removeClass("menu-one").addClass("menu-one-alt")
+        
     } else {
         var header = $(".nav-bar-txt"); 
         var an1 = $(".main-container-alt1");
