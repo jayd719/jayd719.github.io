@@ -1,6 +1,6 @@
 .second-container{
     width:100vw;
-    height: 40vh;
+    min-height: 40vh;
     display: grid;
     place-content: center;
     background-color:rgb(255, 255, 255);
@@ -22,7 +22,7 @@
 
 .text-one{
   margin-top: 10vh;
-  font-size: 10vh;
+  font-size: 6vh;
   color: #000000;
 
 }

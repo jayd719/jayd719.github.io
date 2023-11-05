@@ -1,0 +1,12 @@
+
+#viewport{
+    height: 99vh;
+}
+
+.viewport-active{
+    filter: blur(0rem);
+}
+
+.viewport-hovered{
+    filter: blur(.2rem);
+}

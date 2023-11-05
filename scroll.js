@@ -10,9 +10,9 @@
         var an3 = $(".menu-two-alt");
         var an4 = $(".menu");
         var an5 = $(".menu-one");
-        var ann6 = $(".spiral-image")
+        var an6 = $(".spiral-image")
 ;
-        document.getElementById("header").style.fontSize = "1.5vh";
+        document.getElementById("header").style.fontSize = "1.25vh";
         header.removeClass('nav-bar') .addClass("nav-bar-txt");
         an1.removeClass('main-container') .addClass("main-container-alt");
         an2.removeClass('text-one-alt') .addClass("text-one");
@@ -28,7 +28,7 @@
         var an3 = $(".menu-two");
         var an4 = $(".menu-alt");
         
-        document.getElementById("header").style.fontSize = "2.0vh";
+        document.getElementById("header").style.fontSize = "1.5vh";
         header.removeClass("nav-bar-txt") .addClass('nav-bar'); 
         an1.removeClass('main-container-alt') .addClass("main-container");
         an2.removeClass('text-one') .addClass("text-one-alt");

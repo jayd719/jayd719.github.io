@@ -15,6 +15,7 @@ backdrop-filter: blur(0.6px);
 border: 1px solid rgba(255, 255, 255, 1);
 animation: nav-bar-appear 3s forwards normal;
 overflow: hidden;
+overflow-x: hidden;
 }
 @keyframes nav-bar-appear{
   0%{
@@ -26,7 +27,7 @@ overflow: hidden;
 }
 
 .header-visible-section{
-  width: 100%;
+  width: 98vw;
   height: 6vh;
   display: inline-flex;
   align-items: center;
@@ -61,7 +62,7 @@ overflow: hidden;
 }
 
 .sections-menu{
-  width: 100%;
+  width: 90vw;
   display: inline-flex;
   justify-content: space-evenly;
   z-index: 11;
@@ -109,12 +110,12 @@ overflow: hidden;
 #top-menu{
   display: inline-flex;
   justify-content: center;
-  margin-right: 2vw;
+  margin-right: 3vw;
 }
 
 #top-menu-item{
   margin: auto 1.5wv;
-  font-size: 1.75vh;
+  font-size: 1.5vh;
   margin: 5px;  
   transition: .6s;
   
@@ -132,7 +133,7 @@ li{
 
 
 .heading1{
-  padding-left: 5vh;
+  padding-left: 4vh;
   font-style: italic;
   transition: all .7s ease-out; 
  }
@@ -175,6 +176,33 @@ li{
   visibility: hidden;
   display: none;
  }
+
+ #unlock-text{
+  font-size: 2.2vh;
+  font-weight: 900;
+  font-style: italic;
+  animation: blink 1.75s infinite;
+  padding-right: 5vw;
+  color: #000000
+}
+#unlock-text{
+  cursor: wait;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 20%;
+    
+  }
+  50%{
+    opacity: 100%;
+    text-shadow: #006d77 1px 0 10px;
+  }
+  100%{
+    opacity: 20%;
+  }
+}
+
 
 
  

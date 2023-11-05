@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
+
+*{
+    margin: 0%;
+    font-family: 'Assistant', sans-serif;
+    
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  body{
+    background-color: #3964e6;
+    overflow-x:hidden 
+  }

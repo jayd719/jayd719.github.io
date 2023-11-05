@@ -1,0 +1,92 @@
+#dashboard {
+    /* Looks */
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: .75vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    /* Position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Elements Position*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+
+}
+
+.dashboard-hidden {
+    animation: .75s forwards .2s disAppearFromBottom;
+    overflow: hidden;
+}
+
+.dashboard-visible {
+    animation: .75s forwards 0s appearFromBottom;
+    overflow: visible;
+}
+
+
+
+#dashboard div {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.exit-button-container {
+    width: 95vw;
+    text-align: right;
+}
+
+
+
+.projects-title {
+    width: 60%;
+    height: 3vh;
+    border: 1px solid #ffffff;
+    text-align: center;
+    color: #fff;
+    font-size: 1.0vh;
+    margin-left: 6%;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    padding-top: .23%;
+}
+
+
+
+
+/* Animation for Dashboard Appering */
+@keyframes appearFromBottom {
+    0% {
+        top: 0%;
+        opacity: 0%;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 100%;
+    }
+}
+
+
+/* Animation for Dashboard Dis-Appering */
+@keyframes disAppearFromBottom {
+    0% {
+        top: 50%;
+        opacity: 100%;
+    }
+
+    100% {
+        top: 00%;
+        opacity: 0%;
+        z-index: -2;
+    }
+}
