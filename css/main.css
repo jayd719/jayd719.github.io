@@ -1,35 +1,45 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
 
 
-*{
-    margin: 0%;
-    font-family: 'Lato', sans-serif;
-  }
-  ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-  }
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-  body{
-    background-color: #ffffff;
-    overflow-x:hidden 
-  }
-
-
-  #viewport{
-    width: 90vw;
-    height: 95vh;
-   
+* {
+  margin: 0%;
+  font-family: 'Lato', sans-serif;
 }
 
-.viewport-active{
-    filter: blur(0rem);
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
-.viewport-hovered{
-    filter: blur(.2rem);
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  overflow: hidden
+}
+
+
+#viewport {
+  margin-top: 6vh;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-y: hidden;
+}
+
+
+.viewport-active {
+  filter: blur(0rem);
+  transition: 2s;
+}
+
+.viewport-hovered {
+  filter: blur(1rem);
+  transition: 2s;
 }

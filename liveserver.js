@@ -40,7 +40,7 @@ function hideDashboard(){
 
 function hideJacks(){
     
-    ChangeCSS(".viewport-hovered",".viewport-active",true);
+    
     ChangeCSS(".spiral-image",".spiral-image-alt",true);
     ChangeCSS(".scroller",".scroller-alt",true);
     ChangeCSS(".jack-image",".jack-image-final",true);
@@ -50,6 +50,7 @@ function hideJacks(){
     ChangeCSS(".locked-section",".locked-section-alt",true);
     ChangeCSS(".cover-image",".cover-image-alt",true);
     ChangeCSS(".second-container-alt",".second-container",true);
+    ChangeCSS(".viewport-hovered",".viewport-active",true);
     
     
     //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";

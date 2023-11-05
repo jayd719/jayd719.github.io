@@ -13,6 +13,7 @@
     -webkit-backdrop-filter: blur(0.6px);
     border: 1px solid rgba(255, 255, 255, 1);
     animation: nav-bar-appear 3s forwards normal;
+    z-index: 10;
 }
 
 .header-visible-section {
