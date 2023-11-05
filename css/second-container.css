@@ -31,10 +31,11 @@
 }
 
 .text-one{
-  font-size: 10vh;
+  font-size: 10vw;
   font-style: italic;
   margin-bottom: 5vh;
 }
 #center-text{
 font-size: 2vh;
+text-align: justify;
 }

@@ -21,7 +21,9 @@
 
 
   #viewport{
+    width: 90vw;
     height: 95vh;
+   
 }
 
 .viewport-active{
