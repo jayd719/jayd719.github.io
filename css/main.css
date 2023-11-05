@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
 
 
 *{
     margin: 0%;
-    font-family: 'Assistant', sans-serif;
-    
+    font-family: 'Lato', sans-serif;
   }
   ::-webkit-scrollbar {
     width: 0px;
@@ -15,6 +15,19 @@
     color: inherit;
   }
   body{
-    background-color: #3964e6;
+    background-color: #ffffff;
     overflow-x:hidden 
   }
+
+
+  #viewport{
+    height: 95vh;
+}
+
+.viewport-active{
+    filter: blur(0rem);
+}
+
+.viewport-hovered{
+    filter: blur(.2rem);
+}

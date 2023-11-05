@@ -1,3 +1,4 @@
+
 function ChangeCSS(from,to,class_){
     var var1 = $(from);
 
@@ -18,7 +19,7 @@ function sleep(ms) {
     do { 
         curDate = new Date(); 
     }
-    while(curDate-date < ms);
+    while(curDate-date < ms*1000);
 }
 
 
@@ -36,4 +37,21 @@ function hideDashboard(){
    ChangeCSS(".cover-image",".cover-image-alt",true);
    //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
 }; 
+
+function hideJacks(){
+    
+    ChangeCSS(".viewport-hovered",".viewport-active",true);
+    ChangeCSS(".spiral-image",".spiral-image-alt",true);
+    ChangeCSS(".scroller",".scroller-alt",true);
+    ChangeCSS(".jack-image",".jack-image-final",true);
+    ChangeCSS(".jack-image2",".jack-image-final2",true);
+    ChangeCSS(".jack-image3",".jack-image-final3",true);
+    ChangeCSS(".jack-image4",".jack-image-final4",true);
+    ChangeCSS(".locked-section",".locked-section-alt",true);
+    ChangeCSS(".cover-image",".cover-image-alt",true);
+    ChangeCSS(".second-container-alt",".second-container",true);
+    
+    
+    //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
+ }; 
 

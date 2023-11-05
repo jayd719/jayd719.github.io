@@ -4,206 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> 
-    <link rel="stylesheet" href="main-styles.css">
-    <link rel="stylesheet" href="nav-bar.css">
-    <link rel="stylesheet" href="scroll-down.css">
-    <link rel="stylesheet" href="flaps.css">
-    <link rel="stylesheet" href="second-container.css">
-    <link rel="stylesheet" href="jack-css.css">
-    <link rel="stylesheet" href="procject-section.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/projects-section.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/locked-section.css">
+    <link rel="stylesheet" href="css/scroller.css">
+    <link rel="stylesheet" href="css/second-container.css">
 
+    <link rel="stylesheet" href="test.css">
  
-    <script src="scroll.js"></script>
+
     <link rel="icon" type="image/x-icon" href="images/jack-of-clubs.png">
     <title>I am JD</title>
    
 </head>
 <body>
+    <section class="locked-section" id="locked-section">
+        <img onclick="hideJacks();" class="jack-image" id="jack-one" src="images/jack1.jpeg" alt="">
+        <img class="jack-image2" id="jack-one" src="images/jack1.jpeg" alt="">
+        <img class="jack-image3" id="jack-one" src="images/jack1.jpeg" alt="">
+        <img class="jack-image4" id="jack-one" src="images/jack1.jpeg" alt="">
+        <img class="spiral-image" src="images/giphy-1.gif" alt="">
 
-    <header class="nav-bar" id="header-nav">
-       
-
-        <div class="header-visible-section">
-            <a href="http://jayd719.github.io"><h1 class="heading1" id="header">Jashandeep Singh</h1></a>
-
-            <div class="menu-one">
-                <p id="unlock-text" title="Hover On Jacks To Unlock">Jack To Unlock</p>
-            </div>
-
-            <div class="menu-alt">
-                <ul class="top-menu-1" id="top-menu">
-                    <li id="top-menu-item">CAD</li>
-                    <li id="top-menu-item">CAM</li>
-                    <li id="top-menu-item">Electronics</li>
-                    <li id="top-menu-item">Apps</li>
-                    <li id="top-menu-item">Contact</li>
-                </ul>
-            </div>
-
-            <div class="menu-two-alt">
-                <ul class="top-menu-1" id="top-menu">
-                    <li id="top-menu-item">Home</li>
-                </ul>
-            </div>
-
+        <div class="scroller">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <span class="text">Click To Unlock</span>
         </div>
-    
-
-        <div class="projects-title">
-            <h1>Projects</h1>
-        </div>
-
-       
-
-        <div class="sections-menu">
-            <div id="hidden-menu-item">
-                <img id="menu-icon" src="images/menu-items/cad.png" alt="">
-                <h1>CAD</h1>
-            </div>
-           
-            <div id="hidden-menu-item">
-                <img id="menu-icon" src="images/menu-items/cam.png" alt="">
-                <h1>CAM</h1>
-            </div>
-
-            <div id="hidden-menu-item">
-                <img id="menu-icon" src="images/menu-items/electronics.png" alt="">
-                <h1>Electronics</h1>
-            </div>
-
-            <div id="hidden-menu-item">
-                <img id="menu-icon" src="images/menu-items/apps.png" alt="">
-                <h1>Apps</h1>
-            </div>
-
-            <div id="hidden-menu-item">
-                <img id="menu-icon" src="images/menu-items/resume.png" alt="">
-                <h1>Resume</h1>
-            </div>
-
-            <div id="hidden-menu-item">
-                <img id="menu-icon" src="images/menu-items/contacts.png" alt="">
-                <h1>Contact</h1>
-            </div>
-        </div>
-    </header>
+    </section>
 
 
-    <div class="main-container">
-            <div id="infinite-scroll">
-                <div id="inf-text">Block 1</div>
-                <div id="inf-text">Block 2</div>
-                <div id="inf-text">Block 3</div>
-                <div id="inf-text">Block 4</div>
-                <div id="inf-text">Block 5</div>
-                <div id="inf-text">Block 1</div>
-                <div id="inf-text">Block 2</div>
-                <div id="inf-text">Block 3</div>
-                <div id="inf-text">Block 4</div>
-                <div id="inf-text">Block 5</div>
-                <div id="inf-text">Block 1</div>
-                <div id="inf-text">Block 2</div>
-                <div id="inf-text">Block 3</div>
-                <div id="inf-text">Block 4</div>
-                <div id="inf-text">Block 5</div>
-                <div id="inf-text">Block 1</div>
-                <div id="inf-text">Block 2</div>
-                <div id="inf-text">Block 3</div>
-                <div id="inf-text">Block 4</div>
-                <div id="inf-text">Block 5</div>
-                <div id="inf-text">Block 1</div>
-                <div id="inf-text">Block 2</div>
-                <div id="inf-text">Block 3</div>
-                <div id="inf-text">Block 4</div>
-                <div id="inf-text">Block 5</div>
-                <div id="inf-text">Block 1</div>
-                <div id="inf-text">Block 2</div>
-                <div id="inf-text">Block 3</div>
-                <div id="inf-text">Block 4</div>
-                <div id="inf-text">Block 5</div>
-            </div>
-            
-            <div id="jack-container">
-                <img class="jack-image" id="glass-like" src="images/jack1.jpeg" alt="">
-                <img class="jack-image2" id="glass-like" src="images/jack1.jpeg" alt="">
-                <img class="jack-image3" id="glass-like" src="images/jack1.jpeg" alt="">
-                <img class="jack-image4" id="glass-like" src="images/jack1.jpeg" alt="">
-                <img class="spiral-image" src="images/giphy-1.gif" alt="">
-
-                <div class="scroller">
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                    <span class="text">Scroll down</span>
+    <section id="viewport" class="viewport-hovered">
+        <header class="nav-bar" id="header-nav">
+            <div class="header-visible-section">
+                <a href="http://jashandeep.co.uk"><h1 class="heading1" id="header">Jashandeep Singh</h1></a>
+                <div class="menu-alt">
+                    <ul class="top-menu-1" id="top-menu">
+                        <li id="top-menu-item" onclick="showDashboard();"">Projects</li>
+                        <a href="files/Jashandeep Singh(JD).pdf" target=”_blank”><li id="top-menu-item">Resume</li></a>
+                        <li id="top-menu-item">Contact</li>
+                    </ul>
                 </div>
-               
             </div>
+        </header>
+
+        <section class="second-container-alt">
+            <div class="greeting-container" >
+                <h1 class="text-one">hello there!</h1>
+            </div>
+    
+            <div class="center-text">
+                <p id="center-text">Welcome to my corner of the digital world! I'm a Computer Science student currently pursuing my education at Wilfrid Laurier University. Coding is not just a hobby for me; it's a passion that drives me to explore the endless possibilities of the digital realm</p>
+            </div>  
+        </section>
+
         
-            <div id="infinite-scroll">
-                <div id="inf-text">Block 1</div>
-                <div id="inf-text">Block 2</div>
-                <div id="inf-text">Block 3</div>
-                <div id="inf-text">Block 4</div>
-                <div id="inf-text">Block 5</div>
-                <div id="inf-text">Block 1</div>
-                <div id="inf-text">Block 2</div>
-                <div id="inf-text">Block 3</div>
-                <div id="inf-text">Block 4</div>
-                <div id="inf-text">Block 5</div>
-                <div id="inf-text">Block 1</div>
-                <div id="inf-text">Block 2</div>
-                <div id="inf-text">Block 3</div>
-                <div id="inf-text">Block 4</div>
-                <div id="inf-text">Block 0</div>
+    </section>
+
+    <section id="dashboard" class="dashboard-hidden">
+        <div class="exit-button-container">
+            <button><input type="submit" id="oo" name="button" onclick="hideDashboard();" value="enter"/></button>
+        </div>
+        
+        <div class="section-project">
+            <!-- CAM BUTTON -->
+            <div class="section-image-container">
+                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
+                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
+                <p id="projects-title">CAD</p> 
+                <span>Check Out CAD Projects</span>
             </div>
 
-           
-    </div>
+    
+            <div class="section-image-container">
+                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
+                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
+                <p id="projects-title">CAM</p> 
+                <span>Check Out CAM Projects</span>
+            </div>
+    
+            <div class="section-image-container">
+                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
+                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
+                <p id="projects-title">Electronics</p> 
+                <span>Check Out Electronics Projects</span>
+            </div>
+    
+            <div class="section-image-container">
+                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
+                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
+                <p id="projects-title">Coding Projects</p> 
+                <span>Uncover Coding Endeavors</span>
+            </div>
 
-
-    <section class="second-container">
-        <div class="greeting-container" >
-            <h1 class="text-one-alt">hello there!</h1>
+            <div class="section-image-container">
+                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
+                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
+                <p id="projects-title">Random</p> 
+                <span>Endeavors</span>
+            </div>
         </div>
-
-        <div class="center-text">
-            <p id="center-text">Welcome to my corner of the digital world! I'm a Computer Science student currently pursuing my education at Wilfrid Laurier University. Coding is not just a hobby for me; it's a passion that drives me to explore the endless possibilities of the digital realm</p>
-        </div>  
     </section>
 
-
-
-
-    <section class="section-project">
-        <div title="Matsuura H-Plus 630" class="section-image-container">
-            <img id="cover-image" class="project-image" src="images/jack.png" alt="">
-            <img id="project-image" class="project-image" src="images/jack2.jpg" alt="">
-            <p id="projects-title">CAD</p> 
-            <span>Check Out CAD Projects</span>
-        </div>
-
-        <div title="Matsuura H-Plus 630" class="section-image-container">
-            <img id="cover-image" class="project-image" src="images/jack.png" alt="">
-            <img id="project-image" class="project-image" src="images/jack2.jpg" alt="">
-            <p id="projects-title">CAM</p> 
-            <span>Check Out CAM Projects</span>
-        </div>
-
-        <div title="Matsuura H-Plus 630" class="section-image-container">
-            <img id="cover-image" class="project-image" src="images/jack.png" alt="">
-            <img id="project-image" class="project-image" src="images/jack2.jpg" alt="">
-            <p id="projects-title">Electronics</p> 
-            <span>Check Out Electronics Projects</span>
-        </div>
-
-        <div title="Matsuura H-Plus 630" class="section-image-container">
-            <img id="cover-image" class="project-image" src="images/jack.png" alt="">
-            <img id="project-image" class="project-image" src="images/jack2.jpg" alt="">
-            <p id="projects-title">Coding Projects</p> 
-            <span>Uncover Coding Endeavors</span>
-        </div>
-
-    </section>
+   
 </body>
 
+<script src="liveserver.js"></script>
 </html>
