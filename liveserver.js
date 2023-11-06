@@ -65,6 +65,7 @@ function hideJacks(){
     ChangeCSS(".footer",".footer-txt",true);
     //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
  }; 
+
  function hideResume(){
     ChangeCSS(".resume-section",".resume-section-alt",true);
     ChangeCSS(".viewport-hovered",".viewport-active",true);
@@ -72,3 +73,9 @@ function hideJacks(){
     ChangeCSS(".footer-txt",".footer",true);
     //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
  }; 
+
+ function cadProjects(){
+    ChangeCSS(".dashboard-visible",".dashboard-hidden",true);
+    ChangeCSS(".cover-image-alt",".cover-image",true);
+
+ }

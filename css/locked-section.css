@@ -9,6 +9,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     animation: 2s forwards 1.2s fly-out3;
+  
 
 }
 .locked-section {
@@ -16,6 +17,7 @@
     width: 100vw;
     height: 100vh;
     background-color: black;
+    
 
     /* Position */
     position: absolute;

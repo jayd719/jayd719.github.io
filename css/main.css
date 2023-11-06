@@ -8,7 +8,7 @@
   margin: 0%;
   font-family: 'Lato', sans-serif;
   word-spacing: 2.25px;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.25px;
 }
 
 ::-webkit-scrollbar {
@@ -24,7 +24,10 @@ a {
 
 body {
   background-color: #ffffff;
-  overflow: hidden
+  overflow:hidden;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  
 }
 
 
@@ -47,5 +50,4 @@ body {
 .viewport-hovered {
   filter: blur(1rem);
   transition: 2s;
-  height: 100vh;
 }

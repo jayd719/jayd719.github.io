@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0 , minimum-scale=1.0 , maximum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/projects-section.css">
     <link rel="stylesheet" href="css/main.css">
@@ -15,22 +16,25 @@
     <link rel="stylesheet" href="css/resume.css">
 
     <link rel="stylesheet" href="test.css">
- 
+
 
     <link rel="icon" type="image/x-icon" href="images/jack-of-clubs.png">
     <script src="liveserver.js"></script>
     <title>I am JD</title>
-   
+
 </head>
+
 <body>
 
     <header class="nav-bar" id="header-nav">
         <div class="header-visible-section">
-            <a href="http://jashandeep.co.uk"><h1 class="heading1" id="header">Jashandeep Singh</h1></a>
+            <a href="http://jashandeep.co.uk">
+                <h1 class="heading1" id="header">Jashandeep Singh</h1>
+            </a>
             <div class="menu-alt">
                 <ul class="top-menu-1" id="top-menu">
                     <li id="top-menu-item" onclick="showDashboard();"">Projects</li>
-                    <li id="top-menu-item" onclick="showResume();">Resume</li></a>
+                    <li id="top-menu-item" onclick="showResume();">Resume</li>
                     <li id="top-menu-item">Contact</li>
                 </ul>
             </div>
@@ -55,61 +59,63 @@
 
 
     <section id="viewport" class="viewport-hovered">
-    
-       
+
+
         <section class="second-container-alt">
-            <div class="greeting-container" >
-                <h1 class="text-one">hello there!</h1>
+            <div class="greeting-container">
+                <h1 class="text-one"></h1>
             </div>
-    
+
             <div class="center-text">
-                <p id="center-text">Welcome to my corner of the digital world! I'm a Computer Science student currently pursuing my education at Wilfrid Laurier University. Coding is not just a hobby for me; it's a passion that drives me to explore the endless possibilities of the digital realm</p>
-            </div>  
+                <p id="center-text">Welcome to my corner of the digital world! I'm a Computer Science student currently
+                    pursuing my education at Wilfrid Laurier University. Coding is not just a hobby for me; it's a
+                    passion that drives me to explore the endless possibilities of the digital realm</p>
+            </div>
         </section>
 
-        
+
     </section>
 
     <section id="dashboard" class="dashboard-hidden">
         <div class="exit-button-container">
-            <button><input type="submit" id="oo" name="button" onclick="hideDashboard();" value="enter"/></button>
+            <button><input type="submit" id="oo" name="button" onclick="hideDashboard();" value="enter" /></button>
         </div>
-        
+
         <div class="section-project">
             <!-- CAM BUTTON -->
-            <div class="section-image-container">
+            <div onclick="cadProjects();" class="section-image-container">
                 <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
                 <img class="cover-image" id="project-image" src="images/jack.png" alt="">
-                <p id="projects-title">CAD</p> 
+                <p id="projects-title">CAD</p>
                 <span>Check Out CAD Projects</span>
             </div>
 
-    
-            <div class="section-image-container">
+
+            <div onclick="cadProjects();" class="section-image-container">
                 <img class="cover-image" id="project-image" src="images/jack.png" alt="">
                 <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
-                <p id="projects-title">CAM</p> 
+                <p id="projects-title">CAM</p>
                 <span>Check Out CAM Projects</span>
             </div>
-    
+
             <div class="section-image-container">
                 <img class="cover-image" id="project-image" src="images/jack.png" alt="">
                 <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
-                <p id="projects-title">Electronics</p> 
+                <p id="projects-title">Electronics</p>
                 <span>Check Out Electronics Projects</span>
             </div>
-    
+
             <div class="section-image-container">
                 <img class="cover-image" id="project-image" src="images/jack.png" alt="">
                 <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
-                <p id="projects-title">Coding Projects</p> 
+                <p id="projects-title">Coding Projects</p>
                 <span>Uncover Coding Endeavors</span>
             </div>
 
             <div class="section-image-container">
                 <img class="cover-image" id="project-image" src="images/jack.png" alt="">
                 <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
-                <p id="projects-title">Random</p> 
+                <p id="projects-title">Random</p>
                 <span>Endeavors</span>
             </div>
         </div>
@@ -118,12 +124,14 @@
 
     <section class="resume-section-alt">
         <div class="exit-button-container">
-            <button><input type="submit" id="oo" name="button" onclick="hideResume();" value="close"/></button>
+            <button><input type="submit" id="oo" name="button" onclick="hideResume();" value="close" /></button>
         </div>
         <object class="resume" data="files/Jashandeep Singh(JD).pdf"></object>
-        
+
     </section>
 
+
+    <section class="cad-projects"></section>
 
     <footer class="footer">
         <!-- <div class="logo-container">
@@ -145,14 +153,14 @@
                 <img src="images/socails/twitter.png" alt="" id="logo-jd">
             </div>
         </div>
-       
+
         <div class="line-split"></div>
         <div class="footer-list">
-            <h1 id="last-line">Copyright © 2023  jashandeep.co.uk - All Rights Reserved.</h1>
+            <h1 id="last-line">Copyright © 2023 jashandeep.co.uk - All Rights Reserved.</h1>
         </div>
-        
+
     </footer>
-   
+
 </body>
 
 

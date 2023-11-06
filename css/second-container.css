@@ -1,21 +1,26 @@
-
-.second-container{
-    width: 100vw;
-    height: 96vh;
-    /* Elements Position*/
-    z-index: 1;
-    /* Elements Position*/
-   overflow: hidden;
-   animation: 10s forwards 0s appear;
+.second-container {
+  width: 100vw;
+  height: 96vh;
+  /* Elements Position*/
+  z-index: 1;
+  /* Elements Position*/
+  overflow: hidden;
+  animation: 10s forwards 0s appear;
 
 }
-.second-container-alt{
+
+.second-container-alt {
   width: 98vw;
   opacity: 0%;
   z-index: -100;
   visibility: hidden;
 }
-.greeting-container,.center-text{
+
+.greeting-container{
+  height: 20vh;
+}
+.greeting-container,
+.center-text {
   width: 100vw;
   text-align: center;
 }
@@ -30,6 +35,12 @@
   font-weight: 900;
 }
 
+.text-one::before {
+  content: "hello there!";
+  animation: changeColors infinite 10s;
+  animation-direction: alternate;
+}
+
 #center-text {
   margin-left: 10vw;
   margin-right: 10vw;
@@ -38,4 +49,88 @@
   text-align: center;
   color: #071619;
   font-family: 'Permanent Marker', cursive;
+}
+
+
+@keyframes changeColors {
+  0%{
+    content: "hello there!";
+    opacity: 100%;
+  }
+  5%{
+    content: "hello there!";
+    opacity: 0%;
+  }
+  10%{
+    content: "Bonjour";
+    opacity: 0%;
+  }
+  15%{
+    content: "Bonjour";
+    opacity: 100%;
+  }
+  20%{
+    content: "Bonjour";
+    opacity: 0%;
+  }
+  25%{
+    content: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ";
+    opacity: 0%;
+  }
+  30%{
+    content: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ";
+    opacity: 100%;
+  }
+  35%{
+    content: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ";
+    opacity: 0%;
+  }
+  40%{
+    content: "வணக்கம்";
+    opacity: 0%;
+  }
+  45%{
+    content: "வணக்கம்";
+    opacity: 100%;
+  }
+  50%{
+    content: "வணக்கம்";
+    opacity: 0%;
+  }
+  55%{
+    content: "السلام عليكم";
+    opacity: 0%;
+  }
+  60%{
+    content: "السلام عليكم";
+    opacity: 100%;
+  }
+  65%{
+    content: "السلام عليكم";
+    opacity: 0%;
+  }
+  70%{
+    content: "नमस्ते";
+    opacity: 0%;
+  }
+  75%{
+    content: "नमस्ते";
+    opacity: 100%;
+  }
+  80%{
+    content: "नमस्ते";
+    opacity: 0%;
+  }
+  85%{
+    content: "hallo";
+    opacity: 0%; 
+  }
+  90%{
+    content: "hallo";
+    opacity: 100%;
+  }
+  100%{
+    content: "hallo";
+    opacity: 0%;
+  }
 }

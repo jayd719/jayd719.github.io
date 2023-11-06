@@ -65,17 +65,17 @@
 li {
     list-style-type: none;
     margin-right: 1vw;
+    
 }
 
 .heading1{
     padding-left: 4vh;
     font-style: italic;
     transition: all .7s ease-out; 
+    
    }
    
-   #text1{
-    font-style: italic;
-   }
+
    
   
    #header:hover{
