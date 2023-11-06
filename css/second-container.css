@@ -20,13 +20,22 @@
   text-align: center;
 }
 
-.text-one{
+.text-one {
   margin-top: 10vh;
-  font-size: 10vw;
-  font-style: italic;
+  font-size: 120px;
+  color: #092327;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  /* text-shadow: 2px 4px 3px #00A9A5; */
+  font-family: 'Sacramento', cursive;
+  font-weight: 900;
 }
-#center-text{
-margin: 10vw;
-font-size: 2vh;
-text-align: justify;
+
+#center-text {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vh;
+  font-size: 19px;
+  text-align: center;
+  color: #071619;
+  font-family: 'Permanent Marker', cursive;
 }

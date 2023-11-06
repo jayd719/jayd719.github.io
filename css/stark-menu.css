@@ -1,0 +1,61 @@
+.stark-menu{
+    width:auto;
+    height:6vh;
+    
+    
+    /* looks */
+    background: rgba(255, 255, 255, 0.14);
+    background-color: aqua;
+    border-radius: .75vw;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
+
+    display: inline-flex;
+    justify-content: center;
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+}
+.stark-menu:hover{
+    width: 80vw;
+    overflow: visible;
+}
+
+.stark-menu ul{
+    width: 2vw;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    overflow: visible;
+}
+
+#icon-main{
+    width: 2.5vw;
+    transition: 1s ease-in-out;
+}
+
+#icon-main:hover{
+   width: 10vw;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.stark-menu:hover .jack-stark-menu{
+    width: 6vw;
+}
+
+.jack-stark-menu{
+    width: 12vw;
+    min-width: 140px;
+    /* looks */
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: .75vw;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    backdrop-filter: blur(0.6px);
+    -webkit-backdrop-filter: blur(0.6px);
+}
