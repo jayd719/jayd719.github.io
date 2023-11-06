@@ -29,18 +29,20 @@ function showDashboard(){
     ChangeCSS(".dashboard-hidden",".dashboard-visible",true);
     ChangeCSS(".viewport-active",".viewport-hovered",true);
     ChangeCSS(".cover-image-alt",".cover-image",true);
+    ChangeCSS(".nav-bar",".nav-bar-txt",true);
+    ChangeCSS(".footer",".footer-txt",true);
 }; 
     
 function hideDashboard(){
    ChangeCSS(".dashboard-visible",".dashboard-hidden",true);
    ChangeCSS(".viewport-hovered",".viewport-active",true);
    ChangeCSS(".cover-image",".cover-image-alt",true);
+   ChangeCSS(".nav-bar-txt",".nav-bar",true);
+   ChangeCSS(".footer-txt",".footer",true);
    //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
 }; 
 
 function hideJacks(){
-    
-    
     ChangeCSS(".spiral-image",".spiral-image-alt",true);
     ChangeCSS(".scroller",".scroller-alt",true);
     ChangeCSS(".jack-image",".jack-image-final",true);
@@ -51,8 +53,22 @@ function hideJacks(){
     ChangeCSS(".cover-image",".cover-image-alt",true);
     ChangeCSS(".second-container-alt",".second-container",true);
     ChangeCSS(".viewport-hovered",".viewport-active",true);
-    
-    
     //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
  }; 
 
+
+
+ function showResume(){
+    ChangeCSS(".resume-section-alt",".resume-section",true);
+    ChangeCSS(".viewport-active",".viewport-hovered",true);
+    ChangeCSS(".nav-bar",".nav-bar-txt",true);
+    ChangeCSS(".footer",".footer-txt",true);
+    //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
+ }; 
+ function hideResume(){
+    ChangeCSS(".resume-section",".resume-section-alt",true);
+    ChangeCSS(".viewport-hovered",".viewport-active",true);
+    ChangeCSS(".nav-bar-txt",".nav-bar",true);
+    ChangeCSS(".footer-txt",".footer",true);
+    //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
+ }; 

@@ -1,0 +1,106 @@
+.footer {
+    background:#262626;
+    color: white;
+    width: 100%;
+    height: auto;
+    animation: .75s backwards .25s appear-txt;
+    box-shadow: rgba(64, 58, 58, 0.56) 0px 22px 70px 4px;
+}
+.footer-txt {
+    background: #262626;
+    color: white;
+    width: 100%;
+    height: auto;
+    animation: .75s forwards .2s drop;
+}
+
+.logo-container {
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+#logo-jd-main {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 50px;
+    rotate: 90deg;
+    transition: .5s;
+}
+
+#logo-jd {
+    padding-top: 10px;
+    width: 20px;
+    transition: 1s;
+}
+
+#logo-jd:hover {
+    scale: 1.23;
+    cursor: pointer;
+}
+
+.foot-section-two {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.flag-container {
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.socail-container {
+    margin-right: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 1.5vw;
+}
+
+.line-split {
+    background-color: rgb(73, 73, 73);
+    width: 96vw;
+    height: 2px;
+    margin-left: 2vw;
+    margin-top: .5vh;
+    margin-bottom: .25vh;
+}
+
+
+.footer-list {
+    margin-right: 10vw;
+    margin-left: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12.5px;
+}
+
+#last-line {
+    font-size: 8px;
+    padding-top: .2vh;
+    padding-bottom: .45vh;
+    font-weight: 100;
+}
+
+@keyframes drop {
+    0%{
+       opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+    
+}
+
+@keyframes appear-txt {
+    0%{
+       opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}

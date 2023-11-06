@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/locked-section.css">
     <link rel="stylesheet" href="css/scroller.css">
     <link rel="stylesheet" href="css/second-container.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/resume.css">
 
     <link rel="stylesheet" href="test.css">
  
@@ -28,7 +30,7 @@
             <div class="menu-alt">
                 <ul class="top-menu-1" id="top-menu">
                     <li id="top-menu-item" onclick="showDashboard();"">Projects</li>
-                    <a href="files/Jashandeep Singh(JD).pdf" target=”_blank”><li id="top-menu-item">Resume</li></a>
+                    <li id="top-menu-item" onclick="showResume();">Resume</li></a>
                     <li id="top-menu-item">Contact</li>
                 </ul>
             </div>
@@ -113,6 +115,43 @@
         </div>
     </section>
 
+
+    <section class="resume-section-alt">
+        <div class="exit-button-container">
+            <button><input type="submit" id="oo" name="button" onclick="hideResume();" value="close"/></button>
+        </div>
+        <object class="resume" data="files/Jashandeep Singh(JD).pdf"></object>
+        
+    </section>
+
+
+    <footer class="footer">
+        <!-- <div class="logo-container">
+            <img src="images/jack.png" alt="" id="logo-jd-main">
+        </div> -->
+
+        <div class="foot-section-two">
+            <div class="flag-container">
+                <img src="images/flags/india.png" alt="" id="logo-jd">
+                <img src="images/flags/united-kingdom.png" alt="" id="logo-jd">
+                <img src="images/flags/canada.png" alt="" id="logo-jd">
+                <img src="images/flags/germany.png" alt="" id="logo-jd">
+                <img src="images/flags/usa.png" alt="" id="logo-jd">
+            </div>
+
+            <div class="socail-container">
+                <img src="images/socails/linkedin.png" alt="" id="logo-jd">
+                <img src="images/socails/github.png" alt="" id="logo-jd">
+                <img src="images/socails/twitter.png" alt="" id="logo-jd">
+            </div>
+        </div>
+       
+        <div class="line-split"></div>
+        <div class="footer-list">
+            <h1 id="last-line">Copyright © 2023  jashandeep.co.uk - All Rights Reserved.</h1>
+        </div>
+        
+    </footer>
    
 </body>
 
