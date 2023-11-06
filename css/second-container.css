@@ -35,11 +35,11 @@
   font-weight: 900;
 }
 
-.text-one::before {
-  content: "hello there!";
-  animation: changeColors infinite 10s;
-  animation-direction: alternate;
-}
+/* .text-one::before {
+  /* content: "hello there!"; */
+  /* animation: changeColors infinite 10s; */
+  /* animation-direction: alternate; */
+ 
 
 #center-text {
   margin-left: 10vw;
@@ -51,7 +51,7 @@
   font-family: 'Permanent Marker', cursive;
 }
 
-
+/* 
 @keyframes changeColors {
   0%{
     content: "hello there!";
@@ -133,4 +133,4 @@
     content: "hallo";
     opacity: 0%;
   }
-}
+} */
