@@ -42,4 +42,5 @@ body {
 .viewport-hovered {
   filter: blur(1rem);
   transition: 2s;
+  height: 100vh;
 }
