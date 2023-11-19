@@ -92,7 +92,7 @@ section {
   color: black;
   font-weight: 200;
   opacity: 0%;
-  animation: 4s forwards 2s ease slide-from-right;
+  animation: 4s forwards 3s ease slide-from-right;
   transition: 1s;
 }
 
