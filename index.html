@@ -1,169 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0 , minimum-scale=1.0 , maximum-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="css/projects-section.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav-bar.css">
-    <link rel="stylesheet" href="css/locked-section.css">
-    <link rel="stylesheet" href="css/scroller.css">
-    <link rel="stylesheet" href="css/second-container.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/resume.css">
-
-    <link rel="stylesheet" href="test.css">
-
-
-    <link rel="icon" type="image/x-icon" href="images/jack-of-clubs.png">
-    <script src="liveserver.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I am JD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/locked-section.css" />
+    <link rel="stylesheet" href="css/scroller-text.css" />
 
-</head>
-
-<body>
-
-    <header class="nav-bar" id="header-nav">
-        <div class="header-visible-section">
-            <a href="http://jashandeep.co.uk">
-                <h1 class="heading1" id="header">Jashandeep Singh</h1>
-            </a>
-            <div class="menu-alt">
-                <ul class="top-menu-1" id="top-menu">
-                    <li id="top-menu-item" onclick="showDashboard();"">Projects</li>
-                    <li id="top-menu-item" onclick="showResume();">Resume</li>
-                    <li id="top-menu-item">Contact</li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-
+    <link rel="icon" type="image/x-icon" href="images/jack-of-clubs.png" />
+  </head>
+  <body>
     <section class="locked-section" id="locked-section">
-        <img onclick="hideJacks();" class="jack-image" id="jack-one" src="images/jack1.jpeg" alt="">
-        <img class="jack-image2" id="jack-one" src="images/jack1.jpeg" alt="">
-        <img class="jack-image3" id="jack-one" src="images/jack1.jpeg" alt="">
-        <img class="jack-image4" id="jack-one" src="images/jack1.jpeg" alt="">
-        <img class="spiral-image" src="images/giphy-1.gif" alt="">
+      <img
+        onclick="hideJacks();"
+        class="jack-image"
+        id="jack-one"
+        src="images/jacks/jack1.jpeg"
+        alt=""
+      />
+      <img
+        class="jack-image2"
+        id="jack-one"
+        src="images/jacks/jack1.jpeg"
+        alt=""
+      />
+      <img
+        class="jack-image3"
+        id="jack-one"
+        src="images/jacks/jack1.jpeg"
+        alt=""
+      />
+      <img
+        class="jack-image4"
+        id="jack-one"
+        src="images/jacks/jack1.jpeg"
+        alt=""
+      />
+      <img class="spiral-image" src="images/jacks/background.gif" alt="" />
 
-        <div class="scroller">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <span class="text">Click To Unlock</span>
-        </div>
+      <div class="scroller">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text">Click To Unlock</span>
+      </div>
     </section>
 
+    <div class="main-container-hidden">
+      <!-- header section -->
+      <header class="header" id="head-one">
+        <img src="images/main.png" id="app-logo" />
+        <ul>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Resume</li>
+          <li>FAQ</li>
+          <li id="contact-button">CONTACT</li>
+        </ul>
+        <button class="hamburger" type="button">
+          <span class="hamburger-box"
+            >kd
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </header>
 
-    <section id="viewport" class="viewport-hovered">
+      <!-- section1 -->
+      <section class="section" id="class-section-one">
+        <h1 class="text-style-one" id="heading-one">
+          <span>Fostering a Future where</span>
+          <span class="flashy-text">Artificial Intelligence </span>and
+          <span class="flashy-text">Machining</span>
+          <span>Unify</span>
+        </h1>
+        <p id="intro-text-one">
+          Welcome To My Corner of The Digital World! I'm a Computer Science
+          Student Currently Pursuing My Education at Wilfrid Laurier University.
+          Coding Is Not Just a Hobby For Me; It's a Passion That Drives Me To
+          Explore The Endless Possibilities Of The Digital Realm.
+        </p>
 
-
-        <section class="second-container-alt">
-            <div class="greeting-container">
-                <h1 class="text-one">hello there!</h1>
-            </div>
-
-            <div class="center-text">
-                <p id="center-text">Welcome to my corner of the digital world! I'm a Computer Science student currently
-                    pursuing my education at Wilfrid Laurier University. Coding is not just a hobby for me; it's a
-                    passion that drives me to explore the endless possibilities of the digital realm</p>
-            </div>
-        </section>
-
-
-    </section>
-
-    <section id="dashboard" class="dashboard-hidden">
-        <div class="exit-button-container">
-            <button><input type="submit" id="oo" name="button" onclick="hideDashboard();" value="enter" /></button>
+        <div class="logo-wrapper" loading="lazy">
+          <img
+            src="images/logos/laser-cutting-machine.png"
+            class="features-logo"
+            id="feature-one"
+            alt=""
+          />
+          <img
+            src="images/logos/python.png"
+            class="features-logo"
+            id="feature-two"
+            alt=""
+          />
+          <img
+            src="images/logos/cpu.png"
+            class="features-logo"
+            id="feature-three"
+            alt=""
+          />
+          <img
+            src="images/logos/java.png"
+            class="features-logo"
+            id="feature-four"
+            alt=""
+          />
+          <img
+            src="images/logos/design.png"
+            class="features-logo"
+            id="feature-five"
+            alt=""
+          />
+          <img
+            src="images/logos/java-script.png"
+            class="features-logo"
+            id="feature-six"
+            alt=""
+          />
         </div>
+      </section>
 
-        <div class="section-project">
-            <!-- CAM BUTTON -->
-            <div onclick="cadProjects();" class="section-image-container">
-                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
-                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
-                <p id="projects-title">CAD</p>
-                <span>Check Out CAD Projects</span>
-            </div>
-
-
-            <div onclick="cadProjects();" class="section-image-container">
-                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
-                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
-                <p id="projects-title">CAM</p>
-                <span>Check Out CAM Projects</span>
-            </div>
-
-            <div class="section-image-container">
-                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
-                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
-                <p id="projects-title">Electronics</p>
-                <span>Check Out Electronics Projects</span>
-            </div>
-
-            <div class="section-image-container">
-                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
-                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
-                <p id="projects-title">Coding Projects</p>
-                <span>Uncover Coding Endeavors</span>
-            </div>
-
-            <div class="section-image-container">
-                <img class="cover-image" id="project-image" src="images/jack.png" alt="">
-                <img class="project-image" id="project-image" src="images/jack2.jpg" alt="">
-                <p id="projects-title">Random</p>
-                <span>Endeavors</span>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="resume-section-alt">
-        <div class="exit-button-container">
-            <button><input type="submit" id="oo" name="button" onclick="hideResume();" value="close" /></button>
-        </div>
-        <object class="resume" data="files/Jashandeep Singh(JD).pdf"></object>
-
-    </section>
-
-
-    <section class="cad-projects">
-    
-    </section>
-
-    <footer class="footer">
-        <!-- <div class="logo-container">
-            <img src="images/jack.png" alt="" id="logo-jd-main">
-        </div> -->
-
-        <div class="foot-section-two">
-            <div class="flag-container">
-                <img src="images/flags/india.png" alt="" id="logo-jd">
-                <img src="images/flags/united-kingdom.png" alt="" id="logo-jd">
-                <img src="images/flags/canada.png" alt="" id="logo-jd">
-                <img src="images/flags/germany.png" alt="" id="logo-jd">
-                <img src="images/flags/usa.png" alt="" id="logo-jd">
-            </div>
-
-            <div class="socail-container">
-                <img src="images/socails/linkedin.png" alt="" id="logo-jd">
-                <img src="images/socails/github.png" alt="" id="logo-jd">
-                <img src="images/socails/twitter.png" alt="" id="logo-jd">
-            </div>
-        </div>
-
-        <div class="line-split"></div>
-        <div class="footer-list">
-            <h1 id="last-line">Copyright © 2023 jashandeep.co.uk - All Rights Reserved.</h1>
-        </div>
-
-    </footer>
-
-</body>
-
-
+      <!-- section2 -->
+      <div id="section-two"></div>
+    </div>
+  </body>
+  <script src="js/scroll.js"></script>
+  <script src="js/click.js"></script>
+  <script src="js/contactButtonHover.js"></script>
 </html>
