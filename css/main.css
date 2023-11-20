@@ -229,46 +229,7 @@ logo wrapper
   }
 }
 
-/* 
-section-two
-*/
-#section-two {
-  background-color: #fefefe;
-  height: 40vh;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  opacity: 0;
-}
 
-@keyframes slide-from-right2 {
-  from {
-    transform: translateX(50rem);
-  }
-  to {
-    transform: translateX(0rem);
-    opacity: 100%;
-  }
-}
-/* #scrolling-div {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-#content {
-  white-space: nowrap;
-  position: absolute;
-}
-
-.item {
-  display: inline-block;
-  margin: 10px;
-  width: 35rem;
-  margin-top: 5rem;
-  border: 1px solid #ccc;
-  background-color: #f0f0f0;
-} */
 
 @media screen and (max-width: 800px) {
   ul {
