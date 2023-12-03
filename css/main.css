@@ -94,6 +94,7 @@ section {
   opacity: 0%;
   animation: 4s forwards 3s ease slide-from-right;
   transition: 1s;
+  /* box-shadow: 0 2px 5px #c6ff7d; */
 }
 
 

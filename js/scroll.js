@@ -1,6 +1,5 @@
 const scrollingDiv = document.getElementById("scrolling-div");
 const content = document.getElementById("content");
-// Clone the content and append it infinitely
 const originalContent = content.innerHTML;
 const itemCount = 4; // Number of items to show at a time
 let scrollPosition = 0;

@@ -5,7 +5,8 @@ section-two
   margin-top: 12.5%;
   margin-bottom: 5%;
   height: 18vw;
-  display: flex;
+  display:flex;
+  overflow: hidden;
 }
 
 .animation{
@@ -28,6 +29,7 @@ section-two
   display: flex;
   text-align: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 #text-cncs {
   margin: 5%;
@@ -45,17 +47,43 @@ section-two
   overflow: hidden;
   z-index: 0;
   border-top-left-radius: 30px;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 30px;
   background-color: #ffffff;
+  
 }
 
 #content {
   white-space: nowrap;
   position: absolute;
+ 
 }
 
 .item {
   margin: 25px;
-  width: 25vw;
+  width: auto;
   background-color: #f0f0f0;
+}
+
+
+#image-dmg-mill{
+  width: 300px;
+}
+
+#image-dmg-lathe{
+  width: 425px;
+}
+
+#image-hplus{
+  width: 240px;
+}
+
+#image-tue{
+  width: 240px;
+}
+
+#image-fadal{
+  width: 300px;
+}
+#image-tss{
+  width: 305px;
 }
