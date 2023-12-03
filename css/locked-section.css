@@ -203,3 +203,12 @@
     opacity: 100%;
   }
 }
+
+
+
+#moving-text{
+  color: aliceblue;
+  position: absolute;
+  cursor:alias;
+  opacity: 0
+}

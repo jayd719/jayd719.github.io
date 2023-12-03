@@ -47,7 +47,6 @@ section-two
   overflow: hidden;
   z-index: 0;
   border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
   background-color: #ffffff;
   
 }
@@ -62,15 +61,18 @@ section-two
   margin: 25px;
   width: auto;
   background-color: #f0f0f0;
+  z-index: 0;
 }
 
 
 #image-dmg-mill{
   width: 300px;
+  z-index: 0;
 }
 
 #image-dmg-lathe{
   width: 425px;
+  z-index: 0;
 }
 
 #image-hplus{
