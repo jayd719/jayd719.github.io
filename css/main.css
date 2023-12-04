@@ -29,6 +29,10 @@ section {
   margin-left: 5vw;
 }
 
+.header-hidden {
+  display: none;
+  visibility: hidden;
+}
 /* HEADER CSS */
 .header {
   width: 100%;
@@ -45,10 +49,37 @@ section {
   justify-content: space-between;
   color: #fefefe;
   /* box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
-  animation: 1.25s forwards 2.75s ease slide-from-top;
-
+  animation: 1.25s forwards 1s ease slide-from-top;
   opacity: 0%;
+  transition: 1.25s;
 }
+
+.header-alt {
+  width: 85%;
+  margin-left: 7.5%;
+  font-size: 1vw;
+  z-index: 10;
+  height: 8vh;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  /* position */
+  position: fixed;
+  top: 10px;
+  /* element position */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 1s;
+  color: #000000;
+}
+.header_zeroOpc {
+  opacity: 100%;
+}
+
 @keyframes slide-from-top {
   from {
     transform: translateY(-10vh);
@@ -59,21 +90,21 @@ section {
   }
 }
 
-.header ul {
+.menu {
   padding-right: 6vw;
   text-decoration: none;
   list-style: none;
   display: flex;
 }
-.header li {
+.menu-item {
   line-height: 1.75vw;
   padding-right: 1rem;
   transition: 0.5s;
 }
-.header li:hover {
+.menu-item:hover {
   scale: 1.08;
   cursor: pointer;
-  text-shadow: #FC0 1px 0 10px;
+  text-shadow: #fc0 1px 0 10px;
 }
 
 #app-logo {
@@ -81,7 +112,12 @@ section {
   width: 6vw;
   min-width: 100px;
   padding-left: 6vw;
+}
+.app-logo {
   filter: brightness(0) invert(1);
+}
+.app-logo-alt {
+  filter: brightness(0) invert(0);
 }
 
 #contact-button {
@@ -96,7 +132,6 @@ section {
   transition: 1s;
   /* box-shadow: 0 2px 5px #c6ff7d; */
 }
-
 
 @keyframes slide-from-right {
   from {
@@ -128,9 +163,9 @@ section {
 }
 .text-style-one {
   margin-top: 25vh;
-  font-size: 75px;
+  font-size: 70px;
   font-weight: 200;
-  line-height: 95px;
+  line-height: 85px;
 }
 /* intro text one */
 #intro-text-one {
@@ -141,8 +176,8 @@ section {
   margin-top: 12.5vh;
   animation: 1.75s forwards 2.25s ease slide-from-right;
   opacity: 0%;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin: 3vw;
+  margin-top: 20vh;
 }
 /* key */
 @keyframes slide-from-left {
@@ -229,8 +264,6 @@ logo wrapper
     opacity: 100%;
   }
 }
-
-
 
 @media screen and (max-width: 800px) {
   ul {

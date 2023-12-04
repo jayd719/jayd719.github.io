@@ -28,7 +28,18 @@ function hideJacks() {
   ChangeCSS(".jack-image4", ".jack-image-final4", true);
   ChangeCSS(".locked-section", ".locked-section-alt", true);
   ChangeCSS(".main-container-hidden", ".main-container", true);
-
+  ChangeCSS(".header-hidden", ".header", true);
   document.body.style.background = "#242424";
   //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
+}
+vP = document.getElementById('viewport')
+
+function showContactSection() {
+  ChangeCSS(".hover-section-hidden", ".hover-section", true);
+  vP.style="filter: blur(20px);"
+}
+
+function hideContactSection() {
+  ChangeCSS(".hover-section", ".hover-section-hidden", true);
+  vP.style="filter: blur(0px);"
 }

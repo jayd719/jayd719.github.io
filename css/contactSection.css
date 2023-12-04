@@ -1,0 +1,121 @@
+.hover-section-hidden {
+  position: absolute;
+  height: 90vh;
+  width: 95%;
+  top: 10px;
+  left: -50px;
+  display: flex;
+  width: 95vw;
+  animation: 1s forwards 0.01s ease slide-to-right;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+}
+
+.hover-section {
+  position: absolute;
+  height: 90vh;
+  width: 0vw;
+  top: 10px;
+  left: -50px;
+  animation: 0.5s forwards 0.01s ease slide-from-right1;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 100;
+  display: flex;
+}
+
+@keyframes slide-from-right1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes slide-to-right {
+  from {
+    opacity: 100%;
+  }
+  to {
+    transform: translateX(-300px);
+    opacity: 0%;
+    z-index: -99;
+  }
+}
+
+.contactLeft {
+  width: 30%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  color: #000000;
+  height: 90vh;
+}
+.closeButton {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  color: transparent;
+  cursor: pointer;
+  top: 5%;
+  left: 96%;
+  overflow: hidden;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+  width: 50px;
+  height: 30px;
+}
+
+.closeButton::before,
+.closeButton::after {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transform-origin: center left;
+  transition: all 0.2s ease-in;
+  width: 141.4214px;
+  z-index: -1;
+}
+
+.closeButton::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.closeButton::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.closeButton:hover {
+  color: #000000;
+}
+
+.closeButton:hover::before,
+.closeButton:hover::after {
+  height: 50px;
+  transform: rotate(0deg);
+}
