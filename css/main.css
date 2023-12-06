@@ -217,7 +217,7 @@ header {
   color: #c6ff7d;
   font-size: larger;
   animation: 20s infinite color-changing-text;
-  font-weight: 300;
+  font-weight: 500;
 }
 @keyframes color-changing-text {
   0% {
@@ -258,8 +258,11 @@ logo wrapper
   min-width: 35px;
   filter: brightness(0) invert(1);
   opacity: 0%;
+  transition: .4s;
 }
-
+.features-logo:hover {
+  scale: 1.2;
+}
 #feature-one {
   animation: 0.75s forwards 3.3s ease-in slide-up;
 }

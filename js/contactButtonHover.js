@@ -1,4 +1,5 @@
 const contactButton = document.getElementById("contact-button");
+const contactSectionDiv = document.getElementById("hover-setion")
 let prev = 0;
 function randomColor() {
   const colorArray = [
@@ -17,6 +18,11 @@ function randomColor() {
   prev = no;
   return colorArray[no];
 }
+
+contactButton.addEventListener("click",()=>{
+  color = randomColor()
+  contactSectionDiv.style.backgroundColor=color
+})
 
 contactButton.addEventListener("mouseover", () => {
   color = randomColor();
