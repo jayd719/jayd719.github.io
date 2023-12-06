@@ -1,12 +1,12 @@
 .hover-section-hidden {
   position: absolute;
-  height: 90vh;
-  width: 95%;
+  height: 98vh;
+  width: 100%;
   top: 10px;
-  left: -50px;
+  left: 0px;
   display: flex;
   width: 95vw;
-  animation: 1s forwards 0.01s ease slide-to-right;
+  animation: .4s forwards 0.01s ease slide-to-right;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -18,10 +18,10 @@
 
 .hover-section {
   position: absolute;
-  height: 90vh;
+  height: 98vh;
   width: 0vw;
   top: 10px;
-  left: -50px;
+  left: 0px;
   animation: 0.5s forwards 0.01s ease slide-from-right1;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -38,9 +38,11 @@
 @keyframes slide-from-right1 {
   from {
     width: 0%;
+    opacity: 0%;
   }
   to {
-    width: 95%;
+    width: 100%;
+    opacity: 100%;
   }
 }
 
@@ -49,7 +51,7 @@
     opacity: 100%;
   }
   to {
-    transform: translateX(-300px);
+    width: 0%;
     opacity: 0%;
     z-index: -99;
   }

@@ -36,10 +36,17 @@ vP = document.getElementById('viewport')
 
 function showContactSection() {
   ChangeCSS(".hover-section-hidden", ".hover-section", true);
+  ChangeCSS(".header-alt", ".header-alt-two", true);
   vP.style="filter: blur(20px);"
+  document.body.style.overflow = 'hidden';
 }
 
 function hideContactSection() {
   ChangeCSS(".hover-section", ".hover-section-hidden", true);
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 10) {
+    ChangeCSS(".header-alt-two", ".header-alt", true);
+  }
+  document.body.style.overflow = 'scroll';
   vP.style="filter: blur(0px);"
 }
