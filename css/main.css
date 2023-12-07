@@ -45,7 +45,7 @@ header {
   font-size: 1vw;
   z-index: 10;
   height: 8vh;
-  background-color: #242424;
+  background-color: #1a191d;
   /* position */
   position: fixed;
   top: 0;
@@ -84,7 +84,7 @@ header {
   z-index: 10;
   height: 8vh;
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.5);
+  background: #eff8e290;
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.9px);
@@ -98,6 +98,7 @@ header {
   justify-content: space-between;
   transition: 1s;
   color: #000000;
+  font-weight: 300;
 }
 .header_zeroOpc {
   opacity: 100%;
@@ -144,15 +145,19 @@ header {
 }
 
 #contact-button {
-  text-align: center;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
   background-color: #c6ff7d;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
   color: black;
   font-weight: 200;
   opacity: 0%;
   animation: 4s forwards 3s ease slide-from-right;
   transition: 1s;
+  font-weight: 300;
+
   /* box-shadow: 0 2px 5px #c6ff7d; */
 }
 
