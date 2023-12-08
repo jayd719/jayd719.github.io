@@ -5,8 +5,7 @@ rightSection.addEventListener("mouseover", () => {
   im.style.transform = "translateX(0px)";
 });
 
-
 rightSection.addEventListener("mouseleave", () => {
-    im.style.transform = "translateX(625px) rotate(30deg)";
-  });
-  
+  im.style.transform = "translateX(625px) rotate(30deg)";
+});
+

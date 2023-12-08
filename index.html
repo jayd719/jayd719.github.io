@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/scroller-text.css" />
     <link rel="stylesheet" href="css/section-two.css" />
     <link rel="stylesheet" href="css/contactSection.css">
+    <link rel="stylesheet" href="css/aboutSection.css">
 
     <!-- code pen -->
     <link rel="stylesheet" href="css/codePen.css/article.css">
@@ -59,11 +60,11 @@
      <header class="header-hidden" id="head-one">
       <img src="images/main.png" id="app-logo" class="app-logo"/>
       <ul class="menu">
-        <li class="menu-item">About</li>
+        <li class="menu-item" onclick="showAboutSection();">About</li>
         <li class="menu-item">Projects</li>
         <li class="menu-item">Resume</li>
         <li class="menu-item">FAQ</li>
-        <li id="contact-button" onclick="showContactSection();">CONTACT</li>
+        <li id="contact-button" onclick="showContactSection();" >CONTACT</li>
       </ul>
       <button class="hamburger" type="button">
         <span class="hamburger-box"
@@ -72,9 +73,15 @@
         </span>
       </button>
 
+      <div class="about-section-hidden">
+        <button class="closeButton" onclick="hideAboutSection();">Close</button>
+        <span>Hi There!</span>
+        <div id="cards-container">
+          <img src="images/jacks/jack.png" alt="">
+        </div>
+      </div>
       <div class="hover-section-hidden">
         <button class="closeButton" onclick="hideContactSection();">Close</button>
-
         <div class="contactLeft">
           <img src="images/jacks/jack.png" id="jackImageContact"  class="translated-alt">
         </div>
@@ -128,37 +135,37 @@
             src="images/logos/laser-cutting-machine.png"
             class="features-logo"
             id="feature-one"
-            alt=""
+            alt="1"
           />
           <img
             src="images/logos/python.png"
             class="features-logo"
             id="feature-two"
-            alt=""
+            alt="1"
           />
           <img
             src="images/logos/cpu.png"
             class="features-logo"
             id="feature-three"
-            alt=""
+            alt="1"
           />
           <img
             src="images/logos/java.png"
             class="features-logo"
             id="feature-four"
-            alt=""
+            alt="1"
           />
           <img
             src="images/logos/design.png"
             class="features-logo"
             id="feature-five"
-            alt=""
+            alt="1"
           />
           <img
             src="images/logos/java-script.png"
             class="features-logo"
             id="feature-six"
-            alt=""
+            alt="1"
           />
         </div>
       </section>

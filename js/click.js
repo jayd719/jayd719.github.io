@@ -32,13 +32,13 @@ function hideJacks() {
   document.body.style.background = "#1a191d";
   //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
 }
-vP = document.getElementById('viewport')
+vP = document.getElementById("viewport");
 
 function showContactSection() {
   ChangeCSS(".hover-section-hidden", ".hover-section", true);
   ChangeCSS(".header-alt", ".header-alt-two", true);
-  vP.style="filter: blur(20px);"
-  document.body.style.overflow = 'hidden';
+  vP.style = "filter: blur(20px);";
+  document.body.style.overflow = "hidden";
 }
 
 function hideContactSection() {
@@ -47,6 +47,68 @@ function hideContactSection() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 10) {
     ChangeCSS(".header-alt-two", ".header-alt", true);
   }
-  document.body.style.overflow = 'scroll';
-  vP.style="filter: blur(0px);"
+  document.body.style.overflow = "scroll";
+  vP.style = "filter: blur(0px);";
+}
+
+function showAboutSection() {
+  ChangeCSS(".about-section-hidden", ".about-section", true);
+  ChangeCSS(".header-alt", ".header-alt-two", true);
+  vP.style = "filter: blur(20px);";
+  document.body.style.overflow = "hidden";
+  let ImageContainer = document.getElementById("cards-container");
+
+  let i = 0;
+  while (i < 19) {
+    let newImage = document.createElement("img");
+    newImage.src = "images/jacks/jack.png";
+
+    newImage.style.left = `${(i * 10) / 2}vw`;
+    newImage.style.zIndex = i;
+    newImage.style.transition = "1s";
+    newImage.id = "jackImage";
+
+    const whatToDo = [
+      { transform: `translateX(-${60 * i + 1}px)` },
+      { transform: "translateX(0px)" },
+    ];
+
+    const howToDo = {
+      duration: parseInt(`${50 * i}`),
+      iterations: 1,
+    };
+
+    newImage.animate(whatToDo, howToDo);
+    ImageContainer.appendChild(newImage);
+    i++;
+  }
+
+  let images = document.querySelectorAll("#jackImage");
+
+  for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener("mouseenter",()=>{
+      images[i].style.transform='translateY(-20px)'
+    })
+
+    images[i].addEventListener('mouseleave',()=>{
+      images[i].style.transform='translateY(0px)'
+    })
+  }
+}
+
+function hideAboutSection() {
+  ChangeCSS(".about-section", ".about-section-hidden", true);
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 10) {
+    ChangeCSS(".header-alt-two", ".header-alt", true);
+  }
+  document.body.style.overflow = "scroll";
+  vP.style = "filter: blur(0px);";
+
+  let ImageContainer = document.getElementById("cards-container");
+  let images = document.querySelectorAll("#jackImage");
+
+  for (let i = 0; i < images.length; i++) {
+    ImageContainer.removeChild(images[i]);
+  }
 }
