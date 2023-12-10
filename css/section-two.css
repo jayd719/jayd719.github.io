@@ -1,17 +1,15 @@
 /* 
 section-two
 */
-#section-two {
+
+.section-two {
   margin-top: 12.5%;
   margin-bottom: 5%;
-  height:300px;
-  display:flex;
+  height: 300px;
+  display: flex;
   overflow: hidden;
 }
 
-.animation{
-    animation: 1.75s forwards 2.25s ease slide-from-right2;
-}
 @keyframes slide-from-right2 {
   from {
     transform: translateX(50rem);
@@ -22,6 +20,31 @@ section-two
   }
 }
 
+.section-two-left-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.scroll-div-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.scroll-div {
+  visibility: visible;
+  animation: 2s forwards 0.01s ease machinesAppear;
+  opacity: 0;
+}
+
+@keyframes machinesAppear{
+  from{
+    opacity: 0%;
+    transform: translateY(200px);
+  }to{
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
 .section-two-left {
   width: 30%;
   background-color: #1a191d;
@@ -30,7 +53,8 @@ section-two
   text-align: center;
   align-items: center;
   padding-bottom: 50px;
-  
+  animation: 2s forwards 0.01s ease machinesAppear;
+  opacity: 0;
 }
 #text-cncs {
   margin: 5%;
@@ -40,6 +64,7 @@ section-two
   color: #f0f0f0;
   text-align: center;
   font-style: italic;
+  
 }
 
 #scrolling-div {
@@ -50,13 +75,13 @@ section-two
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   background-color: #ffffff;
-  
 }
+
+
 
 #content {
   white-space: nowrap;
   position: absolute;
- 
 }
 
 .item {
@@ -66,28 +91,27 @@ section-two
   z-index: 0;
 }
 
-
-#image-dmg-mill{
+#image-dmg-mill {
   width: 300px;
   z-index: 0;
 }
 
-#image-dmg-lathe{
+#image-dmg-lathe {
   width: 425px;
   z-index: 0;
 }
 
-#image-hplus{
+#image-hplus {
   width: 240px;
 }
 
-#image-tue{
+#image-tue {
   width: 240px;
 }
 
-#image-fadal{
+#image-fadal {
   width: 300px;
 }
-#image-tss{
+#image-tss {
   width: 305px;
 }
