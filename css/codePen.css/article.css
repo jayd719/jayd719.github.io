@@ -22,6 +22,7 @@
   text-transform: capitalize;
   text-align: center;
   text-shadow: rgb(0, 0, 0) 4px 5px 2px;
+  animation: exp 2s forwards;
 }
 .circle img:hover {
   cursor: grab;
@@ -62,5 +63,16 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+
+@keyframes exp{
+  from{
+    transform: scale(1);
+    opacity: 100%;
+  } to{
+    transform: scale(10);
+    opacity: 0%;
   }
 }
