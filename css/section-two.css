@@ -2,9 +2,20 @@
 section-two
 */
 
-.sectionsectionContainer{
-  transform: rotate(-.5deg);
+
+.sectionsectionContainer-hidden {
+ opacity: 0;
 }
+
+.sectionsectionContainer {
+  margin-top: 10%;
+  transform: rotate(-0.5deg);
+  margin-bottom: 10%;
+  animation: 2s forwards 0.01s ease machinesAppear;
+  opacity: 0;
+}
+
+
 .section-two {
   height: 300px;
   display: flex;
@@ -33,8 +44,6 @@ section-two
   }
 }
 
-
-
 @keyframes machinesAppear {
   from {
     opacity: 0%;
@@ -54,7 +63,6 @@ section-two
   align-items: center;
   padding-bottom: 50px;
   /* animation: 2s forwards 0.01s ease machinesAppear; */
-
 }
 #text-cncs {
   margin: 5%;
@@ -111,10 +119,7 @@ section-two
   width: 305px;
 }
 
-
-
-
-#about-section-text{
+#about-section-text {
   font-size: 70px;
   color: #000000;
 }
