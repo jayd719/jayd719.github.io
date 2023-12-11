@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Fasthand');
 
 .circle {
   position: absolute;
@@ -5,28 +6,62 @@
   height: 40px;
   transition: 1.5s;
   z-index: 200;
-  animation: swing 1.25s infinite, blink .4s infinite;
 }
 
-.circle img{
+.chatBox-hidden {
+  visibility: hidden;
+}
+.chatBox {
+  visibility: visible;
+  position: relative;
+  left: 50px;
+  top: -100px;
+  color: aliceblue;
+  text-wrap: nowrap;
+  font-family: Fasthand, serif;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: rgb(84, 84, 84);
+  text-shadow: rgb(0, 0, 0) 4px 5px 2px;
+}
+.circle img:hover {
+  cursor: grab;
+  animation: grow 1.25s infinite, blink 0.4s infinite;
+}
+.circle img {
   width: 4vw;
+  animation: swing 1.25s infinite, blink 0.4s infinite;
 }
 
-@keyframes swing{
-  0%{
+@keyframes swing {
+  0% {
     transform: rotate(-15deg);
-  }50%{
+  }
+  50% {
     transform: rotate(15deg);
   }
-  100%{
+  100% {
     transform: rotate(-15deg);
   }
 }
 
-@keyframes blink{
-from{
-filter: grayscale(1);
-}to{
-  filter: grayscale(0);
+@keyframes blink {
+  from {
+    filter: grayscale(1);
+  }
+  to {
+    filter: grayscale(0);
+  }
 }
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
