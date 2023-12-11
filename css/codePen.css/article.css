@@ -21,7 +21,6 @@
   font-family: Fasthand, serif;
   text-transform: capitalize;
   text-align: center;
-  background-color: rgb(84, 84, 84);
   text-shadow: rgb(0, 0, 0) 4px 5px 2px;
 }
 .circle img:hover {
@@ -59,7 +58,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
