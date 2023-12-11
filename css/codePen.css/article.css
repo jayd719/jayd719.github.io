@@ -22,7 +22,6 @@
   text-transform: capitalize;
   text-align: center;
   text-shadow: rgb(0, 0, 0) 4px 5px 2px;
-  animation: exp 2s forwards;
 }
 .circle img:hover {
   cursor: grab;
