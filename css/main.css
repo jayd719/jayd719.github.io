@@ -97,10 +97,10 @@ header {
   backdrop-filter: blur(30px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
+  border-radius: 5px;
   /* position */
   position: fixed;
-  top: 2px;
+  top: 5px;
   /* element position */
   display: flex;
   align-items: center;
