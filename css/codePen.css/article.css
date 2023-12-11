@@ -5,8 +5,28 @@
   height: 40px;
   transition: 1.5s;
   z-index: 200;
+  animation: swing 1.25s infinite, blink .4s infinite;
 }
 
 .circle img{
   width: 4vw;
+}
+
+@keyframes swing{
+  0%{
+    transform: rotate(-15deg);
+  }50%{
+    transform: rotate(15deg);
+  }
+  100%{
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes blink{
+from{
+filter: grayscale(1);
+}to{
+  filter: grayscale(0);
+}
 }
