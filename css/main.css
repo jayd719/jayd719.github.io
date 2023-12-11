@@ -84,8 +84,8 @@ header {
 }
 
 .header-alt {
-  width: 85%;
-  margin-left: 7.5%;
+  width: 98%;
+  margin-left: 1%;
   font-size: 1vw;
   z-index: 10;
   height: 8vh;
@@ -97,12 +97,12 @@ header {
   border-radius: 12px;
   /* position */
   position: fixed;
-  top: 10px;
+  top: 2px;
   /* element position */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: 1s;
+  transition: .8s;
   color: #000000;
   font-weight: 300;
 }
@@ -143,6 +143,7 @@ header {
   width: 6vw;
   min-width: 100px;
   padding-left: 6vw;
+  cursor: pointer;
 }
 .app-logo {
   filter: brightness(0) invert(1);

@@ -59,22 +59,22 @@ function showAboutSection() {
   let ImageContainer = document.getElementById("cards-container");
 
   let i = 0;
-  while (i < 19) {
+  while (i < 25) {
     let newImage = document.createElement("img");
     newImage.src = "images/jacks/jack.png";
 
-    newImage.style.left = `${(i * 10) / 2}vw`;
+    newImage.style.left = `${(i * 8) / 2}vw`;
     newImage.style.zIndex = i;
     newImage.style.transition = "1s";
     newImage.id = "jackImage";
 
     const whatToDo = [
-      { transform: `translateX(-${60 * i + 1}px)` },
+      { transform: `translateX(-${(4*i)}vw` },
       { transform: "translateX(0px)" },
     ];
 
     const howToDo = {
-      duration: parseInt(`${50 * i}`),
+      duration: parseInt(`${100 * i}`),
       iterations: 1,
     };
 

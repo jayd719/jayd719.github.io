@@ -44,6 +44,7 @@
   z-index: 5;
   transition: all 0.5s ease-out;
   animation: fly-out1 1.5s linear forwards;
+  cursor: pointer;
 }
 
 .jack-image2 {

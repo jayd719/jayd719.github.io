@@ -8,7 +8,7 @@ function scrollFunction() {
     var appLogo = $(".app-logo");
     header.removeClass("header").addClass("header-alt");
     appLogo.removeClass("app-logo").addClass("app-logo-alt");
-    
+
   } else {
     var header = $(".header-alt");
     var appLogo = $(".app-logo-alt");
@@ -17,3 +17,12 @@ function scrollFunction() {
     appLogo.removeClass("app-logo-alt").addClass("app-logo");
   }
 }
+
+function upateDate() {
+  const date = new Date();
+  dateEmp = document.getElementById("dateEml");
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  dateEmp.innerText = date.toLocaleDateString('en-us', options);
+}
+
+upateDate();
