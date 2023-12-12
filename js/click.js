@@ -30,6 +30,7 @@ function hideJacks() {
   ChangeCSS(".main-container-hidden", ".main-container", true);
   ChangeCSS(".header-hidden", ".header", true);
   document.body.style.background = "#1b1f23";
+  document.body.style.overscrollBehaviorX='hidden';
   //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
 }
 vP = document.getElementById("viewport");
