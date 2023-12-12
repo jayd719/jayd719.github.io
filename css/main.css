@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  width: 100vh;
 }
 
 .main-container {
