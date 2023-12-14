@@ -134,7 +134,7 @@
   transition: 1s;
   transform: translate(-50%, -50%);
   z-index: 1;
-  animation: 2s forwards 1s fall-down; 
+  animation: 2s forwards 1s fall-down;
 }
 .jack-image-final2 {
   /* position */
@@ -170,6 +170,8 @@
 
   100% {
     opacity: 0%;
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -205,11 +207,9 @@
   }
 }
 
-
-
-#moving-text{
+#moving-text {
   color: aliceblue;
   position: absolute;
-  cursor:alias;
-  opacity: 0
+  cursor: alias;
+  opacity: 0;
 }
