@@ -94,14 +94,13 @@ header {
   z-index: 10;
   height: 8vh;
 
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(30px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   /* position */
   position: fixed;
-  top: 5px;
   /* element position */
   display: flex;
   align-items: center;
@@ -194,7 +193,8 @@ header {
 /*  */
 #class-section-one {
   align-items: center;
-  color: #ffffff;
+  color: lightgray;
+	text-shadow: 0px 0px 10px #f5f5f5dd;
 }
 
 /* HEADING ONe */
@@ -207,8 +207,7 @@ header {
   font-size: 70px;
   font-weight: 200;
   line-height: 85px;
-   color: lightgray;
-	text-shadow: 0px 0px 10px #f5f5f5dd;
+  
 }
 /* intro text one */
 #intro-text-one {
@@ -277,14 +276,14 @@ logo wrapper
 .features-logo {
   width: 52.5px;
   min-width: 35px;
-  filter: brightness(0) invert(1);
+  filter: grayscale(1) invert(1);
   opacity: 0%;
   transition: 0.4s;
   
 }
 .features-logo:hover {
   scale: 1.2;
-  filter: invert(2);
+  filter: none;
 }
 #feature-one {
   animation: 0.75s forwards 3.3s ease-in slide-up;

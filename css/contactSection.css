@@ -54,6 +54,9 @@
     width: 0%;
     opacity: 0%;
     z-index: -99;
+    display: none;
+    visibility: hidden;
+
   }
 }
 
