@@ -139,7 +139,12 @@
 .socials img {
   width: 5vw;
   padding: 25px;
-  filter: brightness(0);
+  filter: grayscale(1) invert(1) brightness(.5);
+  transition: .5s;
+}
+
+.socials img:hover{
+  filter: none;
 }
 
 .contactRight h1 {
