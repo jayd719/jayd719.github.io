@@ -6,20 +6,14 @@ let scrollPosition = 0;
 let scrolling = true;
 
 function updateScrollPositionLeft() {
-  if (scrolling) {
-    if (scrollPosition >= content.offsetWidth - scrollingDiv.offsetWidth) {
-      scrollPosition = 0;
-      content.innerHTML += originalContent;
-    }
-
-    content.style.transform = `translateX(-${scrollPosition}px)`;
-    scrollPosition += 0.25
-    ; // Adjust this value for the scrolling speed
-    requestAnimationFrame(updateScrollPositionLeft);
+  if (scrollPosition >= content.offsetWidth - scrollingDiv.offsetWidth) {
+    scrollPosition = 0;
+    content.innerHTML += originalContent;
   }
+
+  content.style.transform = `translateX(-${scrollPosition}px)`;
+  scrollPosition += 0.25; // Adjust this value for the scrolling speed
+  requestAnimationFrame(updateScrollPositionLeft);
 }
 
 updateScrollPositionLeft();
-
-
-

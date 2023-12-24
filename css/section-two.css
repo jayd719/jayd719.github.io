@@ -63,11 +63,11 @@ section-two
 #text-cncs {
   line-height: 35px;
   font-size: 40px;
-  font-weight: 400;
-  color: #ffffff;
+  font-weight: 500;
+  color: lightgray;
+  text-shadow: 0px 0px 10px #f5f5f5dd;
   text-align: center;
-  font-style: italic;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 #scrolling-div {
@@ -78,17 +78,13 @@ section-two
 }
 
 #content {
-  white-space: nowrap;
-  position: absolute;
   display: flex;
+  position: absolute;
   color: #f0f0f0;
 }
 
 .item {
-  width: auto;
-  display: table-row;
   z-index: 0;
-  display: inline;
   margin-left: 20px;
   padding: 10px;
   border-radius: 10px;
@@ -97,10 +93,12 @@ section-two
   border-radius: 15px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  display: grid;
 }
 
 #content img {
   border-radius: 10px;
+  filter: brightness(.9);
 }
 #image-dmg-mill {
   width: 300px;
@@ -134,34 +132,32 @@ section-two
 
 .machineName {
   --rem: 16;
-
   font-size: 16px;
-  color: #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 0.75rem;
+  font-weight: 500;
+  opacity: 0.8;
 }
 .machineInfo {
   --rem: 16;
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 17px;
+  font-size: 14px;
   opacity: 0.8;
-  margin-bottom: 3px;
-
-  width: 220px;
+  line-height: 16px;
+  padding-top: 5px;
+  font-weight: 300;
+  text-align: justify;
+  align-self: center;
 }
+
 
 .machineLink {
   --rem: 16;
   box-sizing: border-box;
-  position: relative;
   z-index: 1;
   display: inline-block;
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
-  color: #d8d8d8;
   padding: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -170,5 +166,12 @@ section-two
   outline: none;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
-  overflow: hidden;
+  margin-top: 30px;
+  align-self: end;
+}
+
+
+.machineLink:hover{
+  background: #e5e5e5;
+  color: #000000;
 }
