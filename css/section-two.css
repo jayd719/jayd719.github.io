@@ -94,6 +94,10 @@ section-two
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   display: grid;
+  transition: all 0.3s ease-in-out;
+}
+.item:hover{
+  scale: 1.025;
 }
 
 #content img {
