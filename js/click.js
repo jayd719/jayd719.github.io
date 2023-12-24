@@ -22,7 +22,7 @@ function hideJacks() {
   ChangeCSS(".locked-section", ".locked-section-alt", true);
   ChangeCSS(".main-container-hidden", ".main-container", true);
   ChangeCSS(".header-hidden", ".header", true);
-  document.body.style.background = "#010716";
+  // document.body.style.background = "#010716";
   document.body.style.overscrollBehaviorX='hidden';
   //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
 }
