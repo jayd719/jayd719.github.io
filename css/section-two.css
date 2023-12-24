@@ -98,7 +98,7 @@ section-two
 
 #content img {
   border-radius: 10px;
-  filter: brightness(.9);
+  filter: brightness(0.9);
 }
 #image-dmg-mill {
   width: 300px;
@@ -149,7 +149,6 @@ section-two
   align-self: center;
 }
 
-
 .machineLink {
   --rem: 16;
   box-sizing: border-box;
@@ -170,8 +169,7 @@ section-two
   align-self: end;
 }
 
-
-.machineLink:hover{
+.machineLink:hover {
   background: #e5e5e5;
   color: #000000;
 }
