@@ -204,9 +204,21 @@ header {
 }
 .text-style-one {
   margin-top: 25vh;
-  font-size: 70px;
-  font-weight: 200;
-  line-height: 85px;
+  margin-top: 25vh;
+  -webkit-text-size-adjust: 100%;
+  
+  --background: #101010;
+  --on-background: #f2f2f2;
+  color: var(--on-background);
+  pointer-events: all;
+  box-sizing: border-box;
+  text-align: left;
+  text-shadow: 0 5px 10px rgba(0, 87, 255, .15), 0 -5px 10px rgba(255, 90, 0, .1), 0 -5px 25px rgba(255, 255, 255, .3);
+  font-family: Neue Montreal, sans-serif;
+  font-weight: 500;
+  line-height: 92px;
+  letter-spacing: -2.2px;
+  font-size: 86px;
 }
 /* intro text one */
 #intro-text-one {
