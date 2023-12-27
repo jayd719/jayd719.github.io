@@ -11,8 +11,6 @@ function ChangeCSS(from, to, class_) {
   return value;
 }
 
-
-
 function hideJacks() {
   ChangeCSS(".spiral-image", ".spiral-image-alt", true);
   ChangeCSS(".jack-image", ".jack-image-final", true);
@@ -23,7 +21,7 @@ function hideJacks() {
   ChangeCSS(".main-container-hidden", ".main-container", true);
   ChangeCSS(".header-hidden", ".header", true);
   // document.body.style.background = "#010716";
-  document.body.style.overscrollBehaviorX='hidden';
+  document.body.style.overscrollBehaviorX = "hidden";
   //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
 }
 vP = document.getElementById("viewport");
@@ -63,7 +61,7 @@ function showAboutSection() {
     newImage.id = "jackImage";
 
     const whatToDo = [
-      { transform: `translateX(-${(4*i)}vw` },
+      { transform: `translateX(-${4 * i}vw` },
       { transform: "translateX(0px)" },
     ];
 
@@ -80,13 +78,13 @@ function showAboutSection() {
   let images = document.querySelectorAll("#jackImage");
 
   for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener("mouseenter",()=>{
-      images[i].style.transform='translateY(-20px)'
-    })
+    images[i].addEventListener("mouseenter", () => {
+      images[i].style.transform = "translateY(-20px)";
+    });
 
-    images[i].addEventListener('mouseleave',()=>{
-      images[i].style.transform='translateY(0px)'
-    })
+    images[i].addEventListener("mouseleave", () => {
+      images[i].style.transform = "translateY(0px)";
+    });
   }
 }
 
