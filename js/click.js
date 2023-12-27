@@ -106,3 +106,4 @@ function hideAboutSection() {
     ImageContainer.removeChild(images[i]);
   }
 }
+

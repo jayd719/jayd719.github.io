@@ -86,13 +86,11 @@ section-two
 .item {
   z-index: 0;
   margin-left: 20px;
-  padding: 10px;
+  padding: 12.5px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   display: grid;
   transition: all 0.3s ease-in-out;
 }
@@ -136,15 +134,17 @@ section-two
 
 .machineName {
   --rem: 16;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 500;
   opacity: 0.8;
+  align-self: end;
+  font-style: oblique;
 }
 .machineInfo {
   --rem: 16;
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0.8;
   line-height: 16px;
   padding-top: 5px;
