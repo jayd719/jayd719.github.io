@@ -95,7 +95,7 @@ section-two
   border-radius: 15px;
   display: grid;
   transition: all 0.3s ease-in-out;
-  opacity: 60%;
+  opacity: 50%;
 }
 .item:hover{
   background:rgb(0, 140, 255);
