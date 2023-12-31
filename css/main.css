@@ -86,19 +86,20 @@ header {
 
 .header-alt {
   width: 98%;
+  top: 10px;
   margin-left: 1%;
   font-size: 1vw;
   z-index: 10;
   height: 8vh;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.06),
-    0 0 25px rgba(255, 255, 255, 0.06), 0 0 50px rgba(255, 255, 255, 0.06),
-    0 0 100px rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 5px rgba(255, 255, 255,0.1),
+    0 0 25px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.1),
+    0 0 100px rgba(255, 255, 255, 0.1);
   /* position */
   position: fixed;
   /* element position */
@@ -290,7 +291,7 @@ logo wrapper
   width: 52.5px;
   min-width: 35px;
   /* filter: grayscale(1) invert(1); */
-  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+  filter:  grayscale(100%) sepia(100%) hue-rotate(190deg) saturate(500%);
   opacity: 0%;
   transition: 0.4s;
 }

@@ -6,7 +6,6 @@
   left: 0px;
   width: 95vw;
   animation: 0.4s forwards 0.01s ease slide-to-top1;
-  /* background: linear-gradient(to right, hsl(98, 53%, 42%), hsl(204 100% 59%)); */
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -39,7 +38,7 @@
   color: black;
 }
 
-@keyframes slide-from-top1 {
+/* @keyframes slide-from-top1 {
   from {
     height: 0vh;
     opacity: 0%;
@@ -48,7 +47,7 @@
     height: 98vh;
     opacity: 100%;
   }
-}
+} */
 
 @keyframes slide-to-top1 {
   from {
