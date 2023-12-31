@@ -12,7 +12,7 @@ function updateScrollPositionLeft() {
   }
 
   content.style.transform = `translateX(-${scrollPosition}px)`;
-  scrollPosition += 0.25; // Adjust this value for the scrolling speed
+  scrollPosition += 0.5; // Adjust this value for the scrolling speed
   requestAnimationFrame(updateScrollPositionLeft);
 }
 

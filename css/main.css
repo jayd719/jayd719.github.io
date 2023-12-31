@@ -11,11 +11,7 @@ a {
   cursor: pointer;
 }
 body {
-  background-color: #001a29;
-  /* background-color: black; */
-  /* background: linear-gradient(130deg, #001a29, #331624); */
-
-  font-family: "Inter", sans-serif;
+  background: #212121;
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.4rem;
@@ -68,6 +64,7 @@ header {
   animation: 1.25s forwards 1s ease slide-from-top;
   opacity: 0%;
   transition: 1.25s;
+  font-family: Neue Montreal, sans-serif;
 }
 
 .header-alt-two {
@@ -99,6 +96,9 @@ header {
   border-radius: 15px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.06),
+    0 0 25px rgba(255, 255, 255, 0.06), 0 0 50px rgba(255, 255, 255, 0.06),
+    0 0 100px rgba(255, 255, 255, 0.06);
   /* position */
   position: fixed;
   /* element position */
@@ -108,6 +108,7 @@ header {
   transition: 0.8s;
   color: #ffffff;
   font-weight: 300;
+  font-family: Neue Montreal, sans-serif;
 }
 
 .header_zeroOpc {
@@ -156,16 +157,15 @@ header {
 }
 
 #contact-button {
+  opacity: 0%;
+  animation: 4s forwards 3s ease slide-from-right;
   width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  background-color: #c6ff7d;
-  color: black;
-  font-weight: 200;
-  opacity: 0%;
-  animation: 4s forwards 3s ease slide-from-right;
+  background-color: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
   transition: 1s;
   font-weight: 300;
   cursor: pointer;
@@ -206,14 +206,15 @@ header {
   margin-top: 25vh;
   margin-top: 25vh;
   -webkit-text-size-adjust: 100%;
-  
+
   --background: #101010;
   --on-background: #f2f2f2;
   color: var(--on-background);
   pointer-events: all;
   box-sizing: border-box;
   text-align: left;
-  text-shadow: 0 5px 10px rgba(0, 87, 255, .15), 0 -5px 10px rgba(255, 90, 0, .1), 0 -5px 25px rgba(255, 255, 255, .3);
+  text-shadow: 0 5px 10px rgba(0, 87, 255, 0.15),
+    0 -5px 10px rgba(255, 90, 0, 0.1), 0 -5px 25px rgba(255, 255, 255, 0.3);
   font-family: Neue Montreal, sans-serif;
   font-weight: 500;
   line-height: 92px;
@@ -222,8 +223,8 @@ header {
 }
 /* intro text one */
 #intro-text-one {
+  
   font-size: 1.25rem;
-  font-style: italic;
   line-height: 1.8rem;
   text-align: justify;
   margin-top: 12.5vh;
@@ -244,9 +245,9 @@ header {
 }
 
 .flashy-text {
-  color: #c6ff7d;
+  color: rgb(0, 140, 255);
   font-size: larger;
-  animation: 15s infinite color-changing-text;
+  /* animation: 15s infinite color-changing-text; */
   font-weight: 500;
   text-shadow: none;
 }
@@ -289,12 +290,17 @@ logo wrapper
   width: 52.5px;
   min-width: 35px;
   /* filter: grayscale(1) invert(1); */
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
   opacity: 0%;
   transition: 0.4s;
 }
 .features-logo:hover {
-  scale: 1.2;
+  scale: 1.3;
   filter: none;
+  background-color: rgba(0, 140, 255, 0.153);
+  box-shadow: 0 0 0px rgb(0, 140, 255), 0 0 0px rgb(0, 140, 255),
+    0 0 0px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+    opacity: 100%;
 }
 #feature-one {
   animation: 0.75s forwards 3.3s ease-in slide-up;
@@ -320,7 +326,7 @@ logo wrapper
   }
   to {
     transform: translateY(0rem);
-    opacity: 100%;
+    opacity: 70%;
   }
 }
 

@@ -33,6 +33,7 @@
   overflow-y: hidden;
   z-index: 10;
   display: flex;
+  font-family: Inter, sans-serif;
 }
 
 @keyframes slide-from-right1 {

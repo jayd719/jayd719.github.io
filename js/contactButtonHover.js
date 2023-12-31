@@ -28,8 +28,10 @@ contactButton.addEventListener("mouseover", () => {
   color = randomColor();
   contactButton.style.backgroundColor = color
   contactButton.style.boxShadow=`"0 2px 5px ${color};"`
+  contactButton.style.boxShadow=`box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+  0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);`
 });
 contactButton.addEventListener("mouseleave", () => {
-  contactButton.style.backgroundColor = "#c6ff7d";
+  contactButton.style.backgroundColor = "rgb(0, 140, 255)";
   contactButton.style.boxShadow="0 2px 5px #c6ff7d;"
 });

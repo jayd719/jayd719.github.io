@@ -1,0 +1,53 @@
+
+#information-section table {
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  margin: 5%;
+  border-collapse: separate;
+  border-spacing: 5em;
+  font-family: Neue Montreal, sans-serif;
+}
+#information-section tr{
+    height: 40%;
+
+}
+
+#information-section .left-side {
+  width: 35%;
+  padding: 10%;
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+#information-section .left-side:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+}
+
+#information-section tr:hover ~ .right-section {
+  scale: 1.1;
+}
+
+#information-section .right-section {
+  margin: 10%;
+  border: none;
+  font-size: 15px;
+  color: #ffffff6e;
+  transition: 0.5s;
+  text-align: justify;
+}
+#information-section .right-section:hover {
+  color: #ffffff;
+  /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; */
+}
