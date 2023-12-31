@@ -195,7 +195,6 @@ header {
 #class-section-one {
   align-items: center;
   color: lightgray;
-  text-shadow: 0px 0px 10px #f5f5f5dd;
 }
 
 /* HEADING ONe */
@@ -204,10 +203,8 @@ header {
   opacity: 0%;
 }
 .text-style-one {
-  margin-top: 25vh;
-  margin-top: 25vh;
+  margin-top: 30vh;
   -webkit-text-size-adjust: 100%;
-
   --background: #101010;
   --on-background: #f2f2f2;
   color: var(--on-background);
@@ -218,20 +215,20 @@ header {
     0 -5px 10px rgba(255, 90, 0, 0.1), 0 -5px 25px rgba(255, 255, 255, 0.3);
   font-family: Neue Montreal, sans-serif;
   font-weight: 500;
-  line-height: 92px;
+  line-height: 65px;
   letter-spacing: -2.2px;
-  font-size: 86px;
+  font-size: 60px;
+  text-align: center;
 }
 /* intro text one */
 #intro-text-one {
-  
-  font-size: 1.25rem;
+  font-size: 1.27rem;
+  font-style: italic;
   line-height: 1.8rem;
-  text-align: justify;
+  text-align: center;
   margin-top: 12.5vh;
   animation: 1.75s forwards 2.25s ease slide-from-right;
   opacity: 0%;
-  margin: 3vw;
   margin-top: 20vh;
 }
 /* key */
@@ -247,10 +244,10 @@ header {
 
 .flashy-text {
   color: rgb(0, 140, 255);
+  text-shadow: 0px 0px 10px rgb(0, 140, 255);
   font-size: larger;
   /* animation: 15s infinite color-changing-text; */
   font-weight: 500;
-  text-shadow: none;
 }
 @keyframes color-changing-text {
   0% {
@@ -291,17 +288,18 @@ logo wrapper
   width: 52.5px;
   min-width: 35px;
   /* filter: grayscale(1) invert(1); */
-  filter:  grayscale(100%) sepia(100%) hue-rotate(190deg) saturate(500%);
+  /* filter:  grayscale(100%) sepia(100%) hue-rotate(190deg) saturate(500%); */
   opacity: 0%;
   transition: 0.4s;
 }
 .features-logo:hover {
   scale: 1.3;
+  opacity: 100%;
   filter: none;
-  background-color: rgba(0, 140, 255, 0.153);
+  /* background-color: rgba(0, 140, 255, 0.153);
   box-shadow: 0 0 0px rgb(0, 140, 255), 0 0 0px rgb(0, 140, 255),
-    0 0 0px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
-    opacity: 100%;
+    0 0 0px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255); */
+  
 }
 #feature-one {
   animation: 0.75s forwards 3.3s ease-in slide-up;
@@ -327,7 +325,7 @@ logo wrapper
   }
   to {
     transform: translateY(0rem);
-    opacity: 70%;
+    opacity: 100%;
   }
 }
 
