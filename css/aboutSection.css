@@ -22,7 +22,7 @@
   width: 100vw;
   top: 10px;
   left: 0px;
-  animation: 0.5s forwards 0.01s ease slide-from-top1;
+  animation: .6s forwards 0.01s ease slide-from-top1;
   /* background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%)); */
   background-color: #ffffff;
   border-radius: 16px;
@@ -36,6 +36,16 @@
   text-align: center;
   opacity: 0;
   color: black;
+}
+
+@keyframes slide-from-top1{
+  from{
+    transform: rotate(150deg) scale(.01);
+  }to{
+    transform: rotate(0deg) scale(1);
+    height: 98vh;
+    opacity: 100%;
+  }
 }
 
 /* @keyframes slide-from-top1 {
