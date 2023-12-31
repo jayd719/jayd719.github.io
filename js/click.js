@@ -11,6 +11,27 @@ function ChangeCSS(from, to, class_) {
   return value;
 }
 
+function addBoxes(n) {
+  if (document.documentElement.clientWidth > 800) {
+    for (k = 0; k <= n; ++k) {
+      let loader = document.createElement("div");
+      loader.className = "loader";
+      loader.style.top = `${Math.floor(Math.random() * 100)}%`;
+      loader.style.left = `${Math.floor(Math.random() * 100)}%`;
+      loader.style.scale=`1.${k}`
+      let cube = document.createElement("div");
+      cube.className = "cube";
+      for (i = 0; i <= 5; ++i) {
+        let face = document.createElement("div");
+        face.className = "face";
+        cube.appendChild(face);
+      }
+      loader.appendChild(cube);
+      document.body.appendChild(loader);
+    }
+  }
+}
+
 function hideJacks() {
   ChangeCSS(".spiral-image", ".spiral-image-alt", true);
   ChangeCSS(".jack-image", ".jack-image-final", true);
@@ -20,6 +41,8 @@ function hideJacks() {
   ChangeCSS(".locked-section", ".locked-section-alt", true);
   ChangeCSS(".main-container-hidden", ".main-container", true);
   ChangeCSS(".header-hidden", ".header", true);
+  addBoxes(10);
+
   // document.body.style.background = "#010716";
   document.body.style.overscrollBehaviorX = "hidden";
   //ChangeCSS("#cover-image","cover-image",false).style.opacity="100%";
@@ -104,4 +127,3 @@ function hideAboutSection() {
     ImageContainer.removeChild(images[i]);
   }
 }
-
