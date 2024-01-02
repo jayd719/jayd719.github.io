@@ -18,7 +18,7 @@ function addBoxes(n) {
       loader.className = "loader";
       loader.style.top = `${Math.floor(Math.random() * 100)}%`;
       loader.style.left = `${Math.floor(Math.random() * 100)}%`;
-      loader.style.scale=`1.${k}`
+      loader.style.scale = `1.${k}`;
       let cube = document.createElement("div");
       cube.className = "cube";
       for (i = 0; i <= 5; ++i) {
@@ -29,6 +29,17 @@ function addBoxes(n) {
       loader.appendChild(cube);
       document.body.appendChild(loader);
     }
+  }
+}
+
+function addSpinner(n) {
+  for (i = 0; i < n; ++i) {
+    let newDiv = document.createElement("div");
+    newDiv.className = "spinner";
+    newDiv.style.top = `${Math.floor(Math.random() * 100)}%`;
+    newDiv.style.left = `${Math.floor(Math.random() * 100)}%`;
+    newDiv.style.scale = `${(k+1)/k}`;
+    document.body.appendChild(newDiv);
   }
 }
 

@@ -131,7 +131,6 @@
 .contactLeft img {
   width: 15vw;
   border-radius: 7px;
-  filter: grayscale(100);
   transition: 1s;
   z-index: 1;
   transform: translateX(625px) rotate(30deg);

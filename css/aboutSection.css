@@ -125,7 +125,6 @@
 }
 .subhead img {
   width: 2vw;
-  filter: grayscale(.6);
 }
 
 .content {
