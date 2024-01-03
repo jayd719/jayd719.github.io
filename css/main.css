@@ -12,7 +12,6 @@ a {
 }
 body {
   background: #212121;
-  font-size: 1rem;
   font-weight: 200;
   line-height: 1.4rem;
   overflow-x: hidden;
@@ -49,7 +48,7 @@ header {
 
 .header {
   width: 100%;
-  font-size: 1vw;
+  font-size: 15px;
   z-index: 10;
   height: 8vh;
   /* position */
@@ -69,7 +68,7 @@ header {
 
 .header-alt-two {
   width: 100%;
-  font-size: 1vw;
+  font-size: 15px;
   z-index: 10;
   height: 8vh;
   /* From https://css.glass */
@@ -88,7 +87,7 @@ header {
   width: 98%;
   top: 10px;
   margin-left: 1%;
-  font-size: 1vw;
+  font-size: 15px;
   z-index: 10;
   height: 8vh;
   color: #fff;
@@ -97,7 +96,7 @@ header {
   border-radius: 15px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 0 5px rgba(255, 255, 255,0.1),
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1),
     0 0 25px rgba(255, 255, 255, 0.1), 0 0 50px rgba(255, 255, 255, 0.1),
     0 0 100px rgba(255, 255, 255, 0.1);
   /* position */
@@ -145,7 +144,7 @@ header {
 
 #app-logo {
   /* main logo css */
-  width: 6vw;
+  width: 70px;
   min-width: 100px;
   padding-left: 6vw;
   cursor: pointer;
@@ -222,9 +221,8 @@ header {
 }
 /* intro text one */
 #intro-text-one {
-  font-size: 1.27rem;
+  font-size: 20px;
   font-style: italic;
-  line-height: 1.8rem;
   text-align: center;
   margin-top: 12.5vh;
   animation: 1.75s forwards 2.25s ease slide-from-right;
@@ -299,7 +297,6 @@ logo wrapper
   /* background-color: rgba(0, 140, 255, 0.153);
   box-shadow: 0 0 0px rgb(0, 140, 255), 0 0 0px rgb(0, 140, 255),
     0 0 0px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255); */
-  
 }
 #feature-one {
   animation: 0.75s forwards 3.3s ease-in slide-up;
