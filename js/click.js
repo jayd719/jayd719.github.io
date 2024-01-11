@@ -1,3 +1,15 @@
+
+
+
+
+// // On Hover to main page.
+// document.getElementById("jack-one").addEventListener("mouseenter",()=>{
+//   hideJacks();
+// })
+
+// 
+// 
+// 
 function ChangeCSS(from, to, class_) {
   var var1 = $(from);
 
@@ -32,16 +44,7 @@ function addBoxes(n) {
   }
 }
 
-function addSpinner(n) {
-  for (i = 0; i < n; ++i) {
-    let newDiv = document.createElement("div");
-    newDiv.className = "spinner";
-    newDiv.style.top = `${Math.floor(Math.random() * 100)}%`;
-    newDiv.style.left = `${Math.floor(Math.random() * 100)}%`;
-    newDiv.style.scale = `${(k+1)/k}`;
-    document.body.appendChild(newDiv);
-  }
-}
+
 
 function hideJacks() {
   ChangeCSS(".spiral-image", ".spiral-image-alt", true);
