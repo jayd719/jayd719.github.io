@@ -1,540 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I am JD</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      type="text/css"
     />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/machine.css">
+    <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/about section.css" />
+    <title>Bootstrap Example</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/locked-section.css" />
-    <link rel="stylesheet" href="css/scroller-text.css" />
-    <link rel="stylesheet" href="css/section-two.css" />
-    <link rel="stylesheet" href="css/contactSection.css" />
-    <link rel="stylesheet" href="css/aboutSection.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/infomationSection.css" />
-
-    <!-- code pen -->
-    <link rel="stylesheet" href="css/codePen.css/article.css" />
-    <link rel="stylesheet" href="css/codePen.css/pyramid.css" />
-
-    <link rel="icon" type="image/x-icon" href="images/jack-of-clubs.png" />
   </head>
   <body>
-    <section class="locked-section" id="locked-section">
-      <img
-        onclick="hideJacks();"
-        class="jack-image"
-        id="jack-one"
-        src="images/jacks/jack1.jpeg"
-        alt=""
-      />
-      <img
-        class="jack-image2"
-        id="jack-one"
-        src="images/jacks/jack1.jpeg"
-        alt=""
-      />
-      <img
-        class="jack-image3"
-        id="jack-one"
-        src="images/jacks/jack1.jpeg"
-        alt=""
-      />
-      <img
-        class="jack-image4"
-        id="jack-one"
-        src="images/jacks/jack1.jpeg"
-        alt=""
-      />
-      <img class="spiral-image" src="images/jacks/background.gif" alt="" />
-
-      <div class="scroller">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <span class="text">Click To Unlock</span>
-      </div>
-      <span id="moving-text">Click On Jack</span>
-    </section>
-
-    <!-- header section -->
-
-    <header class="header-hidden" id="head-one">
-      <img src="images/main.png" id="app-logo" class="app-logo" />
-      <ul class="menu">
-        <li class="menu-item" onclick="showAboutSection();">About Me</li>
-        <a href="test.html"><li class="menu-item">Projects</li></a>
-        <li class="menu-item">Resume</li>
-        <li id="contact-button" onclick="showContactSection();">Contact</li>
-      </ul>
-      <button class="hamburger" type="button">
-        <span class="hamburger-box"
-          >kd
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-
-      <div class="about-section-hidden">
-        <button class="closeButton" onclick="hideAboutSection();">Close</button>
-
-        <div class="head">
-          <div class="headerobjectswrapper">
-            <a href="https://thecord.ca/" target="_blank"
-              ><span class="heading">the cord</span></a
-            >
-          </div>
-
-          <div class="subhead">
-            <img src="images/flags/united-kingdom.png" alt="" />
-            <img src="images/flags/canada.png" alt="" />
-            <img src="images/flags/india.png" alt="" />
-            <span id="dateEml">Thursday August 30, 1978 - Seven Pages</span>
-            <img src="images/flags/united-kingdom.png" alt="" />
-            <img src="images/flags/germany.png" alt="" />
-            <img src="images/flags/usa.png" alt="" />
-          </div>
-        </div>
-
-        <div class="content">
-          <div class="collumns">
-            <div class="collumn" style="width: 45%">
-              <div class="head">
-                <span class="headline hl1">computer science student </span>
-                <p>
-                  With a deep passion for unraveling the intricacies of
-                  technology and problem-solving. Dedicated to leveraging my
-                  skills to create innovative solutions and contribute to the
-                  ever-evolving tech landscape. Complemented by a solid
-                  foundation in programming, I possess a keen interest in
-                  software development and system architecture. Eager to merge
-                  technical passion with creative endeavors to make meaningful
-                  contributions to both the technology industry and creative
-                  projects.
-                </p>
-
-                <br />
-                <p>
-                  <span class="headline hl2">Keen Observer,Quick Learner</span>
-                </p>
-                <br />
-
-                <p>
-                  Known for my innovative thinking, quick learning ability, and
-                  keen observation, I bring a unique blend of technical
-                  proficiency and creative problem-solving to every project. I
-                  am not only passionate about the intricacies of computer
-                  science but also deeply interested in diverse fields such as
-                  mediation, electronics, design, history, law, and
-                  entrepreneurship. This broad range of interests enhances my
-                  ability to approach challenges from different perspectives,
-                  fostering a well-rounded and adaptive mindset.
-                </p>
-              </div>
-            </div>
-
-            <div class="collumn" style="width: 30%">
-              <video
-                class="viPlay"
-                src="images/videos/MachSim_Video_20231107_101241.mp4"
-                autoplay
-                loop
-                muted
-                codecs="avc1.4D401E, mp4a.40.2"
-              ></video>
-              <div class="head">
-                <span class="headline hl3">Manufacturing Engineer</span>
-                <p>
-                  <span class="headline hl4">Mechanical Engineer Graduate</span>
-                </p>
-              </div>
-              <p>
-                Over four years of hands-on experience as a Manufacturing
-                Engineer.Leveraging engineering, problem solving skills,
-                technical aptitude, and a strong work ethic to excel in
-                technology sector.
-              </p>
-            </div>
-
-            <div class="collumn">
-              <div class="head">
-                <span class="headline hl5">CAD,CAM and More</span>
-              </div>
-              <p>
-                Proficient in a range of programming languages, including
-                Python, C++,Java, and JavaScript, adapting to ever-evolving
-                field of Computer Science. This creativity is further showcased
-                through my proficiency in tools such as SolidWorks and Mastercam
-                during my Mechanical Engineering studies, demonstrating an
-                ability to merge the worlds of technology and design seamlessly.
-              </p>
-              <br />
-            </div>
-
-            <div class="collumn" style="width: 100%; border-left-style: none">
-              <div class="head">
-                <span class="headline hl3" style="text-decoration: underline"
-                  >Experience and Exposure</span
-                >
-                <table>
-                  <tr>
-                    <td>
-                      <span class="headline hl6"
-                        >Conestoga College <br />
-                        <p class="headline hl10" style="margin: 0; padding: 0%">
-                          Mechanical Engineering Technology <br />Automated
-                          Manufacturing <br />2016-2019
-                        </p></span
-                      >
-                    </td>
-
-                    <td></td>
-                    <td>
-                      <span class="headline hl6"
-                        >Canadian Babbitt Bearings<br />
-                        <p class="headline hl10" style="margin: 0; padding: 0%">
-                          Manufacturing Engineer<br />2019
-                        </p></span
-                      >
-                    </td>
-
-                    <td></td>
-                    <td>
-                      <span class="headline hl6"
-                        >NASA<br />
-                        <p class="headline hl10" style="margin: 0; padding: 0%">
-                          Maybe?
-                        </p></span
-                      >
-                    </td>
-                  </tr>
-                  <tr id="middleRow">
-                    <td>&#8226;</td>
-                    <td>&#x2022;</td>
-                    <td>&#x2022;</td>
-                    <td>&#x2022;</td>
-                    <td>&#x2022;</td>
-                  </tr>
-
-                  <tr>
-                    <td></td>
-                    <td>
-                      <span class="headline hl6"
-                        >Stackpole International<br />
-                        <p class="headline hl10" style="margin: 0; padding: 0%">
-                          CNC Settor/Operator<br />Co-Op<br />2018
-                        </p></span
-                      >
-                    </td>
-                    <td></td>
-                    <td>
-                      <span class="headline hl6"
-                        >Wilfrid Laurier University<br />
-                        <p class="headline hl10" style="margin: 0; padding: 0%">
-                          B.Sc. Computer Science<br />2022-2026
-                        </p></span
-                      >
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-          <!-- <div id="cards-container">
-          <img src="images/jacks/jack.png" alt="" />
-        </div> -->
-        </div>
-      </div>
-
-      <div class="hover-section-hidden">
-        <button class="closeButton" onclick="hideContactSection();">
-          Close
+    <!-- nav bar -->
+    <nav
+      class="navbar navbar-preview fixed-top fixed-top navbar-expand-lg nav-bar"
+      id="nav-bar"
+    >
+      <div class="container">
+        <img src="images/main.png" id="app-logo" class="app-logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="contactLeft">
-          <img
-            src="images/jacks/jack.png"
-            id="jackImageContact"
-            class="translated-alt"
-          />
-        </div>
-        <div class="contactRight">
-          <!-- <h1>Feel free to reach out <br>I'd love to hear from you!</h1> -->
-          <div class="ck" id="rightSection">
-            <h1>Feel free to reach out...</h1>
-            <p>I'd love to hear from you!</p>
-
-            <div class="socials">
-              <a href="https://github.com/jayd719" target="_blank"
-                ><img src="images/socails/github.png" alt=""
-              /></a>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="text-align: center"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
               <a
-                href="https://www.linkedin.com/in/jashansingh65/"
-                target="_blank"
-                ><img src="images/socails/linkedin.png" alt=""
-              /></a>
-              <a href="http://" target="_blank"
-                ><img src="images/socails/twitter.png" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="circle" id="circle">
-      <img src="images/robot.png" alt="" />
-      <div class="chatBox-hidden"><h1>Hello There!</h1></div>
-      <div class="yel"></div>
-    </div>
-
-    <div class="main-container-hidden" id="viewport">
-      <!-- section1 -->
-      <section class="section" id="class-section-one">
-        <h1 class="text-style-one" id="heading-one">
-          Welcome To My Corner of The Digital World! I'm a
-          <span class="flashy-text">Computer Science</span> Student Currently
-          Pursuing My Education at
-          <span class="flashy-text">Wilfrid Laurier University</span>
-        </h1>
-        <p id="intro-text-one">
-          Coding Is Not Just a Hobby For Me; It's a Passion That Drives Me To
-          Explore The Endless Possibilities Of The Digital Realm.
-        </p>
-
-        <div class="logo-wrapper" loading="lazy">
-          <img
-            src="images/logos/laser-cutting-machine.png"
-            class="features-logo"
-            id="feature-one"
-            alt="1"
-          />
-          <img
-            src="images/logos/python.png"
-            class="features-logo"
-            id="feature-two"
-            alt="1"
-          />
-          <img
-            src="images/logos/cpu.png"
-            class="features-logo"
-            id="feature-three"
-            alt="1"
-          />
-          <img
-            src="images/logos/java.png"
-            class="features-logo"
-            id="feature-four"
-            alt="1"
-          />
-          <img
-            src="images/logos/design.png"
-            class="features-logo"
-            id="feature-five"
-            alt="1"
-          />
-          <img
-            src="images/logos/java-script.png"
-            class="features-logo"
-            id="feature-six"
-            alt="1"
-          />
-        </div>
-      </section>
-
-      <div class="sectionsectionContainer">
-        <div id="section-two" class="section-two">
-          <h1 id="text-cncs">
-            <span class="flashy-text">CNCs</span> I've Programmed For
-          </h1>
-
-          <div id="scrolling-div" class="scroll-div">
-            <div id="content">
-              <div class="item">
-                <img
-                  id="image-dmg-mill"
-                  src="images/machines/machines_resized/DMGEcomill.png"
-                  alt=""
-                />
-
-                <span class="machineName">Vertical Mill</span>
-                <p class="machineInfo">
-                  3+2 Axis Vertical Milling With Siemens 840D Controller and
-                  Renishaw OMP 60 Probe
-                </p>
-                <a
-                  href="https://en.dmgmori.com/products/machines/milling/5-axis-milling/dmu/dmu-50"
-                  target="_blank"
-                  ><span class="machineLink">DMG MORI ECOMILL 50</span></a
-                >
-              </div>
-
-              <div class="item">
-                <img
-                  id="image-dmg-lathe"
-                  src="images/machines/machines_resized/DMGEcoTurn310.jpeg"
-                  alt=""
-                />
-
-                <span class="machineName">TurnMill</span>
-                <p class="machineInfo">
-                  Horizontal Lathe With Siemens 840D Controller and Live Tooling
-                </p>
-                <br />
-                <a href="http://" target="_blank"
-                  ><span class="machineLink">DMG Mori EcoTurn 310</span></a
-                >
-              </div>
-
-              <div class="item">
-                <img
-                  id="image-tss"
-                  src="images/machines/machines_resized/tss-series.jpg"
-                  alt=""
-                />
-
-                <span class="machineName">TurnMill</span>
-                <p class="machineInfo">
-                  Vertical Boring and Turning Mill With Fanuc 31i Controlls
-                </p>
-                <a
-                  href="https://shibaura-machine.com/machine-tools/specifications/vertical-boring-turning-mill/tss/"
-                  target="_blank"
-                  ><span class="machineLink">TSS-30/55C(S)</span></a
-                >
-              </div>
-
-              <div class="item">
-                <img
-                  id="image-fadal"
-                  src="images/machines/machines_resized/fadal.png"
-                  alt=""
-                />
-
-                <span class="machineName">Vertical Mill</span>
-                <p class="machineInfo">
-                  3 Axis Vertical Milling Center With Fanuc Controller
-                </p>
-                <a href="https://fadal.com/vmc-6032/" target="_blank"
-                  ><span class="machineLink">Fadal VMC 6030</span></a
-                >
-              </div>
-
-              <div class="item">
-                <img
-                  id="image-hplus"
-                  src="images/machines/machines_resized/MatsuuraHPlus630.jpeg"
-                  alt=""
-                />
-
-                <span class="machineName">Horizontal Mill</span>
-                <p class="machineInfo">
-                  Four Axis with Fanuc Controls and Renishaw OPM 90 Probe
-                </p>
-                <a
-                  href="https://www.matsuurausa.com/model/h-plus-630/"
-                  target="_blank"
-                  ><span class="machineLink">H.PLUS-630</span></a
-                >
-              </div>
-
-              <div class="item">
-                <img
-                  id="image-tue"
-                  src="images/machines/machines_resized/tue-200.jpeg"
-                  alt=""
-                />
-
-                <span class="machineName">TurnMill</span>
-                <p class="machineInfo">
-                  Vertical Boring and Turning Mill With Fanuc 31i Controlls
-                </p>
-                <a
-                  href="https://shibaura-machine.com/machine-tools/specifications/vertical-boring-turning-mill/tue/"
-                  target="_blank"
-                  ><span class="machineLink">TUE-200(S)</span></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="border"></div> -->
-      </div>
-      <!-- section2 -->
-
-      <!-- <section id="information-section">
-        <table>
-          <tr>
-            <td class="left-side">Innovation Through Open Source</td>
-            <td class="left-side">Innovation Through Open Source</td>
-          </tr>
-          <tr>
-            <td class="left-side">Customizing Needs</td>
-            <td class="left-side">Innovation Through Open Source</td>
-          </tr>
-          <tr>
-            <td class="left-side">Getting In Control Of Data</td>
-            <td class="left-side">Innovation Through Open Source</td>
-          </tr>
-        </table>
-      </section> -->
-      <div class="_blank" style="height: 200px"></div>
-
-      <footer>
-        <div class="row">
-          <ul>
-            <li>ਜਸ਼ਨਦੀਪ ਸਿੰਘ</li>
-            <li>जशनदीप सिंह</li>
-            <li>جشندیپ سنگھ</li>
+                class="nav-link active"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                onclick="upateDate();"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link active"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Project 1</a></li>
+                <li><a class="dropdown-item" href="#">Project 2</a></li>
+                <li><a class="dropdown-item" href="#">Project 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+                >contact</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="name" id="nameLetter">
-          <img id="letter" src="images/letters/letter-j.png" alt="" />
-          <img id="letter" src="images/letters/letter-a.png" alt="" />
-          <img id="letter" src="images/letters/letter-s.png" alt="" />
-          <img id="letter" src="images/letters/letter-h.png" alt="" />
-          <img id="letter" src="images/letters/letter-a.png" alt="" />
-          <img id="letter" src="images/letters/letter-n.png" alt="" />
-          <img id="letter" src="images/letters/letter-d.png" alt="" />
-          <img id="letter" src="images/letters/letter-e.png" alt="" />
-          <img id="letter" src="images/letters/letter-e.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- contact container start -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+      style="width: 38%; min-width: 400px"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="ck contact" id="rightSection">
+          <img src="images/j.png" alt="" style="width: 250px" />
+          <h2 class="textone" style="margin-top: 10%">
+            Feel free to reach out...
+          </h2>
+          <h2 class="texttwo">I'd love to hear from you!</h2>
+
+          <div
+            class="d-flex justify-content-around socials"
+            style="margin-top: 20%"
+          >
+            <a href="https://github.com/jayd719" target="_blank"
+              ><img src="images/socails/github.png" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/jashansingh65/" target="_blank"
+              ><img src="images/socails/linkedin.png" alt=""
+            /></a>
+            <a href="http://" target="_blank"
+              ><img src="images/socails/twitter.png" alt=""
+            /></a>
+            <a href="http://" target="_blank"
+              ><img src="images/socails/discord.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- left container end -->
+
+    <!-- resume container start -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+      style="width: 60%; min-width: 500px"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+        <a
+          href="assets/Jashandeep Singh(JD).pdf"
+          download="Resume:Jashandeep Singh(JD)"
+          target="_blank"
+          >Download Resume</a
+        >
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <embed
+          src="assets/Jashandeep Singh(JD).pdf"
+          width="100%"
+          height="100%"
+          type="application/pdf"
+          title="Resume-JD"
+          style="background-color: transparent"
+        />
+      </div>
+    </div>
+    <!-- right container end -->
+
+    <!-- about me -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog modal-xl">
+        <div class="modal-content" style="color: black">
+          <div
+            class="container-fuild"
+            style="display: flex; justify-content: end"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="">
+            <div class="head">
+              <div class="headerobjectswrapper">
+                <a href="https://thecord.ca/" target="_blank"
+                  ><span class="heading">the cord</span></a
+                >
+              </div>
+
+              <div class="subhead">
+                <img src="images/flags/united-kingdom.png" alt="" />
+                <img src="images/flags/canada.png" alt="" />
+                <img src="images/flags/india.png" alt="" />
+                <span id="dateEml">Thursday August 30, 1978 - Seven Pages</span>
+                <img src="images/flags/united-kingdom.png" alt="" />
+                <img src="images/flags/germany.png" alt="" />
+                <img src="images/flags/usa.png" alt="" />
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="collumns">
+                <div class="collumn" style="width: 60%">
+                  <div class="head">
+                    <span class="headline hl1">computer science student </span>
+                    <p>
+                      With a deep passion for unraveling the intricacies of
+                      technology and problem-solving. Dedicated to leveraging my
+                      skills to create innovative solutions and contribute to
+                      the ever-evolving tech landscape. Complemented by a solid
+                      foundation in programming, I possess a keen interest in
+                      software development and system architecture. Eager to
+                      merge technical passion with creative endeavors to make
+                      meaningful contributions to both the technology industry
+                      and creative projects.
+                    </p>
+
+                    <br />
+                    <p>
+                      <span class="headline hl2"
+                        >Keen Observer,Quick Learner</span
+                      >
+                    </p>
+                    <br />
+
+                    <p>
+                      Known for my innovative thinking, quick learning ability,
+                      and keen observation, I bring a unique blend of technical
+                      proficiency and creative problem-solving to every project.
+                      I am not only passionate about the intricacies of computer
+                      science but also deeply interested in diverse fields such
+                      as mediation, electronics, design, history, law, and
+                      entrepreneurship. This broad range of interests enhances
+                      my ability to approach challenges from different
+                      perspectives, fostering a well-rounded and adaptive
+                      mindset.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="collumn" style="width: 40%">
+                  <video
+                    class="viPlay"
+                    src="images/videos/MachSim_Video_20231107_101241.mp4"
+                    autoplay
+                    loop
+                    muted
+                    codecs="avc1.4D401E, mp4a.40.2"
+                  ></video>
+                  <div class="head">
+                    <span class="headline hl3">Manufacturing Engineer</span>
+                    <p>
+                      <span class="headline hl4"
+                        >Mechanical Engineer Graduate</span
+                      >
+                    </p>
+                  </div>
+                  <p>
+                    Over four years of hands-on experience as a Manufacturing
+                    Engineer.Leveraging engineering, problem solving skills,
+                    technical aptitude, and a strong work ethic to excel in
+                    technology sector.
+                  </p>
+
+                  <p>
+                    Proficient in a range of programming languages, including
+                    Python, C++,Java, and JavaScript, adapting to ever-evolving
+                    field of Computer Science. This creativity is further
+                    showcased through my proficiency in tools such as SolidWorks
+                    and Mastercam during my Mechanical Engineering studies,
+                    demonstrating an ability to merge the worlds of technology
+                    and design seamlessly.
+                  </p>
+
+                  <p></p>
+                </div>
+
+                <div
+                  class="collumn"
+                  style="width: 100%; border-left-style: none"
+                >
+                  <div class="head">
+                    <span
+                      class="headline hl3"
+                      style="text-decoration: underline"
+                      >Experience and Exposure</span
+                    >
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="headline hl6"
+                            >Conestoga College <br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              Mechanical Engineering Technology <br />Automated
+                              Manufacturing <br />2016-2019
+                            </p></span
+                          >
+                        </td>
+
+                        <td></td>
+                        <td>
+                          <span class="headline hl6"
+                            >Canadian Babbitt Bearings<br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              Manufacturing Engineer<br />2019
+                            </p></span
+                          >
+                        </td>
+
+                        <td></td>
+                        <td>
+                          <span class="headline hl6"
+                            >NASA<br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              Maybe?
+                            </p></span
+                          >
+                        </td>
+                      </tr>
+                      <tr id="middleRow">
+                        <td>&#8226;</td>
+                        <td>&#x2022;</td>
+                        <td>&#x2022;</td>
+                        <td>&#x2022;</td>
+                        <td>&#x2022;</td>
+                      </tr>
+
+                      <tr>
+                        <td></td>
+                        <td>
+                          <span class="headline hl6"
+                            >Stackpole International<br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              CNC Settor/Operator<br />Co-Op<br />2018
+                            </p></span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <span class="headline hl6"
+                            >Wilfrid Laurier University<br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              B.Sc. Computer Science<br />2022-2026
+                            </p></span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about me -->
+
+    <img
+      class="jack-image"
+      id="jack-one"
+      src="images/jacks/jack1.jpeg"
+      alt=""
+    />
+    <img
+      class="jack-image2"
+      id="jack-one"
+      src="images/jacks/jack1.jpeg"
+      alt=""
+    />
+    <img
+      class="jack-image3"
+      id="jack-one"
+      src="images/jacks/jack1.jpeg"
+      alt=""
+    />
+    <img
+      class="jack-image4"
+      id="jack-one"
+      src="images/jacks/jack1.jpeg"
+      alt=""
+    />
+
+    <div class="container image-container" style="margin-top: 12vh">
+      <h1 class="display-4 intro-text-one">
+        Welcome To My Corner of The Digital World! I'm a Computer Science
+        Student Currently Pursuing My Education at Wilfrid Laurier University
+      </h1>
+      <center>
+        <img class="image-one" src="images/code/i.png" alt="" />
+      </center>
+    </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">1 of 2</div>
+        <div class="col">2 of 2</div>
+      </div>
+    </div>
+
+
+<h1 class="display-4" style="text-align: center; margin-top: 20%;">CNCs I Have Programmed For</h1>
+    <div class="container-fuild machine-container" id="scrolling-div">
+      <div id="content">
+        <div class="item">
           <img
-            id="letter"
-            src="images/letters/letter-p.png"
+            id="image-dmg-mill"
+            src="images/machines/machines_resized/DMGEcomill.png"
             alt=""
-            style="padding-right: 20px"
           />
-          <img id="letter" src="images/letters/letter-s.png" alt="" />
-          <img id="letter" src="images/letters/letter-i.png" alt="" />
-          <img id="letter" src="images/letters/letter-n.png" alt="" />
-          <img id="letter" src="images/letters/letter-g.png" alt="" />
-          <img id="letter" src="images/letters/letter-h.png" alt="" />
+
+          <span class="machineName">Vertical Mill</span>
+          <p class="machineInfo">
+            3+2 Axis Vertical Milling With Siemens 840D Controller and Renishaw
+            OMP 60 Probe
+          </p>
+          <a
+            href="https://en.dmgmori.com/products/machines/milling/5-axis-milling/dmu/dmu-50"
+            target="_blank"
+            ><span class="machineLink">DMG MORI ECOMILL 50</span></a
+          >
         </div>
-        <div class="row">
-          <ul>
-            <li>Credits</li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li onclick="showContactSection();">Contact</li>
-          </ul>
+
+        <div class="item">
+          <img
+            id="image-dmg-lathe"
+            src="images/machines/machines_resized/DMGEcoTurn310.jpeg"
+            alt=""
+          />
+
+          <span class="machineName">TurnMill</span>
+          <p class="machineInfo">
+            Horizontal Lathe With Siemens 840D Controller and Live Tooling
+          </p>
+          <br />
+          <a href="http://" target="_blank"
+            ><span class="machineLink">DMG Mori EcoTurn 310</span></a
+          >
         </div>
-        <div class="row">
-          Copyright © 2024 jashandeep.co.uk - All rights reserved
+
+        <div class="item">
+          <img
+            id="image-tss"
+            src="images/machines/machines_resized/tss-series.jpg"
+            alt=""
+          />
+
+          <span class="machineName">TurnMill</span>
+          <p class="machineInfo">
+            Vertical Boring and Turning Mill With Fanuc 31i Controlls
+          </p>
+          <a
+            href="https://shibaura-machine.com/machine-tools/specifications/vertical-boring-turning-mill/tss/"
+            target="_blank"
+            ><span class="machineLink">TSS-30/55C(S)</span></a
+          >
         </div>
-      </footer>
+
+        <div class="item">
+          <img
+            id="image-fadal"
+            src="images/machines/machines_resized/fadal.png"
+            alt=""
+          />
+
+          <span class="machineName">Vertical Mill</span>
+          <p class="machineInfo">
+            3 Axis Vertical Milling Center With Fanuc Controller
+          </p>
+          <a href="https://fadal.com/vmc-6032/" target="_blank"
+            ><span class="machineLink">Fadal VMC 6030</span></a
+          >
+        </div>
+
+        <div class="item">
+          <img
+            id="image-hplus"
+            src="images/machines/machines_resized/MatsuuraHPlus630.jpeg"
+            alt=""
+          />
+
+          <span class="machineName">Horizontal Mill</span>
+          <p class="machineInfo">
+            Four Axis with Fanuc Controls and Renishaw OPM 90 Probe
+          </p>
+          <a
+            href="https://www.matsuurausa.com/model/h-plus-630/"
+            target="_blank"
+            ><span class="machineLink">H.PLUS-630</span></a
+          >
+        </div>
+
+        <div class="item">
+          <img
+            id="image-tue"
+            src="images/machines/machines_resized/tue-200.jpeg"
+            alt=""
+          />
+
+          <span class="machineName">TurnMill</span>
+          <p class="machineInfo">
+            Vertical Boring and Turning Mill With Fanuc 31i Controlls
+          </p>
+          <a
+            href="https://shibaura-machine.com/machine-tools/specifications/vertical-boring-turning-mill/tue/"
+            target="_blank"
+            ><span class="machineLink">TUE-200(S)</span></a
+          >
+        </div>
+      </div>
     </div>
+    <div class="container" style="height: 90vh"></div>
+    <div
+      class="container-fuild"
+      style="height: 10vh; background-color: rgb(255, 255, 255)"
+    ></div>
+
+    <!-- End Example Code -->
+
+    <footer>
+      <div class="row-f">
+        <ul>
+          <li>ਜਸ਼ਨਦੀਪ ਸਿੰਘ</li>
+          <li>जशनदीप सिंह</li>
+          <li>جشندیپ سنگھ</li>
+        </ul>
+      </div>
+      <div class="name" id="nameLetter">
+        <img id="letter" src="images/letters/letter-j.png" alt="" />
+        <img id="letter" src="images/letters/letter-a.png" alt="" />
+        <img id="letter" src="images/letters/letter-s.png" alt="" />
+        <img id="letter" src="images/letters/letter-h.png" alt="" />
+        <img id="letter" src="images/letters/letter-a.png" alt="" />
+        <img id="letter" src="images/letters/letter-n.png" alt="" />
+        <img id="letter" src="images/letters/letter-d.png" alt="" />
+        <img id="letter" src="images/letters/letter-e.png" alt="" />
+        <img id="letter" src="images/letters/letter-e.png" alt="" />
+        <img
+          id="letter"
+          src="images/letters/letter-p.png"
+          alt=""
+          style="margin-right: 20px"
+        />
+        <img id="letter" src="images/letters/letter-s.png" alt="" />
+        <img id="letter" src="images/letters/letter-i.png" alt="" />
+        <img id="letter" src="images/letters/letter-n.png" alt="" />
+        <img id="letter" src="images/letters/letter-g.png" alt="" />
+        <img id="letter" src="images/letters/letter-h.png" alt="" />
+      </div>
+      <div class="row-f">
+        <ul>
+          <li>Credits</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
+      <div class="row-f">
+        Copyright © 2024 jashandeep.co.uk - All rights reserved
+      </div>
+    </footer>
   </body>
 
-  <script src="js/click.js"></script>
-  <script src="js/contactButtonHover.js"></script>
-  <!-- <script src="js/locked-section-text.js"></script> -->
-  <script src="js/headerScroll.js"></script>
-  <script src="js/scroll.js"></script>
-  <script src="js/contactLeftHover.js"></script>
-  <script src="js/circleHover.js"></script>
-  <script src="js/Testing.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </html>

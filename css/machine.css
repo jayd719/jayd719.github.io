@@ -1,0 +1,110 @@
+#content {
+  display: flex;
+  position: absolute;
+}
+
+.item {
+  background-color: aliceblue;
+  z-index: 0;
+  margin-left: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  /* background:rgb(255, 196, 0); */
+  border-radius: 15px;
+  display: grid;
+  transition: all 1.2s ease-in-out;
+  opacity: 50%;
+}
+.item:hover {
+  border: 2px solid transparent;
+  outline: none;
+  background-color: #ffffff;
+  color: #0d0c22;
+  transition: 0.5s ease;
+  border-radius: 25px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    opacity: 100%;
+}
+
+#content img {
+  border-radius: 10px;
+  filter: brightness(0.9);
+}
+#image-dmg-mill {
+  width: 300px;
+  z-index: 0;
+}
+
+#image-dmg-lathe {
+  width: 425px;
+  z-index: 0;
+}
+
+#image-hplus {
+  width: 240px;
+}
+
+#image-tue {
+  width: 240px;
+}
+
+#image-fadal {
+  width: 300px;
+}
+#image-tss {
+  width: 305px;
+}
+
+#about-section-text {
+  font-size: 70px;
+  color: #000000;
+}
+
+.machineName {
+  --rem: 16;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.8;
+  align-self: end;
+  font-style: oblique;
+}
+.machineInfo {
+  --rem: 16;
+  font-size: 12px;
+  opacity: 0.8;
+  line-height: 16px;
+  padding-top: 5px;
+  font-weight: 300;
+  text-align: justify;
+  align-self: center;
+}
+
+.machineLink {
+  --rem: 16;
+  box-sizing: border-box;
+  z-index: 1;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  line-height: 0.95;
+  background: none;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  margin-top: 30px;
+  align-self: end;
+}
+
+.machineLink:hover {
+  background: #e5e5e5;
+  color: #000000;
+}
