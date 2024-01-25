@@ -8,6 +8,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  animation: appear 2s forwards;
 }
 
 @keyframes appear {
@@ -109,20 +110,4 @@ footer li:hover {
 
 /* footerEnd */
 
-.machine-container {
-  margin-top: 2%;
-  display: flex;
-  animation: slide-left 30s linear infinite;
 
-}
-
-@keyframes slide-left {
-  from {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
