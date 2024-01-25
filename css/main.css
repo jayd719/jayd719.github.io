@@ -138,3 +138,23 @@ footer li:hover {
     scale: 1;
   }
 }
+
+
+
+.projects .col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.projects .col:hover{
+  background-color: #4d5154;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 15px 20px #4d51546f;
+  z-index: 10;
+  transform: scale(1.05);
+}

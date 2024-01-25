@@ -16,25 +16,24 @@
 }
 
 .item {
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   z-index: 0;
   margin-left: 40px;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(0, 0, 0, 0.43);
   /* background:rgb(255, 196, 0); */
+  transition: 2s;
   border-radius: 15px;
   display: grid;
-  transition: all 1.2s ease-in-out;
-  opacity: 50%;
+  opacity: 80%;
 }
 .item:hover {
   background-color: #4d5154;
   box-shadow: 0px 15px 20px #4d51546f;
   color: #fff;
   transform: translateY(-2px);
-  transition: all 0.5s ease-in-out;
+  transition: .1s;
   opacity: 100%;
   font-weight: bolder;
 }
