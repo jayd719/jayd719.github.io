@@ -36,34 +36,41 @@
   transform: translateY(-2px);
   transition: all 0.5s ease-in-out;
   opacity: 100%;
+  font-weight: bolder;
 }
 
 #content img {
-  border-radius: 10px;
+  border-radius: 20px;
   filter: brightness(0.9);
 }
 #image-dmg-mill {
+  border-radius: 10px;
   width: 300px;
   z-index: 0;
 }
 
 #image-dmg-lathe {
+  border-radius: 10px;
   width: 425px;
   z-index: 0;
 }
 
 #image-hplus {
   width: 240px;
+  border-radius: 10px;
 }
 
 #image-tue {
   width: 240px;
+  border-radius: 10px;
 }
 
 #image-fadal {
+  border-radius: 10px;
   width: 300px;
 }
 #image-tss {
+  border-radius: 10px;
   width: 305px;
 }
 
@@ -74,13 +81,12 @@
 
 .machineName {
   --rem: 16;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bolder;
   opacity: 0.8;
   align-self: end;
-  font-style: oblique;
 }
 .machineInfo {
   --rem: 16;

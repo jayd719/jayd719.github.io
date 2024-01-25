@@ -8,7 +8,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  animation: appear 2s forwards;
+  animation: appear 3s forwards;
 }
 
 @keyframes appear {
@@ -77,6 +77,12 @@ ul {
   margin-right: 50%;
 }
 
+.textONe {
+  color: #330072;
+  font-weight: 900;
+  font-size: 120%;
+}
+
 footer {
   background: #000;
   text-align: center;
@@ -110,4 +116,25 @@ footer li:hover {
 
 /* footerEnd */
 
+.col img {
+  width: 75px;
+  margin: 15% 5%;
+  animation: 2s blink infinite;
+  border-radius: 8px;
+}
 
+.col img:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+@keyframes blink {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
