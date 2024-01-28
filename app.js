@@ -60,3 +60,25 @@ function addBoxes(n) {
     }
   }
 }
+
+let images = document.querySelectorAll("#skills");
+function shuffleSkills() {
+  for (let i = 0; i < images.length; i++) {
+    images[i].style.transform = `translate(${Math.floor(
+      Math.random() * 50
+    )}px,${Math.floor(Math.random() * 250)}px) scale(${Math.random()})`;
+  }
+}
+shuffleSkills();
+
+document.getElementById("gcont").addEventListener("mouseenter", () => {
+  for (let i = 0; i < images.length; i++) {
+    images[i].style.transform = "translate(00px,00px) scale(1)";
+  }
+});
+
+document
+  .getElementById("gcont")
+  .addEventListener("mouseleave", ()=>{
+    shuffleSkills()
+  });
