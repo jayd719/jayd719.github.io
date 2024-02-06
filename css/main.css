@@ -10,6 +10,9 @@ body {
   font-family: "Montserrat", sans-serif;
   animation: appear 3s forwards;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 @keyframes appear {
   from {
