@@ -13,7 +13,7 @@ body {
   height: 120vh;
 }
 
-/* @page {
+@page {
   size: A4;
   margin: 0;
 }
@@ -22,7 +22,7 @@ body {
   .sheet-outer.A5.landscape {
     width: 210mm;
   }
-} */
+}
 @media screen {
   body {
     background: #e0e0e0;
