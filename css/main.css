@@ -227,7 +227,6 @@ footer li:hover {
 
 .card {
   margin: 70px 10px;
-  transition: 0.7s;
   background: #fafaf5;
   border: 2px solid #e6e6e6;
   border-radius: 24px;
@@ -237,8 +236,9 @@ footer li:hover {
   font-size: 20px;
   line-height: 130%;
   font-size: smaller;
-  height: 285px;
   overflow: hidden;
+  transition: 1s;
+
 }
 .card img {
   border-top-left-radius: 20px;
@@ -247,6 +247,7 @@ footer li:hover {
 
 .card:hover {
   scale: 1.025;
+  transition: 1s;
 }
 
 .colored {
