@@ -386,5 +386,164 @@
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  transform: rotate(9deg) scale(5);
+  transform: rotate(9deg) scale(4);
 }
+
+/* machines */
+.machine-container {
+  margin-top: 1%;
+  display: flex;
+  animation: slide-left 30s linear infinite;
+}
+
+@keyframes slide-left {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.item {
+  background-color: rgb(255, 255, 255);
+  z-index: 0;
+  margin-left: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  /* background:rgb(255, 196, 0); */
+  transition: 2s;
+  border-radius: 15px;
+  display: grid;
+  opacity: 80%;
+}
+.item:hover {
+  background-color: #4d5154;
+  box-shadow: 0px 15px 20px #4d51546f;
+  color: #fff;
+  transform: translateY(-2px);
+  transition: 0.1s;
+  opacity: 100%;
+  font-weight: bolder;
+}
+
+#content img {
+  border-radius: 20px;
+  filter: brightness(0.9);
+}
+#image-dmg-mill {
+  border-radius: 10px;
+  width: 300px;
+  z-index: 0;
+}
+
+#image-dmg-lathe {
+  border-radius: 10px;
+  width: 425px;
+  z-index: 0;
+}
+
+#image-hplus {
+  width: 240px;
+  border-radius: 10px;
+}
+
+#image-tue {
+  width: 240px;
+  border-radius: 10px;
+}
+
+#image-fadal {
+  border-radius: 10px;
+  width: 300px;
+}
+#image-tss {
+  border-radius: 10px;
+  width: 305px;
+}
+
+#about-section-text {
+  font-size: 70px;
+  color: #000000;
+}
+
+.machineName {
+  --rem: 16;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  opacity: 0.8;
+  align-self: end;
+}
+.machineInfo {
+  --rem: 16;
+  font-size: 12px;
+  opacity: 0.8;
+  line-height: 16px;
+  padding-top: 5px;
+  font-weight: 300;
+  text-align: justify;
+  align-self: center;
+}
+
+.machineLink {
+  --rem: 16;
+  box-sizing: border-box;
+  z-index: 1;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  line-height: 0.95;
+  background: none;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  margin-top: 30px;
+  align-self: end;
+}
+
+.machineLink:hover {
+  background: #e5e5e5;
+  color: #000000;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* footer */
+footer ul li {
+  display: inline-block;
+  margin: 0px 30px;
+  transition: 0.4s ease-out;
+}
+
+footer li:hover {
+  color: rgba(240, 248, 255, 0.91);
+  cursor: pointer;
+}
+.name {
+  padding: 1%;
+  display: inline-flex;
+}
+
+.name img {
+  filter: grayscale(1);
+  width: 35px;
+}
+
+/* footerEnd */

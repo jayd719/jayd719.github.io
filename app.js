@@ -3,6 +3,36 @@ const textTwo = document.getElementById("dis");
 const nav = document.getElementById("nav-contianer");
 const boxes = document.getElementById("boxes");
 const codeImage = document.getElementById("codeiamge");
+const projects = document.getElementById("projectscontainer");
+const cnc = document.getElementById("cncs");
+
+function appendToUL(appendList, classStr) {
+  UL = document.createElement("ul");
+  UL.className = "nav nav-tabs";
+  for (i = 0; i, appendList.length; i++) {
+    li = document.createElement("li");
+    li.className = classStr;
+    li.innerText = appendList[i];
+    UL.appendChild(li);
+  }
+  return UL;
+}
+
+function changeNavBar() {
+  container1 = document.getElementById("navoptions1");
+  container1.style.visibility = "hidden";
+  container1.style - "display:none";
+  navBar = document.getElementById("navOne");
+
+  newContainer = document.createElement("div");
+  newContainer.className = "container";
+  newContainer.id = "navoption2";
+
+  tabs = ["this", "that", "who"];
+
+  newContainer.appendChild(appendToUL(tabs, "nav-item"));
+  navBara.appendChild(newContainer);
+}
 
 function addBoxes(n) {
   if (document.documentElement.clientWidth > 800) {
@@ -105,7 +135,15 @@ document.addEventListener("scroll", (event) => {
   if (position > 900) {
     boxes.style.opacity = `${20000 / position}%`;
   } else {
-    boxes.style.opacity = `${position / 6}%`;
+    boxes.style.opacity = `${10000 / position}%`;
+  }
+
+  if (position>900 && position<1700){
+    cnc.style.scale= `${position/1950}`
+  }
+
+  if (position>1900){
+    cnc.style.scale= `${1700/position}`
   }
 
   console.log(position);

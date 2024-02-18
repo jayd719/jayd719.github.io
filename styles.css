@@ -42,6 +42,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 a {
   text-decoration: inherit;
@@ -89,4 +90,9 @@ a {
   position: fixed;
   height: 100vh;
   z-index: -10;
+}
+
+.optionscontainer{
+  
+  top: 10;
 }
