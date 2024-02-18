@@ -1,0 +1,85 @@
+body {
+  background-color: #030303;
+  color: #fafafa;
+  text-align: center;
+  animation: appear 3s forwards;
+  overflow-x: hidden;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.nav {
+  margin: 10px 40px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  z-index: 100;
+}
+
+.newageliquor {
+  line-height: 20vh;
+  font-size: 40vh;
+}
+
+.discountText {
+  line-height: 10vh;
+  font-size: 10vh;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.textONe {
+  color: #330072;
+  font-weight: 900;
+  font-size: 120%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: inherit;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+.marquee-container {
+  height: 30px;
+  overflow: hidden;
+  line-height: 30px;
+  .marquee {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+  }
+
+  .marquee2 {
+    animation-delay: 15s;
+  }
+  b {
+    padding-left: 10px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}

@@ -3,100 +3,96 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NL</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
-
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
-    <link
-      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/machine.css" />
-    <link rel="stylesheet" href="css/loader.css" />
-    <link rel="stylesheet" href="css/about section.css" />
-    <title>I am JD</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-old.css" />
   </head>
   <body>
-    <!-- nav bar -->
-    <nav
-      class="navbar navbar-preview fixed-top fixed-top navbar-expand-lg nav-bar"
-      id="nav-bar"
-    >
-      <div class="container">
-        <img src="images/main.png" id="app-logo" class="app-logo" />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-          style="text-align: center"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
-                onclick="upateDate();"
-                >About Me</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                data-bs-toggle="offcanvas"
-                href="#offcanvasExample"
-                role="button"
-                aria-controls="offcanvasExample"
-                >Resume</a
-              >
-            </li>
-            <li class="nav-item active">
-              <a
-                class="nav-link active"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Projects
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Project 1</a></li>
-                <li><a class="dropdown-item" href="#">Project 2</a></li>
-                <li><a class="dropdown-item" href="#">Project 3</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation"
-                >contact</a
-              >
-            </li>
-          </ul>
+    <div class="container-fluid" id="nav-contianer">
+      <nav
+        class="navbar fixed-top bg-body-tertiary navbar-preview navbar-expand-lg nav"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            style="text-align: center"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  onclick="upateDate();"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a
+                  class="nav-link active"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Project 1</a></li>
+                  <li><a class="dropdown-item" href="#">Project 2</a></li>
+                  <li><a class="dropdown-item" href="#">Project 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <a class="navbar-brand" href="#">Fixed top</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- contact container start -->
     <div
@@ -117,7 +113,7 @@
       </div>
       <div class="offcanvas-body">
         <div class="ck contact" id="rightSection">
-          <img src="images/j.png" alt="" style="width: 250px" />
+          <img src="assets/images/j.png" alt="" style="width: 250px" />
           <h2 class="textone" style="margin-top: 10%">
             Feel free to reach out...
           </h2>
@@ -128,16 +124,16 @@
             style="margin-top: 20%"
           >
             <a href="https://github.com/jayd719" target="_blank"
-              ><img src="images/socails/github.png" alt=""
+              ><img src="assets/images/socails/github.png" alt=""
             /></a>
             <a href="https://www.linkedin.com/in/jashansingh65/" target="_blank"
-              ><img src="images/socails/linkedin.png" alt=""
+              ><img src="assets/images/socails/linkedin.png" alt=""
             /></a>
             <a href="http://" target="_blank"
-              ><img src="images/socails/twitter.png" alt=""
+              ><img src="assets/images/socails/twitter.png" alt=""
             /></a>
             <a href="http://" target="_blank"
-              ><img src="images/socails/discord.png" alt=""
+              ><img src="assets/images/socails/discord.png" alt=""
             /></a>
           </div>
         </div>
@@ -214,13 +210,13 @@
               </div>
 
               <div class="subhead">
-                <img src="images/flags/united-kingdom.png" alt="" />
-                <img src="images/flags/canada.png" alt="" />
-                <img src="images/flags/india.png" alt="" />
+                <img src="assets/images/flags/united-kingdom.png" alt="" />
+                <img src="assets/images/flags/canada.png" alt="" />
+                <img src="assets/images/flags/india.png" alt="" />
                 <span id="dateEml">Thursday August 30, 1978 - Seven Pages</span>
-                <img src="images/flags/united-kingdom.png" alt="" />
-                <img src="images/flags/germany.png" alt="" />
-                <img src="images/flags/usa.png" alt="" />
+                <img src="assets/images/flags/united-kingdom.png" alt="" />
+                <img src="assets/images/flags/germany.png" alt="" />
+                <img src="assets/images/flags/usa.png" alt="" />
               </div>
             </div>
 
@@ -267,7 +263,7 @@
                 <div class="collumn" style="width: 40%">
                   <video
                     class="viPlay"
-                    src="images/videos/MachSim_Video_20231107_101241.mp4"
+                    src="assets/videos/MachSim_Video_20231107_101241.mp4"
                     autoplay
                     loop
                     muted
@@ -397,563 +393,57 @@
     </div>
     <!-- about me -->
 
-    <img
-      class="jack-image"
-      id="jack-one"
-      src="images/jacks/jack1.jpeg"
-      alt=""
-    />
-    <img
-      class="jack-image2"
-      id="jack-one"
-      src="images/jacks/jack1.jpeg"
-      alt=""
-    />
-    <img
-      class="jack-image3"
-      id="jack-one"
-      src="images/jacks/jack1.jpeg"
-      alt=""
-    />
-    <img
-      class="jack-image4"
-      id="jack-one"
-      src="images/jacks/jack1.jpeg"
-      alt=""
-    />
+    <div class="position-relative marquee-container d-none d-sm-block">
+      <div class="marquee d-flex justify-content-around">
+        <span>BTC<b>3,588.39</b></span>
+        <span>XRP<b>0.32</b></span>
+        <span>ETH<b>116.36</b></span>
+        <span>EOS<b>2.44</b></span>
+        <span>USDT<b>1.01</b></span>
+        <span>LTC<b>32.61</b></span>
+        <span>XLM<b>0.10</b></span>
+        <span>TRX<b>0.03</b></span>
+        <span>BSV<b>74.29</b></span>
+        <span>ADA<b>0.04</b></span>
+      </div>
+      <div class="marquee marquee2 d-flex justify-content-around">
+        <span>BTC<b>3,588.39</b></span>
+        <span>XRP<b>0.32</b></span>
+        <span>ETH<b>116.36</b></span>
+        <span>EOS<b>2.44</b></span>
+        <span>USDT<b>1.01</b></span>
+        <span>LTC<b>32.61</b></span>
+        <span>XLM<b>0.10</b></span>
+        <span>TRX<b>0.03</b></span>
+        <span>BSV<b>74.29</b></span>
+        <span>ADA<b>0.04</b></span>
+      </div>
+    </div>
+    <div class="container" style="height: 100vh; text-align: center">
+      <h1 class="display-1 newageliquor" id="nal" style="padding-top: 10%">
+        Jashan Deep <span style="opacity: 50%">Singh</span>
+      </h1>
 
-    <div class="container image-container" style="margin-top: 12vh">
-      <h1 class="display-4 intro-text-one">
+      <h1
+        class="display-4 intro-text-one"
+        id="dis"
+        style="padding-top: 5%; font-family: Montserrat, sans-serif"
+      >
         Welcome To My Corner of The Digital World! I'm a
         <span class="textONe">Computer Science</span> Student Currently Pursuing
         My Education at<span class="textONe"> Wilfrid Laurier University</span>
       </h1>
-      <center>
-        <img class="image-one" src="images/code/i.png" alt="" />
-      </center>
     </div>
 
-    <div class="container-fluid gcont" id="gcont">
-      <h1 class="display-6" style="margin-top: 15vh; text-align: center">
-        Technologies I'm Fimiliar With
-      </h1>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <img id="skills" src="images/logos/python.png" alt="" />
-          </div>
-          <div class="col">
-            <img
-              id="skills"
-              class=""
-              src="images/logos/java-script.png"
-              alt=""
-            />
-          </div>
-          <div class="col">
-            <img id="skills" src="images/logos/solidworks.png" alt="" />
-          </div>
-          <div class="col">
-            <img id="skills" src="images/logos/django.png" alt="" />
-          </div>
-          <div class="col">
-            <img id="skills" src="images/logos/java.png" alt="" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img id="skills" src="images/logos/mastercam.png" alt="" />
-          </div>
-          <div class="col">
-            <img id="skills" src="images/logos/cpu.png" alt="" />
-          </div>
-          <div class="col">
-            <img id="skills" src="images/logos/bootstrap.png" alt="" />
-          </div>
-          <div class="col">
-            <img
-              id="skills"
-              src="images/logos/spring.svg"
-              alt=""
-              style="height: 10vh"
-            />
-          </div>
-          <div class="col">
-            <img id="skills" src="images/logos/html.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="container-fluid" id="cards"></div>
 
+    <div class="container" style="height: 100vh"></div>
 
-      <div class="container-fluid dq" style="margin-top: 25vh;">
-        <div class="row" style="text-align: center;" >
-          <span class="text-dq display-6" style="scale: .35;">Forever Greatful For The Opportunities</span>
-        </div>
-        
-        <div class="row d-flex justify-content-center">
-          <img class="stp-image" src="https://www.stackpole.com/uploads/images/stackpole-logo.png" alt="">
-          <img class="stp-image" src="https://cbb.ca/wp-content/uploads/2021/07/CBB-LOGO-without-text.png" alt="">
-        </div>
-        
-      </div>
-    
-      <h1 class="display-5" style="text-align: center; margin-top: 25vh">
-        CNCs I Have Programmed For
-      </h1>
-      <div style="display: flex">
-        <div class="container-fuild machine-container">
-          <div class="item">
-            <img
-              id="image-dmg-mill"
-              src="images/machines/machines_resized/DMGEcomill.png"
-              alt=""
-            />
-
-            <span class="machineName">Vertical Mill</span>
-            <p class="machineInfo">
-              3+2 Axis Vertical Milling With Siemens 840D Controller and
-              Renishaw OMP 60 Probe
-            </p>
-            <a
-              href="https://en.dmgmori.com/products/machines/milling/5-axis-milling/dmu/dmu-50"
-              target="_blank"
-              ><span class="machineLink">DMG MORI ECOMILL 50</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-dmg-lathe"
-              src="images/machines/machines_resized/DMGEcoTurn310.jpeg"
-              alt=""
-            />
-
-            <span class="machineName">TurnMill</span>
-            <p class="machineInfo">
-              Horizontal Lathe With Siemens 840D Controller and Live Tooling
-            </p>
-            <br />
-            <a href="http://" target="_blank"
-              ><span class="machineLink">DMG Mori EcoTurn 310</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-tss"
-              src="images/machines/machines_resized/tss-series.jpg"
-              alt=""
-            />
-
-            <span class="machineName">TurnMill</span>
-            <p class="machineInfo">
-              Vertical Boring and Turning Mill With Fanuc 31i Controlls
-            </p>
-            <a
-              href="https://shibaura-machine.com/machine-tools/specifications/vertical-boring-turning-mill/tss/"
-              target="_blank"
-              ><span class="machineLink">TSS-30/55C(S)</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-fadal"
-              src="images/machines/machines_resized/fadal.png"
-              alt=""
-            />
-
-            <span class="machineName">Vertical Mill</span>
-            <p class="machineInfo">
-              3 Axis Vertical Milling Center With Fanuc Controller
-            </p>
-            <a href="https://fadal.com/vmc-6032/" target="_blank"
-              ><span class="machineLink">Fadal VMC 6030</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-hplus"
-              src="images/machines/machines_resized/MatsuuraHPlus630.jpeg"
-              alt=""
-            />
-
-            <span class="machineName">Horizontal Mill</span>
-            <p class="machineInfo">
-              Four Axis with Fanuc Controls and Renishaw OPM 90 Probe
-            </p>
-            <a
-              href="https://www.matsuurausa.com/model/h-plus-630/"
-              target="_blank"
-              ><span class="machineLink">H.PLUS-630</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-tue"
-              src="images/machines/machines_resized/tue-200.jpeg"
-              alt=""
-            />
-
-            <span class="machineName">TurnMill</span>
-            <p class="machineInfo">
-              Vertical Boring and Turning Mill With Fanuc 31i Controlls
-            </p>
-            <a
-              href="https://shibaura-machine.com/machine-tools/specifications/vertical-boring-turning-mill/tue/"
-              target="_blank"
-              ><span class="machineLink">TUE-200(S)</span></a
-            >
-          </div>
-        </div>
-
-        <div class="container-fuild machine-container">
-          <div class="item">
-            <img
-              id="image-dmg-mill"
-              src="images/machines/machines_resized/DMGEcomill.png"
-              alt=""
-            />
-
-            <span class="machineName">Vertical Mill</span>
-            <p class="machineInfo">
-              3+2 Axis Vertical Milling With Siemens 840D Controller and
-              Renishaw OMP 60 Probe
-            </p>
-            <a
-              href="https://en.dmgmori.com/products/machines/milling/5-axis-milling/dmu/dmu-50"
-              target="_blank"
-              ><span class="machineLink">DMG MORI ECOMILL 50</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-dmg-lathe"
-              src="images/machines/machines_resized/DMGEcoTurn310.jpeg"
-              alt=""
-            />
-
-            <span class="machineName">TurnMill</span>
-            <p class="machineInfo">
-              Horizontal Lathe With Siemens 840D Controller and Live Tooling
-            </p>
-            <br />
-            <a href="http://" target="_blank"
-              ><span class="machineLink">DMG Mori EcoTurn 310</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-tss"
-              src="images/machines/machines_resized/tss-series.jpg"
-              alt=""
-            />
-
-            <span class="machineName">TurnMill</span>
-            <p class="machineInfo">
-              Vertical Boring and Turning Mill With Fanuc 31i Controlls
-            </p>
-            <a
-              href="https://shibaura-machine.com/machine-tools/specifications/vertical-boring-turning-mill/tss/"
-              target="_blank"
-              ><span class="machineLink">TSS-30/55C(S)</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-fadal"
-              src="images/machines/machines_resized/fadal.png"
-              alt=""
-            />
-
-            <span class="machineName">Vertical Mill</span>
-            <p class="machineInfo">
-              3 Axis Vertical Milling Center With Fanuc Controller
-            </p>
-            <a href="https://fadal.com/vmc-6032/" target="_blank"
-              ><span class="machineLink">Fadal VMC 6030</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-hplus"
-              src="images/machines/machines_resized/MatsuuraHPlus630.jpeg"
-              alt=""
-            />
-
-            <span class="machineName">Horizontal Mill</span>
-            <p class="machineInfo">
-              Four Axis with Fanuc Controls and Renishaw OPM 90 Probe
-            </p>
-            <a
-              href="https://www.matsuurausa.com/model/h-plus-630/"
-              target="_blank"
-              ><span class="machineLink">H.PLUS-630</span></a
-            >
-          </div>
-
-          <div class="item">
-            <img
-              id="image-tue"
-              src="images/machines/machines_resized/tue-200.jpeg"
-              alt=""
-            />
-
-            <span class="machineName">TurnMill</span>
-            <p class="machineInfo">
-              Vertical Boring and Turning Mill With Fanuc 31i Controlls
-            </p>
-            <a
-              href="https://shibaura-machine.com/machine-tools/specifications/vertical-boring-turning-mill/tue/"
-              target="_blank"
-              ><span class="machineLink">TUE-200(S)</span></a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid colored">
-      <div class="container projects" style="margin-top: 25vh; scale: .9;">
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <div class="card" aria-hidden="true">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" aria-hidden="true">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-        <div class="row" style="margin-top: 400px;">
-          <div class="col">
-            <div class="card">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card">
-              <img src="images/code/i.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <img class="mx-auto d-block Laurier-exp-image" src="https://www.wlu.ca/_ato/dist/img/laurier-short.png" alt="">
-          <span  class="mx-auto d-block Laurier-exp">Things I Did At Laurier</span>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="container projects"
-      style="margin-top: 15vh; text-align: center"
-    >
-      <div class="row">
-        <div class="col">
-          <h1>project</h1>
-        </div>
-        <div class="col">
-          <h1>project</h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h1>project</h1>
-        </div>
-        <div class="col">
-          <h1>project</h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" style="height: 10vh"></div>
-    <div
-      class="container-fuild"
-      style="height: 10vh; background-color: rgba(255, 255, 255, 0)"
-    ></div>
-
-    <!-- End Example Code -->
-
-    <footer>
-      <div class="row-f">
-        <ul>
-          <li>ਜਸ਼ਨਦੀਪ ਸਿੰਘ</li>
-          <li>जशनदीप सिंह</li>
-          <li>جشندیپ سنگھ</li>
-        </ul>
-      </div>
-      <div class="name" id="nameLetter">
-        <img id="letter" src="images/letters/letter-j.png" alt="" />
-        <img id="letter" src="images/letters/letter-a.png" alt="" />
-        <img id="letter" src="images/letters/letter-s.png" alt="" />
-        <img id="letter" src="images/letters/letter-h.png" alt="" />
-        <img id="letter" src="images/letters/letter-a.png" alt="" />
-        <img id="letter" src="images/letters/letter-n.png" alt="" />
-        <img id="letter" src="images/letters/letter-d.png" alt="" />
-        <img id="letter" src="images/letters/letter-e.png" alt="" />
-        <img id="letter" src="images/letters/letter-e.png" alt="" />
-        <img
-          id="letter"
-          src="images/letters/letter-p.png"
-          alt=""
-          style="margin-right: 20px"
-        />
-        <img id="letter" src="images/letters/letter-s.png" alt="" />
-        <img id="letter" src="images/letters/letter-i.png" alt="" />
-        <img id="letter" src="images/letters/letter-n.png" alt="" />
-        <img id="letter" src="images/letters/letter-g.png" alt="" />
-        <img id="letter" src="images/letters/letter-h.png" alt="" />
-      </div>
-      <div class="row-f">
-        <ul>
-          <li>About Me</li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Resume</a></li>
-          <li
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            Contact
-          </li>
-        </ul>
-      </div>
-      <div class="row-f">
-        Copyright © 2024 jashandeep.co.uk - All rights reserved
-      </div>
-    </footer>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
-
-  <script src="app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </html>

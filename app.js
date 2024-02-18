@@ -1,18 +1,8 @@
-window.addEventListener("scroll", (event) => {
-  let scroll = this.scrollY;
-  console.log(scroll);
-  if (scroll > 50) {
-    ChangeCSS(".nav-bar", ".nav-bar-txt");
-  } else if (scroll < 30) {
-    ChangeCSS(".nav-bar-txt", ".nav-bar");
-  }
-});
+const headginOne = document.getElementById("nal");
+const textTwo = document.getElementById("dis");
+const nav = document.getElementById("nav-contianer");
 
-function ChangeCSS(from, to) {
-  let var1 = $(from);
-  var1.removeClass(from.slice(1)).addClass(to.slice(1));
-}
-
+// functions
 function upateDate() {
   const date = new Date();
   dateEmp = document.getElementById("dateEml");
@@ -25,60 +15,67 @@ function upateDate() {
   dateEmp.innerText = date.toLocaleDateString("en-us", options);
 }
 
-window.scrollTo(0, 0);
-let navBar = document.getElementById("nav-bar");
-function hideJacks() {
-  ChangeCSS(".spiral-image", ".spiral-image-alt", true);
-  ChangeCSS(".jack-image", ".jack-image-final", true);
-  ChangeCSS(".jack-image2", ".jack-image-final2", true);
-  ChangeCSS(".jack-image3", ".jack-image-final3", true);
-  ChangeCSS(".jack-image4", ".jack-image-final4", true);
-  ChangeCSS(".locked-section", ".locked-section-alt", true);
-  navBar.style.opacity = "100%";
-  // addBoxes(10);
-  document.body.style.overflow = "scroll";
-}
+function jacks(numberOfJacks) {
+  let jacksContainer = document.getElementById("cards");
+  for (i = 0; i < numberOfJacks; i++) {
+    let img = new Image();
+    img.src = "assets/images/jacks/jack1.jpeg";
+    img.id = "jack-one";
+    // img.className = `jack-image${Math.floor(Math.random() * 3) + 1}`;
+    img.style.left = `${10 + Math.floor(Math.random() * 80)}%`;
+    img.style.top = `${125 + Math.floor(Math.random() * 50)}%`;
 
-addBoxes(10);
-function addBoxes(n) {
-  if (document.documentElement.clientWidth > 800) {
-    for (k = 0; k <= n; ++k) {
-      let loader = document.createElement("div");
-      loader.className = "loader";
-      loader.style.top = `${Math.floor(Math.random() * 100)}%`;
-      loader.style.left = `${Math.floor(Math.random() * 100)}%`;
-      loader.style.scale = `1.${k}`;
-      let cube = document.createElement("div");
-      cube.className = "cube";
-      for (i = 0; i <= 5; ++i) {
-        let face = document.createElement("div");
-        face.className = "face";
-        cube.appendChild(face);
-      }
-      loader.appendChild(cube);
-      document.body.appendChild(loader);
+
+    let degree = Math.floor(Math.random() * 100)
+    if (i % 2 == 0) {
+      img.style.transform = `rotate(-${degree}deg)`;
+    } else {
+      img.style.transform = `rotate(${degree}deg)`;
     }
+    jacksContainer.appendChild(img);
   }
 }
 
-let images = document.querySelectorAll("#skills");
-function shuffleSkills() {
-  for (let i = 0; i < images.length; i++) {
-    images[i].style.transform = `translate(${Math.floor(
-      Math.random() * 50
-    )}px,${Math.floor(Math.random() * 250)}px) scale(${Math.random()})`;
+function moveJacks() {
+  let jacks = document.querySelectorAll("#jack-one");
+  for (j = 0; j < jacks.length; j++) {
+    jacks[j].style.transitionDuration=`${Math.floor(Math.random() * 10)+4}s`;
+    jacks[j].style.top = "-200%";
   }
 }
-shuffleSkills();
 
-document.getElementById("gcont").addEventListener("mouseenter", () => {
-  for (let i = 0; i < images.length; i++) {
-    images[i].style.transform = "translate(00px,00px) scale(1)";
+// INTILIZE
+nav.style.opacity = 0;
+jacks(20);
+
+
+// scroll event
+document.addEventListener("scroll", (event) => {
+  let position = window.scrollY;
+
+  headginOne.style.opacity = `${100 - position / 1.75}%`;
+  textTwo.style.opacity = `${position - 450}%`;
+
+  if (position / 2 < 255) {
+    document.body.style.backgroundColor =
+      "rgb(" +
+      [position / 2, position / 2 - 5, position / 2 - 5].join(",") +
+      ")";
   }
+
+  if (position>2){
+    moveJacks();
+  }
+
+  // nav bar apperance
+  nav.style.opacity = `${position / 4 - 50}%`;
+
+  // condtional css
+  if (position > 200) {
+    document.body.style.color = "black";
+  } else {
+    document.body.style.color = "white";
+  }
+
+  console.log(position);
 });
-
-document
-  .getElementById("gcont")
-  .addEventListener("mouseleave", ()=>{
-    shuffleSkills()
-  });

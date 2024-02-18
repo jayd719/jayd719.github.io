@@ -10,9 +10,9 @@
 }
 
 /* margin-top: 0;
-    margin-bottom: 20px;
-  }
-  */
+      margin-bottom: 20px;
+    }
+    */
 
 .viPlay {
   width: 100%;
@@ -245,9 +245,9 @@
   background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
 }
 /* .image-container{
+    
   
-
-} */
+  } */
 
 .image-one {
   padding: 5px;
@@ -263,105 +263,43 @@
   border-radius: 25px;
   background: #e0e0e0;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  animation: slideup 3s forwards .3s;
+  animation: slideup 3s forwards 0.3s;
   z-index: -10;
   opacity: 0;
-  
 }
 
 @keyframes slideup {
-  from{
+  from {
     opacity: 0;
     transform: translateY(200px);
-  }to{
+  }
+  to {
     opacity: 100%;
     transform: translateY(0px);
   }
-  
 }
 
-.intro-text-one{
+.intro-text-one {
   margin-top: 15%;
   margin-bottom: 50px;
   text-align: center;
   z-index: 2;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
-
-
-
-
-
 
 #jack-one {
   /* size */
   width: 10vw;
   min-width: 140px;
   /* looks */
+  position: absolute;
   background: rgba(255, 255, 255, 0.14);
   border-radius: 0.75vw;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0.6px);
   -webkit-backdrop-filter: blur(0.6px);
   border: 1px solid rgba(255, 255, 255, 1);
-}
-
-.jack-image {
-  /* position */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  transition: all 0.5s ease-out;
-  animation: fly-out1 2.0s linear forwards;
-  cursor: pointer;
-}
-
-.jack-image2 {
-  /* position */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 4;
-  rotate: 15deg;
-  transition: all 0.6s ease-out;
-  animation: fly-out1 2.25s forwards;
-}
-
-.jack-image3 {
-  /* position */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  rotate: -30deg;
-  transition: all 0.7s ease-out;
-  animation: fly-out1 1.65s forwards;
-}
-
-.jack-image4 {
-  /* position */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  transition: all 0.8s ease-out;
-  animation: fly-out1 1s forwards;
-  rotate: 25deg;
-}
-
-@keyframes fly-out1 {
-  0% {
-   transform: translateY(500px);
-  }
-
-  100% {
-    transform: translateY(-1000px);
-  }
+  transition: 2s;
 }
 
 
