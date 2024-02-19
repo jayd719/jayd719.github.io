@@ -2,7 +2,7 @@ body {
   background-color: #030303;
   color: #fafafa;
   text-align: center;
-  animation: appear 3s forwards;
+  animation: appear 5s forwards;
   overflow-x: hidden;
 }
 
@@ -15,10 +15,10 @@ body {
   }
 }
 
-.nav {
-  margin: 10px 40px;
+.nav1 {
+  margin: 15px 42.5px;
   border-radius: 10px;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #29282845, -20px -20px 60px #1b1a1a36;
   z-index: 100;
 }
 

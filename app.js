@@ -6,6 +6,33 @@ const codeImage = document.getElementById("codeiamge");
 const projects = document.getElementById("projectscontainer");
 const cnc = document.getElementById("cncs");
 
+const pythonButton = document.getElementById("python");
+const javaButton = document.getElementById("java");
+
+let images = document.querySelectorAll("#skills");
+function shuffleSkills() {
+  for (let i = 0; i < images.length; i++) {
+    let sign = "-";
+    if (i % Math.floor(Math.random() * 10) == 0) {
+      sign = "";
+    }
+    images[i].style.transform = `translate(${Math.floor(
+      Math.random() * 50
+    )}px, ${sign}${Math.floor(Math.random() * 250)}px) scale(${Math.random()})`;
+  }
+}
+shuffleSkills();
+
+document.getElementById("gcont").addEventListener("mouseenter", () => {
+  for (let i = 0; i < images.length; i++) {
+    images[i].style.transform = "translate(00px,00px) scale(1)";
+  }
+});
+
+document.getElementById("gcont").addEventListener("mouseleave", () => {
+  shuffleSkills();
+});
+
 function appendToUL(appendList, classStr) {
   UL = document.createElement("ul");
   UL.className = "nav nav-tabs";
@@ -113,9 +140,7 @@ document.addEventListener("scroll", (event) => {
 
   if (position / 2 < 255) {
     document.body.style.backgroundColor =
-      "rgb(" +
-      [position / 2, position / 2 - 5, position / 2 - 5].join(",") +
-      ")";
+      "rgb(" + [position / 2, position / 2, position / 2].join(",") + ")";
   }
 
   if (position > 2) {
@@ -132,18 +157,37 @@ document.addEventListener("scroll", (event) => {
     document.body.style.color = "white";
   }
 
-  if (position > 900) {
-    boxes.style.opacity = `${20000 / position}%`;
+  if (position > 800) {
+    boxes.style.opacity = `${10000 / position}%`;
   } else {
     boxes.style.opacity = `${10000 / position}%`;
   }
 
-  if (position>900 && position<1700){
-    cnc.style.scale= `${position/1950}`
+  if (position > 900 && position < 1700) {
+    cnc.style.scale = `${position / 1950}`;
   }
 
-  if (position>1900){
-    cnc.style.scale= `${1700/position}`
+  if (position > 1900) {
+    cnc.style.scale = `${1700 / position}`;
+  }
+
+  let topLimit = 2300;
+  if (position > 2050 && position < topLimit) {
+    nav.style.boxShadow = "none";
+    document.body.style.color = "white";
+    document.body.style.backgroundColor =
+      "rgb(" +
+      [
+        topLimit + 75 - position,
+        topLimit + 163 - position,
+        topLimit + 195 - position,
+      ].join(",") +
+      ")";
+  }
+
+  if (position > topLimit) {
+    document.body.style.color = "white";
+    nav.style.boxShadow = "none";
   }
 
   console.log(position);
