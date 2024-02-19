@@ -180,7 +180,7 @@ document.addEventListener("scroll", (event) => {
       [
         topLimit + 54 - position,
         topLimit + 56 - position,
-        topLimit +46- position,
+        topLimit + 46 - position,
       ].join(",") +
       ")";
   }
