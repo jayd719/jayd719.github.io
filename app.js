@@ -5,6 +5,7 @@ const boxes = document.getElementById("boxes");
 const codeImage = document.getElementById("codeiamge");
 const projects = document.getElementById("projectscontainer");
 const cnc = document.getElementById("cncs");
+const skillscont = document.getElementById("gcont");
 
 const pythonButton = document.getElementById("python");
 const javaButton = document.getElementById("java");
@@ -172,23 +173,25 @@ document.addEventListener("scroll", (event) => {
   }
 
   let topLimit = 2300;
-  if (position > 2050 && position < topLimit) {
+  if (position > 1900 && position < topLimit) {
     nav.style.boxShadow = "none";
-    document.body.style.color = "white";
+    // document.body.style.color = "white";
     document.body.style.backgroundColor =
       "rgb(" +
       [
-        topLimit + 54 - position,
-        topLimit + 56 - position,
-        topLimit + 46 - position,
+        topLimit + 187 - position,
+        topLimit + 219 - position,
+        topLimit + 180 - position,
       ].join(",") +
       ")";
+
+   skillscont.style.opacity = `${(100-(topLimit-(position)))}%`;
   }
 
   if (position > topLimit) {
-    document.body.style.color = "white";
+    // document.body.style.color = "white";
     nav.style.boxShadow = "none";
   }
 
-  console.log(position);
+  // console.log(position);
 });
