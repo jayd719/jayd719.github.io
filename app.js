@@ -178,9 +178,9 @@ document.addEventListener("scroll", (event) => {
     document.body.style.backgroundColor =
       "rgb(" +
       [
-        topLimit + 75 - position,
-        topLimit + 163 - position,
-        topLimit + 195 - position,
+        topLimit + 54 - position,
+        topLimit + 56 - position,
+        topLimit +46- position,
       ].join(",") +
       ")";
   }
