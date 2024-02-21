@@ -172,18 +172,22 @@ document.addEventListener("scroll", (event) => {
     cnc.style.scale = `${1700 / position}`;
   }
 
+
+  C1 = [134, 239, 172];
+  C2 = [59, 130, 246];
+  C3 = [147, 51, 234];
   let topLimit = 2300;
   if (position > 1900 && position < topLimit) {
     nav.style.boxShadow = "none";
     // document.body.style.color = "white";
     document.body.style.backgroundColor =
-      "rgb(" +
-      [
-        topLimit + 187 - position,
-        topLimit + 219 - position,
-        topLimit + 180 - position,
-      ].join(",") +
-      ")";
+      document.body.style.background = `linear-gradient(rgb(${
+      topLimit + C1[0] - position
+    }, ${topLimit + C1[1] - position}, ${topLimit + C1[2] - position}), rgb(${
+      topLimit + C2[0] - position
+    }, ${topLimit + C2[1] - position}, ${topLimit + C1[2] - position}), rgb(${
+      topLimit + C3[0] - position
+    }, ${topLimit + C3[1] - position}, ${topLimit + C2[2] - position}))`;
 
    skillscont.style.opacity = `${(100-(topLimit-(position)))}%`;
   }
