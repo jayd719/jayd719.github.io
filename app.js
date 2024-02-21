@@ -180,8 +180,7 @@ document.addEventListener("scroll", (event) => {
   if (position > 1900 && position < topLimit) {
     nav.style.boxShadow = "none";
     // document.body.style.color = "white";
-    document.body.style.backgroundColor =
-      document.body.style.background = `linear-gradient(rgb(${
+    document.body.style.background = `linear-gradient(rgb(${
       topLimit + C1[0] - position
     }, ${topLimit + C1[1] - position}, ${topLimit + C1[2] - position}), rgb(${
       topLimit + C2[0] - position
