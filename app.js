@@ -140,7 +140,8 @@ document.addEventListener("scroll", (event) => {
   codeImage.style.opacity = `${position - 800}%`;
 
   if (position / 2 < 255) {
-    document.body.style.backgroundColor =
+    skillscont.style.opacity = 0;
+    document.body.style.background =
       "rgb(" + [position / 2, position / 2, position / 2].join(",") + ")";
   }
 
@@ -158,11 +159,11 @@ document.addEventListener("scroll", (event) => {
     document.body.style.color = "white";
   }
 
-  if (position > 800) {
-    boxes.style.opacity = `${10000 / position}%`;
-  } else {
-    boxes.style.opacity = `${10000 / position}%`;
-  }
+  // if (position > 800) {
+  //   boxes.style.opacity = `${40000 / position}%`;
+  // } else {
+  //   boxes.style.opacity = `${position}%`;
+  // }
 
   if (position > 900 && position < 1700) {
     cnc.style.scale = `${position / 1950}`;
@@ -172,14 +173,13 @@ document.addEventListener("scroll", (event) => {
     cnc.style.scale = `${1700 / position}`;
   }
 
-
   C1 = [134, 239, 172];
   C2 = [59, 130, 246];
-  C3 = [147, 51, 234];
-  let topLimit = 2300;
-  if (position > 1900 && position < topLimit) {
+  C3 = [59, 130, 246];
+  let topLimit = 2400;
+  if (position > 2100 && position < topLimit) {
     nav.style.boxShadow = "none";
-    // document.body.style.color = "white";
+    document.body.style.color = "white";
     document.body.style.background = `linear-gradient(rgb(${
       topLimit + C1[0] - position
     }, ${topLimit + C1[1] - position}, ${topLimit + C1[2] - position}), rgb(${
@@ -188,11 +188,11 @@ document.addEventListener("scroll", (event) => {
       topLimit + C3[0] - position
     }, ${topLimit + C3[1] - position}, ${topLimit + C2[2] - position}))`;
 
-   skillscont.style.opacity = `${(100-(topLimit-(position)))}%`;
+    skillscont.style.opacity = `${100 - (topLimit - position)}%`;
   }
 
   if (position > topLimit) {
-    // document.body.style.color = "white";
+    document.body.style.color = "white";
     nav.style.boxShadow = "none";
   }
 

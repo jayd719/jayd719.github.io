@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Protest+Revolution&family=Shadows+Into+Light&display=swap");
+
 body {
   background-color: #030303;
   color: #fafafa;
@@ -23,8 +25,12 @@ body {
 }
 
 .newageliquor {
-  line-height: 20vh;
-  font-size: 40vh;
+  line-height: 175px;
+  font-size: 350px;
+  font-family: sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .discountText {
@@ -85,14 +91,113 @@ a {
   }
 }
 
-
-#boxes{
+#boxes {
   position: fixed;
   height: 100vh;
   z-index: -10;
 }
 
-.optionscontainer{
-  
+.optionscontainer {
   top: 10;
+}
+
+.heading-2 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 576px) {
+  .card-group.card-group-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+}
+
+.card-group.card-group-scroll > .card {
+  flex-basis: 20%;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 2.5px;
+  margin: 50px 20px;
+  box-shadow: 0 13px 13px rgba(0,0,0,0.35);
+}
+.card img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 14px;
+}
+
+/* CSS */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #18181a;
+  color: #18181a;
+  font-size: 15px;
+  padding: 5px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 20px;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
