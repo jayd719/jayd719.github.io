@@ -251,8 +251,8 @@
 
 .image-one {
   padding: 5px;
-  width: 60%;
-  min-width: 400px;
+  width: 50%;
+  min-width: 600px;
   opacity: 97%;
   line-height: 28px;
   border: 2px solid transparent;
@@ -408,30 +408,22 @@
 }
 
 .item {
-  background: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-  z-index: 0;
-  margin-left: 40px;
-  padding: 5px;
-  border-radius: 10px;
-  background: rgba(179, 166, 166, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.8px);
-  -webkit-backdrop-filter: blur(6.8px);
-  border: 1px solid rgba(179, 166, 166, 0.5);
-  transition: 2s;
-  border-radius: 15px;
-  display: grid;
-  opacity: 80%;
+  width: 350px;
+  height: 350px;
+  border-radius: 40px;
+  background: #fefefe;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  overflow: hidden;
+  margin: 20px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 .item:hover {
-  background-color: #4d5154;
-  box-shadow: 0px 15px 20px #4d51546f;
-  transform: translateY(-2px);
-  transition: 0.1s;
-  color: #e3eeff;
-  opacity: 100%;
-  font-weight: bolder;
+  scale: 1.05;
+  cursor: pointer;
 }
 
 #content img {
@@ -568,7 +560,7 @@ footer li:hover {
   font-size: 20px;
   line-height: 130%;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
 }
 .card img {
   border-top-left-radius: 10px;

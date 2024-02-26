@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
 }
 
+
 @keyframes appear {
   from {
     opacity: 0%;
