@@ -128,21 +128,24 @@ function moveJacks() {
 
 // INTILIZE
 nav.style.opacity = 0;
-jacks(20);
+skillscont.style.opacity = 0;
+jacks(52);
 addBoxes(20);
 
 // scroll event
 document.addEventListener("scroll", (event) => {
   let position = window.scrollY;
 
-  headginOne.style.opacity = `${100 - position / 1.75}%`;
+  headginOne.style.opacity = `${100 - position / 3.75}%`;
+  nav.style.opacity = `${position / 4 - 10}%`;
   textTwo.style.opacity = `${position - 450}%`;
-  codeImage.style.opacity = `${position - 800}%`;
+  codeImage.style.opacity = `${position - 700}%`;
 
   if (position / 2 < 255) {
-    skillscont.style.opacity = 0;
     document.body.style.background =
       "rgb(" + [position / 2, position / 2, position / 2].join(",") + ")";
+    document.body.style.color =
+      "rgb(" + [255 - position, 255 - position, 255 - position].join(",") + ")";
   }
 
   if (position > 2) {
@@ -159,11 +162,6 @@ document.addEventListener("scroll", (event) => {
     document.body.style.color = "white";
   }
 
-  // if (position > 800) {
-  //   boxes.style.opacity = `${40000 / position}%`;
-  // } else {
-  //   boxes.style.opacity = `${position}%`;
-  // }
 
   if (position > 900 && position < 1700) {
     cnc.style.scale = `${position / 1950}`;
