@@ -37,24 +37,7 @@
 }
 
 
-/* machines */
-.machine-container {
-  margin-top: 1%;
-  display: flex;
-  animation: slide-left 30s linear infinite;
-  gap: 20px;
-}
 
-@keyframes slide-left {
-  from {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
 
 
 

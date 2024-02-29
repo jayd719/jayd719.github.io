@@ -15,6 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/cover.css">
     <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 
     <style>
@@ -34,7 +35,7 @@
 
       .b-example-divider {
         width: 100%;
-        height: 5rem;
+        height: 5.5rem;
         background-color: rgba(0, 0, 0, .1);
         border: solid rgba(0, 0, 0, .15);
         border-width: 1px 0;
@@ -156,9 +157,9 @@
     <div class="b-example-divider" style="height: 25vh; visibility: hidden;"></div>
 
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="box-shadow: 10px 10px 30px #29282845, -10px -10px 30px #1b1a1a36;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .5em 1.5em rgba(0, 0, 0, .1)">
         <div class="container">
-          <a href="#" class="navbar-brand">Tutorial Republic</a>
+          <a href="#" class="navbar-brand" style="scale: 2;">JD</a>
           <button
             type="button"
             class="navbar-toggler"
@@ -169,20 +170,317 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-              <a href="#" class="nav-item nav-link">Home</a>
-              <a href="#" class="nav-item nav-link">Services</a>
-              <a href="#" class="nav-item nav-link">About</a>
-              <a href="#" class="nav-item nav-link">Contact</a>
-              <a href="#" class="nav-item nav-link">Login</a>
+              <a type="button" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="upateDate();">About Me</a>
+              <a href="#projects" class="nav-item nav-link">Projects</a>
+              <a class="nav-item nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Resume</a>
+              <a href="#main-Project" class="nav-item nav-link">Live</a>
             </div>
             <div class="navbar-nav ms-auto">
-              <a href="#" class="btn btn-outline-primary">Register</a>
+              <a class="nav-item nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">Contact</a>
             </div>
           </div>
         </div>
     </nav>
 
 
+     <!-- contact container start -->
+    <div
+     class="offcanvas offcanvas-end"
+     tabindex="-1"
+     id="offcanvasNavbar"
+     aria-labelledby="offcanvasNavbarLabel"
+     style="width: 38%; min-width: 400px"
+   >
+     <div class="offcanvas-header">
+       <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+       <button
+         type="button"
+         class="btn-close"
+         data-bs-dismiss="offcanvas"
+         aria-label="Close"
+       ></button>
+     </div>
+     <div class="offcanvas-body">
+       <div class="ck contact" id="rightSection">
+         <img src="assets/images/j.png" alt="" style="width: 250px" />
+         <h2 class="textone" style="margin-top: 10%">
+           Feel free to reach out...
+         </h2>
+         <h2 class="texttwo">I'd love to hear from you!</h2>
+
+         <div
+           class="d-flex justify-content-around socials"
+           style="margin-top: 20%"
+         >
+           <a href="https://github.com/jayd719" target="_blank"
+             ><img src="assets/images/socails/github.png" alt=""
+           /></a>
+           <a href="https://www.linkedin.com/in/jashansingh65/" target="_blank"
+             ><img src="assets/images/socails/linkedin.png" alt=""
+           /></a>
+           <a href="http://" target="_blank"
+             ><img src="assets/images/socails/twitter.png" alt=""
+           /></a>
+           <a href="http://" target="_blank"
+             ><img src="assets/images/socails/discord.png" alt=""
+           /></a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- left container end -->
+
+   <!-- resume container start -->
+   <div
+     class="offcanvas offcanvas-start"
+     tabindex="-1"
+     id="offcanvasExample"
+     aria-labelledby="offcanvasExampleLabel"
+     style="width: 60%; min-width: 500px"
+   >
+     <div class="offcanvas-header">
+       <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+       <a
+         href="assets/Resume-Jashandeep Singh.pdf"
+         download="Resume:Jashandeep Singh(JD)"
+         target="_blank"
+         >Download Resume</a
+       >
+       <button
+         type="button"
+         class="btn-close"
+         data-bs-dismiss="offcanvas"
+         aria-label="Close"
+       ></button>
+     </div>
+     <div class="offcanvas-body">
+       <embed
+         src="assets/Resume-Jashandeep Singh.pdf"
+         width="100%"
+         height="100%"
+         type="application/pdf"
+         title="Resume-JD"
+         style="background-color: transparent"
+       />
+     </div>
+   </div>
+   <!-- right container end -->
+
+   <!-- about me -->
+   <div
+     class="modal fade"
+     id="staticBackdrop"
+     data-bs-backdrop="static"
+     data-bs-keyboard="false"
+     tabindex="-1"
+     aria-labelledby="staticBackdropLabel"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog modal-dialog modal-xl">
+       <div class="modal-content" style="color: black">
+         <div
+           class="container-fuild"
+           style="display: flex; justify-content: end"
+         >
+           <button
+             type="button"
+             class="btn-close"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+           ></button>
+         </div>
+
+         <div class="">
+           <div class="head">
+             <div class="headerobjectswrapper">
+               <a href="https://thecord.ca/" target="_blank"
+                 ><span class="heading">the cord</span></a
+               >
+             </div>
+
+             <div class="subhead">
+               <img src="assets/images/flags/united-kingdom.png" alt="" />
+               <img src="assets/images/flags/canada.png" alt="" />
+               <img src="assets/images/flags/india.png" alt="" />
+               <span id="dateEml">Thursday August 30, 1978 - Seven Pages</span>
+               <img src="assets/images/flags/united-kingdom.png" alt="" />
+               <img src="assets/images/flags/germany.png" alt="" />
+               <img src="assets/images/flags/usa.png" alt="" />
+             </div>
+           </div>
+
+           <div class="content">
+             <div class="collumns">
+               <div class="collumn" style="width: 60%">
+                 <div class="head">
+                   <span class="headline hl1">computer science student </span>
+                   <p>
+                     With a deep passion for unraveling the intricacies of
+                     technology and problem-solving. Dedicated to leveraging my
+                     skills to create innovative solutions and contribute to
+                     the ever-evolving tech landscape. Complemented by a solid
+                     foundation in programming, I possess a keen interest in
+                     software development and system architecture. Eager to
+                     merge technical passion with creative endeavors to make
+                     meaningful contributions to both the technology industry
+                     and creative projects.
+                   </p>
+
+                   <br />
+                   <p>
+                     <span class="headline hl2"
+                       >Keen Observer,Quick Learner</span
+                     >
+                   </p>
+                   <br />
+
+                   <p>
+                     Known for my innovative thinking, quick learning ability,
+                     and keen observation, I bring a unique blend of technical
+                     proficiency and creative problem-solving to every project.
+                     I am not only passionate about the intricacies of computer
+                     science but also deeply interested in diverse fields such
+                     as mediation, electronics, design, history, law, and
+                     entrepreneurship. This broad range of interests enhances
+                     my ability to approach challenges from different
+                     perspectives, fostering a well-rounded and adaptive
+                     mindset.
+                   </p>
+                 </div>
+               </div>
+
+               <div class="collumn" style="width: 40%">
+                 <video
+                   class="viPlay"
+                   src="assets/videos/MachSim_Video_20231107_101241.mp4"
+                   autoplay
+                   loop
+                   muted
+                   codecs="avc1.4D401E, mp4a.40.2"
+                 ></video>
+                 <div class="head">
+                   <span class="headline hl3">Manufacturing Engineer</span>
+                   <p>
+                     <span class="headline hl4"
+                       >Mechanical Engineer Graduate</span
+                     >
+                   </p>
+                 </div>
+                 <p>
+                   Over four years of hands-on experience as a Manufacturing
+                   Engineer.Leveraging engineering, problem solving skills,
+                   technical aptitude, and a strong work ethic to excel in
+                   technology sector.
+                 </p>
+
+                 <p>
+                   Proficient in a range of programming languages, including
+                   Python, C++,Java, and JavaScript, adapting to ever-evolving
+                   field of Computer Science. This creativity is further
+                   showcased through my proficiency in tools such as SolidWorks
+                   and Mastercam during my Mechanical Engineering studies,
+                   demonstrating an ability to merge the worlds of technology
+                   and design seamlessly.
+                 </p>
+
+                 <p></p>
+               </div>
+
+               <div
+                 class="collumn"
+                 style="width: 100%; border-left-style: none"
+               >
+                 <div class="head">
+                   <span
+                     class="headline hl3"
+                     style="text-decoration: underline"
+                     >Experience and Exposure</span
+                   >
+                   <table>
+                     <tr>
+                       <td>
+                         <span class="headline hl6"
+                           >Conestoga College <br />
+                           <p
+                             class="headline hl10"
+                             style="margin: 0; padding: 0%"
+                           >
+                             Mechanical Engineering Technology <br />Automated
+                             Manufacturing <br />2016-2019
+                           </p></span
+                         >
+                       </td>
+
+                       <td></td>
+                       <td>
+                         <span class="headline hl6"
+                           >Canadian Babbitt Bearings<br />
+                           <p
+                             class="headline hl10"
+                             style="margin: 0; padding: 0%"
+                           >
+                             Manufacturing Engineer<br />2019
+                           </p></span
+                         >
+                       </td>
+
+                       <td></td>
+                       <td>
+                         <span class="headline hl6"
+                           >NASA<br />
+                           <p
+                             class="headline hl10"
+                             style="margin: 0; padding: 0%"
+                           >
+                             Maybe?
+                           </p></span
+                         >
+                       </td>
+                     </tr>
+                     <tr id="middleRow">
+                       <td>&#8226;</td>
+                       <td>&#x2022;</td>
+                       <td>&#x2022;</td>
+                       <td>&#x2022;</td>
+                       <td>&#x2022;</td>
+                     </tr>
+
+                     <tr>
+                       <td></td>
+                       <td>
+                         <span class="headline hl6"
+                           >Stackpole International<br />
+                           <p
+                             class="headline hl10"
+                             style="margin: 0; padding: 0%"
+                           >
+                             CNC Settor/Operator<br />Co-Op<br />2018
+                           </p></span
+                         >
+                       </td>
+                       <td></td>
+                       <td>
+                         <span class="headline hl6"
+                           >Wilfrid Laurier University<br />
+                           <p
+                             class="headline hl10"
+                             style="margin: 0; padding: 0%"
+                           >
+                             B.Sc. Computer Science<br />2022-2026
+                           </p></span
+                         >
+                       </td>
+                     </tr>
+                   </table>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- about me -->
 
 <main>
 
@@ -251,37 +549,38 @@
 
   <!-- skills -->
   <div class="container px-4 py-5" id="icon-grid">
-    <h2 class="pb-2 border-bottom">Icon grid</h2>
-
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
       <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
+    </div>
+    <h2 class="pb-2 border-bottom" style="text-align: center;">Icon grid</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
       <div class="col d-flex align-items-start">
         <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
         <div>
@@ -315,7 +614,7 @@
   <div class="b-example-divider"></div>
 
   <!-- main Project Container -->
-  <div class="container my-5">
+  <div class="container my-5" id="main-Project">
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows</h1>
@@ -333,7 +632,7 @@
   <div class="b-example-divider"></div>
 
   <!-- projects -->
-  <div class="container py-5">
+  <div class="container py-5" id="projects">
   <div class="row" data-masonry='{"percentPosition": true }'>
   <div class="col-sm-6 col-lg-4 mb-4">
     <div class="card">
@@ -428,42 +727,33 @@
     <footer class="py-5">
       <div class="row">
         <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
+          <h5>More</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Me</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Resume</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cookie Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms Of Use</a></li>
           </ul>
         </div>
   
         <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
+          <h5>Projects</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tracker</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Generaotor</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tracker</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tracker</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trackers</a></li>
           </ul>
         </div>
   
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
+    
   
-        <div class="col-md-5 offset-md-1 mb-3">
+        <div class="col-md-5 offset-md-3 mb-3">
           <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of what's new and exciting from us.</p>
+            <h5>Get In Touch!</h5>
+            <p>I'll send greetings on Chirtmas and Year...</p>
             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
               <label for="newsletter1" class="visually-hidden">Email address</label>
               <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -474,7 +764,7 @@
       </div>
   
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+        <p>&copy; Copyright © 2024 jashandeep.co.uk - All rights reserved</p>
         <ul class="list-unstyled d-flex">
           <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
           <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
@@ -484,6 +774,7 @@
     </footer>
   </div>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+
 <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
 </body>
 </html>
