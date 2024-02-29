@@ -392,6 +392,7 @@
 .machine-container {
   margin-top: 1%;
   display: flex;
+  overflow-x: hidden;
   animation: slide-left 30s linear infinite;
 }
 
