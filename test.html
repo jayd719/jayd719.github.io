@@ -5,20 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Heroes · Bootstrap v5.3</title>
+    <title>I am JD</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/masonry/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/features/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="assets/css/cover.css">
-    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+   
 
 
     <style>
+      .card-cover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -101,7 +112,6 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="heroes.css" rel="stylesheet">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -157,7 +167,7 @@
     <div class="b-example-divider" style="height: 25vh; visibility: hidden;"></div>
 
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .5em 1.5em rgba(0, 0, 0, .1)">
+    <nav  id="navbar-example3" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .5em 1.5em rgba(0, 0, 0, .1)">
         <div class="container">
           <a href="#" class="navbar-brand" style="scale: 2;">JD</a>
           <button
@@ -168,12 +178,15 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-item nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">About Me</a>
-              <a href="#projects" class="nav-item nav-link">Projects</a>
-              <a class="nav-item nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">Resume</a>
-              <a href="#main-Project" class="nav-item nav-link">Live</a>
+          <div class="collapse navbar-collapse" id="navbarCollapse" style="font-weight: 600;">
+            <div class="navbar-nav ms-auto" >
+              <li class="nav-item"><a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">Resume</a></li>
+              <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#custom-cards" class="nav-link">CNCs</a></li>
+              <li class="nav-item"><a href="#icon-grid" class="nav-link">Techs</a></li>
+              <li class="nav-item"><a href="#main-Project" class="nav-link">Live</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
             </div>
             <div class="navbar-nav ms-auto">
               <a class="nav-item nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact</a>
@@ -212,20 +225,82 @@
    <!-- about me -->
    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 95%; margin: 1%;">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      ...
+      <div class="container-fluid">
+        <header class="border-bottom lh-1 py-3">
+              <h1 class="display-1" style="text-align: center; font-weight: 900;">THE CORD</h1>
+        </header>
+      
+        <div class="nav-scroller py-1 mb-3 border-bottom">
+          <nav class="nav nav-underline justify-content-center" style="align-items: center; scale: .8;" >
+            <img src="assets/images/flags/united-kingdom.png" alt="" width="40px">
+            <img src="assets/images/flags/canada.png" alt="" width="40px">
+            <img src="assets/images/flags/india.png" alt="" width="40px">
+            <span>date</span>
+            <img src="assets/images/flags/usa.png" alt="" width="40px">
+            <img src="assets/images/flags/germany.png" alt="" width="40px">
+            <img src="assets/images/flags/united-kingdom.png" alt="" width="40px">
+          </nav>
+        </div>
+      </div>
+      
+      <main class="container">
+        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+          <div class="col px-0">
+            <h1 class="display-4 fst-italic">Keen Observer,Quick Learner</h1>
+            <p class="lead my-3">With a deep passion for unraveling the intricacies of technology and problem-solving. Dedicated to leveraging my skills to create innovative solutions and contribute to the ever-evolving tech landscape. Complemented by a solid foundation in programming, I possess a keen interest in software development and system architecture. Eager to merge technical passion with creative endeavors to make meaningful contributions to both the technology industry and creative projects.</p>
+            <p class="lead mb-0"><a class="text-body-emphasis fw-bold">Continue reading...</a></p>
+          </div>
+        </div>
+      
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                <h3 class="mb-0">Featured post</h3>
+                <div class="mb-1 text-body-secondary">Nov 12</div>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                <h3 class="mb-0">Post title</h3>
+                <div class="mb-1 text-body-secondary">Nov 11</div>
+                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              </div>
+            </div>
+          </div>
+        </div>      
+      </main>
     </div>
   </div>
    <!-- about me -->
 
-<main>
+<main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
 
     <!-- cover page -->
-  <div class="px-4 pt-5 my-5 text-center">
+  <div class="px-4 pt-5 my-5 text-center" id="home">
     <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
@@ -240,109 +315,113 @@
 
 
   <!-- cncs -->
-  <div class="container px-4 py-5" id="custom-cards">
+  <div class="container-fluid px-4 py-5" id="custom-cards" style="text-align: center;">
     <h2 class="pb-2 border-bottom">Custom cards</h2>
-
-    <div style="display: flex; text-align: left">
-        <div class="container-fuild machine-container">
-        <div class="col">
-            <div class="card card-cover w-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/DMGEcomill.png'); background-size: contain; padding: 30px;">
-              <div class="d-flex flex-column h-50 p-5 pb-3 text-shadow-1">
-                <h3 class="display-6 lh-1 fw-bold">DMG ECO MILL</h3>
-              </div>
-            </div>
+    <div class="row row-cols-1 row-cols-lg-5 g-6 py-5">
+      <div class="col" style="margin-top: 10px;">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/DMGEcomill.png'); background-size: contain; background-color: rgb(255, 255, 255);">
+          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">DMG ECO MILL</h3>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/DMGEcomill.png'); background-size: contain; padding: 30px; background-color: white;">
-              <div class="d-flex flex-column h-50 p-5 pb-3 text-shadow-1">
-              </div>
-            </div>
+      <div class="col" style="margin-top: 10px;">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/MatsuuraHPlus630.jpeg'); background-size: contain; background-color: rgb(255, 255, 255);">
+          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
+          </div>
         </div>
+      </div>
+      
+      <div class="col" style="margin-top: 10px;">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/tue-200.jpeg'); background-size: contain; background-color: rgb(255, 255, 255);">
+          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
+          </div>
+        </div>
+      </div>
 
-        <div class="col">
-            <div class="card card-cover w-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/DMGEcomill.png'); background-size: contain; padding: 30px;">
-              <div class="d-flex flex-column h-50 p-5 pb-3 text-shadow-1">
-                <h3 class="display-6 lh-1 fw-bold">DMG ECO MILL</h3>
-              </div>
-            </div>
+      <div class="col" style="margin-top: 10px;">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/DMGEcoTurn310.jpeg'); background-size: contain; background-color: rgb(255, 255, 255);">
+          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-1 display-6 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
+          </div>
         </div>
+      </div>
 
-        <div class="col">
-            <div class="card card-cover w-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/DMGEcomill.png'); background-size: contain; padding: 30px;">
-              <div class="d-flex flex-column h-50 p-5 pb-3 text-shadow-1">
-                <h3 class="display-6 lh-1 fw-bold">DMG ECO MILL</h3>
-              </div>
-            </div>
+      <div class="col" style="margin-top: 10px;">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/fadal.png'); background-size: contain; background-color: rgb(255, 255, 255);">
+          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
+          </div>
         </div>
-       
-    </div>
-        
-        
-        
-    
-        
+      </div>
     </div>
   </div>
+  
+
   <div class="b-example-divider" style="height: 15vh;"></div>
 
   <!-- skills -->
-  <div class="container px-4 py-5" id="icon-grid">
+  <div class="container px-4 py-5" id="icon-grid" style="text-align: center;">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+      <div class="col">
+        <img src="assets/images/logos/python.png" style="width: 75px;">
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+      <div class="col">
+        <img src="assets/images/logos/solidworks.png" style="width: 75px;">
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+      <div class="col">
+        <img src="assets/images/logos/python.png" style="width: 75px;">
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+      <div class="col">
+        <img src="assets/images/logos/python.png" style="width: 75px;">
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
+     
     </div>
-    <h2 class="pb-2 border-bottom" style="text-align: center;">Icon grid</h2>
+    <h2 class="pb-2 border-bottom border-top" style="text-align: center;">Technologies I'm Fimiliar With</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+      <div class="col">
+        <img src="assets/images/logos/python.png" style="width: 75px;">
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+      <div class="col">
+        <img src="assets/images/logos/python.png" style="width: 75px;">
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+      <div class="col">
+        <img src="assets/images/logos/python.png" style="width: 75px;">
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
         </div>
       </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+      <div class="col">
+        <img src="assets/images/logos/python.png" style="width: 75px;">
         <div>
           <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
           <p>Paragraph of text beneath the heading to explain the heading.</p>
@@ -512,6 +591,9 @@
       </div>
     </footer>
   </div>
+
+
+  
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
