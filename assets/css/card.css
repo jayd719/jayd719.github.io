@@ -1,0 +1,41 @@
+.card-cover {
+  /* transform: rotateY(50deg) skew(1deg); */
+  /* filter: grayscale(.3) brightness(.6); */
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.card-cover:hover {
+  transform: rotate(0deg);
+  filter: none;
+  cursor: context-menu;
+}
+.card-cover h3 {
+  -webkit-text-stroke: 1px black;
+  font-size: xx-large;
+  visibility: hidden;
+}
+
+.the-cord {
+  font: 70px/1 "Playfair Display SC";
+  text-align: center;
+  @media (min-width: 700px) {
+    font: 90px/1 "Playfair Display SC";
+  }
+}
+
+
+.badge{
+    margin: 20px;
+    background-color: transparent;
+}
+.badge img{
+    width: 60px;
+    border-radius: 20px;
+}
+
+.list-cont li:nth-child(2n){
+    margin-left: 20%;
+}
+.list-cont li:nth-child(2n+1){
+margin-right: 20%;
+}

@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <title>I am JD</title>
-
+    
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/masonry/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/features/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/breadcrumbs/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/badges/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <link rel="stylesheet" href="assets/css/cover.css">
@@ -21,7 +25,10 @@
     <!-- <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.css"> -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
-   
+    <link rel="stylesheet" href="assets/css/card.css">
+
+
+
 
 
     <style>
@@ -204,11 +211,17 @@
       </div>
       <div class="offcanvas-body" style="text-align: center;">
         <img src="assets/images/j.png" alt="" style="width: 50%; margin-top: 20%;"> 
-        <ul class="list-unstyled d-flex" style="margin:30% 10%; gap: 20px;">
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="assets/images/socails/github.png" class="bi" width="50" height="50"></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="assets/images/socails/github.png" class="bi" width="50" height="50"></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="assets/images/socails/github.png" class="bi" width="50" height="50"></a></li>
+        <div style="margin:20% 0%;">
+          <h6 class="display-6" style="font-weight:600 ;">Feel free to reach out...</h6>
+          <h6 class="display-7">I'd love to hear from you!</h6>
+        </div>
+        <ul class="list-unstyled d-flex justify-content-center" style="margin:10% 0%; gap: 20px;">
+          <li class="ms-3 "><a class="link-body-emphasis" href="#"><img src="assets/images/socails/github.png" class="bi" width="50" height="50"></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="assets/images/socails/linkedin.png" class="bi" width="50" height="50"></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="assets/images/socails/twitter.png" class="bi" width="50" height="50"></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="assets/images/socails/discord.png" class="bi" width="50" height="50"></a></li>
         </ul>
+        <hr>
       </div>
     </div>
    <!-- right container end -->
@@ -229,13 +242,13 @@
 
    <!-- about me -->
    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="staticBackdropLabel"style="height: 95%; margin: 1%;">
-    <div class="offcanvas-header">
+    <div class="offcanvas-header" style="opacity: 40%;">
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
       <div class="container-fluid">
         <header class="border-bottom lh-1 py-3">
-              <h1 class="display-1" style="text-align: center; font-weight: 900;">THE CORD</h1>
+              <h1 class="display-1 the-cord" style="text-align: center; font-weight: 900;">THE CORD</h1>
         </header>
       
         <div class="nav-scroller py-1 mb-3 border-bottom">
@@ -262,27 +275,30 @@
       
         <div class="row mb-2">
           <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="align-items: center;">
               <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-                <h3 class="mb-0">Featured post</h3>
-                <div class="mb-1 text-body-secondary">Nov 12</div>
-                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Wilfred Laurier University</strong>
+                <h3 class="mb-0">B.Sc. Computer Science</h3>
+                <div class="mb-1 text-body-secondary">Sep 2022-May 2026</div>
+                <p class="card-text mb-auto">Bacheilor of computer Science with concentration in Big and Minor in Economics</p>
                 <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
                   Continue reading
                   <svg class="bi"><use xlink:href="#chevron-right"/></svg>
                 </a>
               </div>
-              <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="col-auto d-none d-lg-block" style="padding: 20px;">
+                <img class="bd-placeholder-img" width="200" src="https://www.wlu.ca/_ato/dist/img/laurier-short.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative " style="align-items: center;">
+              <div class="col-auto d-none d-lg-block" style="padding: 20px;width: 13%;"> 
+                <img class="bd-placeholder-img" width="200" src="https://www.conestogac.on.ca/_content/CorporateWebsiteWebLibrary/images/conestoga-logo.svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              </div>
               <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                <h3 class="mb-0">Post title</h3>
+                <strong class="d-inline-block mb-2 text-success-emphasis">Conestoga College</strong>
+                <h3 class="mb-0">Mechanical Eng:Automated Manufacturing</h3>
                 <div class="mb-1 text-body-secondary">Nov 11</div>
                 <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
@@ -290,12 +306,40 @@
                   <svg class="bi"><use xlink:href="#chevron-right"/></svg>
                 </a>
               </div>
-              <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              </div>
             </div>
           </div>
-        </div>      
+        </div> 
+        
+
+        <hr class="featurette-divider">
+
+        <div class="continer" style="margin: 100px;">
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Oh yeah, Computer Science and <span class="text-body-secondary">Mechanical Engineering.</span></h2>
+              <p class="lead">Over four years of hands-on experience as a Manufacturing Engineer. Leveraging engineering, problem solving skills, technical aptitude, and a strong work ethic to excel in technology sector.Proficient in tools such as SolidWorks and Mastercam, demonstrating an ability to merge the worlds of technology and design seamlessly.
+
+              </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+            </div>
+          </div>          
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+            </div>
+          </div>
+
+        </div>
+
+        
+        
       </main>
     </div>
   </div>
@@ -306,9 +350,9 @@
 
     <!-- cover page -->
   <div class="px-4 pt-5 my-5 text-center" id="home">
-    <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+    <h1 class="display-2 fw-bold text-body-emphasis">Hello There!</h1>
+    <div class="col-lg-8 mx-auto" style="margin-bottom: 60px;">
+      <strong class="d-inline-block mb-2 text-primary-emphasis" style="font-size: 27px; line-height: 29px;">Welcome To My Corner of The Digital World! I'm a <span class="text-success-emphasis">Computer Science </span>Student Currently Pursuing My Education at <span class="text-success-emphasis">Wilfrid Laurier University</span></strong>
     </div>
     <div class="overflow-hidden" style="max-height: 30vh;">
       <div class="container px-5">
@@ -319,141 +363,204 @@
   <div class="b-example-divider"></div>
 
 
-  <!-- cncs -->
-  <div class="container-fluid px-4 py-5" id="custom-cards" style="text-align: center;">
-    <h2 class="pb-2 border-bottom">Custom cards</h2>
-    <div class="row row-cols-1 row-cols-lg-5 g-6 py-5">
-      <div class="col" style="margin-top: 10px;">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/DMGEcomill.png'); background-size: contain; background-color: rgb(255, 255, 255);">
-          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">DMG ECO MILL</h3>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div class="col" style="margin-top: 10px;">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/MatsuuraHPlus630.jpeg'); background-size: contain; background-color: rgb(255, 255, 255);">
-          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
-          </div>
-        </div>
-      </div>
+  
+<!-- consont -->
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+        <span class="fs-4">ALllous and alodstihs</span>
+      </a>
+    </header>
+
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">THINGS HERE</h1>
+        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        
+        <!-- cnc Container -->
+        <div class="container-fluid px-4 py-5" id="custom-cards" style="text-align: center;">
+          <div class="row row-cols-1 row-cols-lg-5 g-6 py-5">
+            <div class="col" style="margin-top: 10px;">
+              <div class="card card-cover h-75 overflow-hidden rounded-4 shadow-lg img-thumbnail" style="background-image: url('assets/images/machines/machines_resized/DMGEcomill.png'); background-size: contain; background-color: rgb(255, 255, 255);">
+                <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">DMG ECO MILL</h3>
+                  </ul>
+                </div>
+              </div>
+            </div>
       
-      <div class="col" style="margin-top: 10px;">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/tue-200.jpeg'); background-size: contain; background-color: rgb(255, 255, 255);">
-          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
+            <div class="col" style="margin-top: 10px;">
+              <div class="card card-cover h-75 overflow-hidden rounded-4 shadow-lg img-thumbnail" style="background-image: url('assets/images/machines/machines_resized/MatsuuraHPlus630.jpeg'); background-size: contain; background-color: rgb(255, 255, 255);">
+                <div class="">
+                  <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">DMG ECO MILL</h3>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col" style="margin-top: 10px;">
+              <div class="card card-cover h-75 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/tue-200.jpeg'); background-size: contain; background-color: rgb(255, 255, 255);">
+                <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col" style="margin-top: 10px;">
+              <div class="card card-cover h-75 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/DMGEcoTurn310.jpeg'); background-size: contain; background-color: rgb(255, 255, 255);">
+                <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-1 display-6 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col" style="margin-top: 10px;">
+              <div class="card card-cover h-75 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/fadal.png'); background-size: contain; background-color: rgb(255, 255, 255);">
+                <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      
+          <!-- skills -->
+          <div class="container px-4 py-5">
+            <h2 class="pb-2 border-bottom">Features with title</h2>
+        
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+              <div class="col d-flex flex-column gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z"/>
+                </svg>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+              <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        
+              <div class="col">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                  <div class="col d-flex flex-column gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z"/>
+                    </svg>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+                  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+        
+                  <div class="col d-flex flex-column gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z"/>
+                    </svg>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+                  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+        
+                  <div class="col d-flex flex-column gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z"/>
+                    </svg>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+                  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+        
+                  <div class="col d-flex flex-column gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z"/>
+                      </svg>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+                    <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <div class="col" style="margin-top: 10px;">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/DMGEcoTurn310.jpeg'); background-size: contain; background-color: rgb(255, 255, 255);">
-          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-1 display-6 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
+          <div class="d-flex gap-2 justify-content-center py-5">
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis"><img src="assets/images/logos/python.png" alt=""></span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis"><img src="assets/images/logos/python.png" alt=""></span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis"><img src="assets/images/logos/python.png" alt=""></span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis "><img src="assets/images/logos/python.png" alt=""></span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis"><img src="assets/images/logos/python.png" alt=""></span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis "><img src="assets/images/logos/python.png" alt=""></span>
+            
           </div>
-        </div>
-      </div>
+  
 
-      <div class="col" style="margin-top: 10px;">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg" style="background-image: url('assets/images/machines/machines_resized/fadal.png'); background-size: contain; background-color: rgb(255, 255, 255);">
-          <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="outline: #c00300;">DMG ECO MILL</h3>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-  <div class="b-example-divider" style="height: 15vh;"></div>
 
-  <!-- skills -->
-  <div class="container px-4 py-5" id="icon-grid" style="text-align: center;">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-      <div class="col">
-        <img src="assets/images/logos/python.png" style="width: 75px;">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col">
-        <img src="assets/images/logos/solidworks.png" style="width: 75px;">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col">
-        <img src="assets/images/logos/python.png" style="width: 75px;">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col">
-        <img src="assets/images/logos/python.png" style="width: 75px;">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-     
-    </div>
-    <h2 class="pb-2 border-bottom border-top" style="text-align: center;">Technologies I'm Fimiliar With</h2>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-      <div class="col">
-        <img src="assets/images/logos/python.png" style="width: 75px;">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col">
-        <img src="assets/images/logos/python.png" style="width: 75px;">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col">
-        <img src="assets/images/logos/python.png" style="width: 75px;">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
-      </div>
-      <div class="col">
-        <img src="assets/images/logos/python.png" style="width: 75px;">
-        <div>
-          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
-        </div>
       </div>
     </div>
+
+   
   </div>
   <div class="b-example-divider"></div>
 
   <!-- main Project Container -->
+  
   <div class="container my-5" id="main-Project">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+        <span class="fs-4">I Call It Live</span>
+      </a>
+    </header>
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows</h1>
         <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
         </div>
       </div>
       <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
           <img class="rounded-lg-3" src="assets/images/code/i.png" alt="" width="720">
       </div>
     </div>
+
+
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          
+    <!-- timeline -->
+              <div class="container my-5">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb breadcrumb-custom overflow-hidden text-center bg-body-tertiary border rounded-3">
+                    <li class="breadcrumb-item">
+                      <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">
+                        <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
+                        V1
+                      </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">V2</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">V2</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">V2</a>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <div class="b-example-divider"></div>
 
   <!-- projects -->
   <div class="container py-5" id="projects">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+        <span class="fs-4">Some Projects</span>
+      </a>
+    </header>
   <div class="row" data-masonry='{"percentPosition": true }'>
   <div class="col-sm-6 col-lg-4 mb-4">
     <div class="card">
