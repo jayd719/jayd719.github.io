@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>I am JD</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-old.css" />
+  </head>
+  <body>
+    <div class="container-fluid" id="nav-contianer">
+      <nav
+        class="navbar fixed-top bg-body-tertiary navbar-preview navbar-expand-lg nav1"
+        id="navOne"
+      >
+        <div class="container" id="navoptions1">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            style="text-align: center"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  onclick="upateDate();"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a
+                  class="nav-link active"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Project 1</a></li>
+                  <li><a class="dropdown-item" href="#">Project 2</a></li>
+                  <li><a class="dropdown-item" href="#">Project 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <a class="navbar-brand main" href="#">JD</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- contact container start -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+      style="width: 38%; min-width: 400px"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="ck contact" id="rightSection">
+          <img src="assets/images/j.png" alt="" style="width: 250px" />
+          <h2 class="textone" style="margin-top: 10%">
+            Feel free to reach out...
+          </h2>
+          <h2 class="texttwo">I'd love to hear from you!</h2>
+
+          <div
+            class="d-flex justify-content-around socials"
+            style="margin-top: 20%"
+          >
+            <a href="https://github.com/jayd719" target="_blank"
+              ><img src="assets/images/socails/github.png" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/jashansingh65/" target="_blank"
+              ><img src="assets/images/socails/linkedin.png" alt=""
+            /></a>
+            <a href="http://" target="_blank"
+              ><img src="assets/images/socails/twitter.png" alt=""
+            /></a>
+            <a href="http://" target="_blank"
+              ><img src="assets/images/socails/discord.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- left container end -->
+
+    <!-- resume container start -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+      style="width: 60%; min-width: 500px"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+        <a
+          href="assets/Resume-Jashandeep Singh.pdf"
+          download="Resume:Jashandeep Singh(JD)"
+          target="_blank"
+          >Download Resume</a
+        >
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <embed
+          src="assets/Resume-Jashandeep Singh.pdf"
+          width="100%"
+          height="100%"
+          type="application/pdf"
+          title="Resume-JD"
+          style="background-color: transparent"
+        />
+      </div>
+    </div>
+    <!-- right container end -->
+
+    <!-- about me -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog modal-xl">
+        <div class="modal-content" style="color: black">
+          <div
+            class="container-fuild"
+            style="display: flex; justify-content: end"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="">
+            <div class="head">
+              <div class="headerobjectswrapper">
+                <a href="https://thecord.ca/" target="_blank"
+                  ><span class="heading">the cord</span></a
+                >
+              </div>
+
+              <div class="subhead">
+                <img src="assets/images/flags/united-kingdom.png" alt="" />
+                <img src="assets/images/flags/canada.png" alt="" />
+                <img src="assets/images/flags/india.png" alt="" />
+                <span id="dateEml">Thursday August 30, 1978 - Seven Pages</span>
+                <img src="assets/images/flags/united-kingdom.png" alt="" />
+                <img src="assets/images/flags/germany.png" alt="" />
+                <img src="assets/images/flags/usa.png" alt="" />
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="collumns">
+                <div class="collumn" style="width: 60%">
+                  <div class="head">
+                    <span class="headline hl1">computer science student </span>
+                    <p>
+                      With a deep passion for unraveling the intricacies of
+                      technology and problem-solving. Dedicated to leveraging my
+                      skills to create innovative solutions and contribute to
+                      the ever-evolving tech landscape. Complemented by a solid
+                      foundation in programming, I possess a keen interest in
+                      software development and system architecture. Eager to
+                      merge technical passion with creative endeavors to make
+                      meaningful contributions to both the technology industry
+                      and creative projects.
+                    </p>
+
+                    <br />
+                    <p>
+                      <span class="headline hl2"
+                        >Keen Observer,Quick Learner</span
+                      >
+                    </p>
+                    <br />
+
+                    <p>
+                      Known for my innovative thinking, quick learning ability,
+                      and keen observation, I bring a unique blend of technical
+                      proficiency and creative problem-solving to every project.
+                      I am not only passionate about the intricacies of computer
+                      science but also deeply interested in diverse fields such
+                      as mediation, electronics, design, history, law, and
+                      entrepreneurship. This broad range of interests enhances
+                      my ability to approach challenges from different
+                      perspectives, fostering a well-rounded and adaptive
+                      mindset.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="collumn" style="width: 40%">
+                  <video
+                    class="viPlay"
+                    src="assets/videos/MachSim_Video_20231107_101241.mp4"
+                    autoplay
+                    loop
+                    muted
+                    codecs="avc1.4D401E, mp4a.40.2"
+                  ></video>
+                  <div class="head">
+                    <span class="headline hl3">Manufacturing Engineer</span>
+                    <p>
+                      <span class="headline hl4"
+                        >Mechanical Engineer Graduate</span
+                      >
+                    </p>
+                  </div>
+                  <p>
+                    Over four years of hands-on experience as a Manufacturing
+                    Engineer.Leveraging engineering, problem solving skills,
+                    technical aptitude, and a strong work ethic to excel in
+                    technology sector.
+                  </p>
+
+                  <p>
+                    Proficient in a range of programming languages, including
+                    Python, C++,Java, and JavaScript, adapting to ever-evolving
+                    field of Computer Science. This creativity is further
+                    showcased through my proficiency in tools such as SolidWorks
+                    and Mastercam during my Mechanical Engineering studies,
+                    demonstrating an ability to merge the worlds of technology
+                    and design seamlessly.
+                  </p>
+
+                  <p></p>
+                </div>
+
+                <div
+                  class="collumn"
+                  style="width: 100%; border-left-style: none"
+                >
+                  <div class="head">
+                    <span
+                      class="headline hl3"
+                      style="text-decoration: underline"
+                      >Experience and Exposure</span
+                    >
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="headline hl6"
+                            >Conestoga College <br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              Mechanical Engineering Technology <br />Automated
+                              Manufacturing <br />2016-2019
+                            </p></span
+                          >
+                        </td>
+
+                        <td></td>
+                        <td>
+                          <span class="headline hl6"
+                            >Canadian Babbitt Bearings<br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              Manufacturing Engineer<br />2019
+                            </p></span
+                          >
+                        </td>
+
+                        <td></td>
+                        <td>
+                          <span class="headline hl6"
+                            >NASA<br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              Maybe?
+                            </p></span
+                          >
+                        </td>
+                      </tr>
+                      <tr id="middleRow">
+                        <td>&#8226;</td>
+                        <td>&#x2022;</td>
+                        <td>&#x2022;</td>
+                        <td>&#x2022;</td>
+                        <td>&#x2022;</td>
+                      </tr>
+
+                      <tr>
+                        <td></td>
+                        <td>
+                          <span class="headline hl6"
+                            >Stackpole International<br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              CNC Settor/Operator<br />Co-Op<br />2018
+                            </p></span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <span class="headline hl6"
+                            >Wilfrid Laurier University<br />
+                            <p
+                              class="headline hl10"
+                              style="margin: 0; padding: 0%"
+                            >
+                              B.Sc. Computer Science<br />2022-2026
+                            </p></span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about me -->
+
+    <div class="container-fluid" id="boxes"></div>
+
+    <div class="position-relative marquee-container d-none d-sm-block">
+      <div class="marquee d-flex justify-content-around">
+        <span>BTC<b>3,588.39</b></span>
+        <span>XRP<b>0.32</b></span>
+        <span>ETH<b>116.36</b></span>
+        <span>EOS<b>2.44</b></span>
+        <span>USDT<b>1.01</b></span>
+        <span>LTC<b>32.61</b></span>
+        <span>XLM<b>0.10</b></span>
+        <span>TRX<b>0.03</b></span>
+        <span>BSV<b>74.29</b></span>
+        <span>ADA<b>0.04</b></span>
+      </div>
+      <div class="marquee marquee2 d-flex justify-content-around">
+        <span>BTC<b>3,588.39</b></span>
+        <span>XRP<b>0.32</b></span>
+        <span>ETH<b>116.36</b></span>
+        <span>EOS<b>2.44</b></span>
+        <span>USDT<b>1.01</b></span>
+        <span>LTC<b>32.61</b></span>
+        <span>XLM<b>0.10</b></span>
+        <span>TRX<b>0.03</b></span>
+        <span>BSV<b>74.29</b></span>
+        <span>ADA<b>0.04</b></span>
+      </div>
+    </div>
+    <div class="container" style="text-align: center">
+      <h1 class="display-1 newageliquor" id="nal" style="padding-top: 10%">
+        Jashan Deep <span style="opacity: 50%; text-shadow: none; outline: none;">Singh</span>
+      </h1>
+
+      <h1
+        class="display-4 intro-text-one"
+        id="dis"
+        style="padding-top: 5%; font-family: Montserrat, sans-serif"
+      >
+        Welcome To My Corner of The Digital World! I'm a
+        <span class="textONe">Computer Science</span> Student Currently Pursuing
+        My Education at<span class="textONe"> Wilfrid Laurier University</span>
+      </h1>
+
+      <div class="container" id="codeiamge">
+        <img class="image-one" src="assets/images/code/i.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container-fluid" id="cards"></div>
+    <div class="container" style="height: 35vh"></div>
+
+    <div class="container-fluid" id="cncs">
+      <h1 class="display-3 heading-2" style="font-style: italic">
+        CNCs I Have Programmed For
+      </h1>
+
+      <div style="display: flex; text-align: left">
+        <div class="container-fuild machine-container">
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/DMGEcomill.png"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/DMGEcoTurn310.jpeg"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/tss-series.jpg"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/fadal.png"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/MatsuuraHPlus630.jpeg"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/tss-series.jpg"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+
+        <div class="container-fuild machine-container">
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/DMGEcomill.png"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/DMGEcoTurn310.jpeg"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/tss-series.jpg"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/fadal.png"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/MatsuuraHPlus630.jpeg"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/images/machines/machines_resized/tss-series.jpg"
+              class="w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="height: 35vh"></div>
+    <div class="container-fluid gcont" id="gcont">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <img id="skills" src="assets/images/logos/python.png" alt="" />
+          </div>
+          <div class="col">
+            <img
+              id="skills"
+              class=""
+              src="assets/images/logos/java-script.png"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <img id="skills" src="assets/images/logos/solidworks.png" alt="" />
+          </div>
+          <div class="col">
+            <img id="skills" src="assets/images/logos/django.png" alt="" />
+          </div>
+          <div class="col">
+            <img id="skills" src="assets/images/logos/java.png" alt="" />
+          </div>
+        </div>
+        <div class="row" style="margin: 50px">
+          <h1 class="display-3 heading-2" style="font-style: italic">
+            Technologies I'm Fimiliar With
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img id="skills" src="assets/images/logos/mastercam.png" alt="" />
+          </div>
+          <div class="col">
+            <img id="skills" src="assets/images/logos/cpu.png" alt="" />
+          </div>
+          <div class="col">
+            <img id="skills" src="assets/images/logos/bootstrap.png" alt="" />
+          </div>
+          <div class="col">
+            <img
+              id="skills"
+              src="assets/images/logos/spring.svg"
+              alt=""
+              style="height: 10vh"
+            />
+          </div>
+          <div class="col">
+            <img id="skills" src="assets/images/logos/html.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="height: 40vh"></div>
+
+    <h1 class="display-3 heading-2">
+      a few of the projects I've worked on....
+    </h1>
+    <div class="container-fluid" style="text-align: left">
+      <div class="card-group card-group-scroll">
+        <div class="card">
+          <img src="assets/images/code/i.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's
+            </p>
+            <button class="button-57">
+              <span class="text">Projrct</span><span>Check Out Details</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/code/i.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button class="button-57">
+              <span class="text">Projrct</span><span>Check Out Details</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/code/i.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button class="button-57">
+              <span class="text">Projrct</span><span>Check Out Details</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/code/i.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button class="button-57">
+              <span class="text">Projrct</span><span>Check Out Details</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/code/i.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button class="button-57">
+              <span class="text">Projrct</span><span>Check Out Details</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/code/i.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button class="button-57">
+              <span class="text">Projrct</span><span>Check Out Details</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/code/i.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button class="button-57">
+              <span class="text">Projrct</span><span>Check Out Details</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="height: 25vh"></div>
+    <!-- End mainBody -->
+    <footer>
+      <div class="row-f">
+        <ul>
+          <li>ਜਸ਼ਨਦੀਪ ਸਿੰਘ</li>
+          <li>जशनदीप सिंह</li>
+          <li>جشندیپ سنگھ</li>
+        </ul>
+      </div>
+      <div class="name" id="nameLetter">
+        <img id="letter" src="assets/images/letters/letter-j.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-a.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-s.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-h.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-a.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-n.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-d.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-e.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-e.png" alt="" />
+        <img
+          id="letter"
+          src="assets/images/letters/letter-p.png"
+          alt=""
+          style="margin-right: 20px"
+        />
+        <img id="letter" src="assets/images/letters/letter-s.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-i.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-n.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-g.png" alt="" />
+        <img id="letter" src="assets/images/letters/letter-h.png" alt="" />
+      </div>
+      <div class="row-f">
+        <ul>
+          <li>
+            <a
+              class="nav-link active"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              onclick="upateDate();"
+              >About Me</a
+            >
+          </li>
+          <li><a href="#">Projects</a></li>
+          <li>
+            <a
+              class="nav-link active"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+              >Resume</a
+            >
+          </li>
+          <li
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
+      <div class="row-f">
+        Copyright © 2024 jashandeep.co.uk - All rights reserved
+      </div>
+    </footer>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
