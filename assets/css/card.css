@@ -1,6 +1,6 @@
 .card-cover {
   /* transform: rotateY(50deg) skew(1deg); */
-  /* filter: grayscale(.3) brightness(.6); */
+  filter: grayscale(.3) brightness(.6);
   transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
