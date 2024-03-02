@@ -30,7 +30,6 @@
 }
 .badge img{
     width: 60px;
-    border-radius: 20px;
 }
 
 .list-cont li:nth-child(2n){
@@ -38,4 +37,9 @@
 }
 .list-cont li:nth-child(2n+1){
 margin-right: 20%;
+}
+
+#nameLetter img{
+  width: 50px;
+  filter: invert(1) grayscale(1);
 }
