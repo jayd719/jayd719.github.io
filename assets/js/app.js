@@ -43,18 +43,21 @@ main.style.opacity = 0;
 nav.style.opacity = 0;
 document.addEventListener("scroll", (event) => {
   let position = window.scrollY;
-  main.style.opacity = position / 300;
-  nav.style.opacity = position / 400;
-  imageCon.style.opacity = 1 - position / 500;
-  imageCon.style.left = `${position}px`;
 
-  imageCon.style.scale = 1 + position / 900;
+  if (position < 400) {
+    main.style.opacity = position / 300;
+    nav.style.opacity = position / 400;
+    imageCon.style.opacity = 1 - position / 550;
+    imageCon.style.left = `${position}px`;
+
+    imageCon.style.scale = 1 + position / 900;
+  }
 
   if (position > 2) {
     moveJacks();
   }
 
-  // console.log(position);
+  console.log(position);
 });
 
 function jacks(numberOfJacks) {
