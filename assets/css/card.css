@@ -43,3 +43,26 @@ margin-right: 20%;
   width: 50px;
   filter: invert(1) grayscale(1);
 }
+
+.bot{
+  position: absolute;
+  transition: 2s;
+}
+
+#image img{
+  filter: brightness(.9);
+}
+#jack-one {
+  /* size */
+  width: 10vw;
+  min-width: 140px;
+  /* looks */
+  position: absolute;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 0.75vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.6px);
+  -webkit-backdrop-filter: blur(0.6px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  transition: 2s;
+}

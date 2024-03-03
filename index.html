@@ -20,13 +20,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <link rel="stylesheet" href="assets/css/cover.css">
-    <!-- <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.css">
     <!-- <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.css"> -->
-    <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.css"> -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
     <link rel="stylesheet" href="assets/css/card.css">
-    <link rel="stylesheet" href="assets/css/bootstrap4-neon-glow.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap4-neon-glow.css"> -->
 
 
 
@@ -124,6 +124,9 @@
     <!-- Custom styles for this template -->
   </head>
   <body>
+
+  
+
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -174,10 +177,10 @@
         </li>
       </ul>
     </div>
-    <div class="b-example-divider" style="height: 25vh; visibility: hidden;"></div>
+    <div class="b-example-divider" style="height: 6vh; visibility: hidden;"></div>
 
     <!-- nav bar -->
-    <nav  id="navbar-example3" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .5em 1.5em rgba(0, 0, 0, .1)">
+    <nav  id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .5em 1.5em rgba(0, 0, 0, .1)">
         <div class="container">
           <a href="#" class="navbar-brand pl-5 text-danger-emphasis" style="scale: 2.0;">JD</a>
           <button
@@ -244,9 +247,26 @@
    <!-- right container end -->
 
    <!-- about me -->
-   <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="staticBackdropLabel"style="height: 95%; margin: 1%;">
-    <div class="offcanvas-header" style="opacity: 40%;">
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+   <div class="offcanvas offcanvas-top rounded border" tabindex="-1" id="offcanvasTop" aria-labelledby="staticBackdropLabel" style="height:auto; margin: 0%;">
+    <div class="container-fluid bg-body-tertiary border" style="overflow: visible;;" >
+        <button class="btn btn-danger" type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="scale: .60;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+          <span class="visually-hidden">j</span>
+        </button>
+        <button class="btn btn-success" type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="scale: .60;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+          <span class="visually-hidden">j</span>
+        </button>
+        <button class="btn btn-warning" type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="scale: .60;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+          <span class="visually-hidden">j</span>
+        </button>
     </div>
     <div class="offcanvas-body">
       <div class="container-fluid">
@@ -275,49 +295,12 @@
             <p class="lead mb-0"><a class="text-body-emphasis fw-bold">Continue reading...</a></p>
           </div>
         </div>
-      
-        <div class="row mb-2">
-          <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="align-items: center;">
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-primary-emphasis">Wilfred Laurier University</strong>
-                <h3 class="mb-0">B.Sc. Computer Science</h3>
-                <div class="mb-1 text-body-secondary">Sep 2022-May 2026</div>
-                <p class="card-text mb-auto">Bachelor of Science in Computer Science with concentration in Big Data and Minor in Economics</p>
-                <a href="https://www.wlu.ca/programs/science/undergraduate/computer-science-bsc/index.html" target="_blank" class="icon-link gap-1 icon-link-hover stretched-link">
-                  Continue reading
-                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-                </a>
-              </div>
-              <div class="col-auto d-none d-lg-block" style="padding: 20px; width: 25%;">
-                <img class="bd-placeholder-img" width="100%" src="https://www.wlu.ca/_ato/dist/img/laurier-short.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative " style="align-items: center;">
-              <div class="col-auto d-none d-lg-block" style="padding: 20px;width: 13%; overflow: hidden;"> 
-                <img class="bd-placeholder-img" width="200" src="https://www.conestogac.on.ca/_content/CorporateWebsiteWebLibrary/images/conestoga-logo.svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-success-emphasis">Conestoga College</strong>
-                <h3 class="mb-0">Mechanical Eng: Automated Manufacturing</h3>
-                <div class="mb-1 text-body-secondary">Sept 2016-August 2019</div>
-                <p class="mb-auto">Advance Diploma in Mechanical Engineering with concentration in Automated Manufacturing</p>
-                <a href="https://www.conestogac.on.ca/fulltime/mechanical-engineering-technology-automated-manufacturing" target="_blank" class="icon-link gap-1 icon-link-hover stretched-link">
-                  Continue reading
-                  <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> 
+
+
         
-
-
         <div class="row g-5">
           <div class="col-md-8">
-            <div class="row featurette d-flex" style="align-items: center;">
+            <div class="row featurette d-flex mt-5" style="align-items: center;">
               <div class="col-md-7 order-md-2" style="scale: .9;">
                 <h2 class="display-5 fw-normal lh-1">Oh yeah, Computer Science and <span class="text-body-secondary">Mechanical Engineering.</span></h2>
                 <p class="lead">Over five years of hands-on experience as a Manufacturing Engineer. Leveraging engineering, problem solving skills, technical aptitude, and a strong work ethic to excel in technology sector.Proficient in tools such as SolidWorks and Mastercam, demonstrating an ability to merge the worlds of technology and design seamlessly.</p>
@@ -326,8 +309,7 @@
                 <img src="assets/images/jacks/jack.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="200" style="transform: rotate(0deg);">
               </div>
             </div>  
-                    
-            <div class="row featurette" style="align-items: center;">
+            <div class="row featurette mt-5" style="align-items: center;">
               <div class="col-md-7" style="scale: .9;">
                 <h2 class="display-5 fw-normal lh-1"><span class="text-body-secondary">Checkmate</span></h2>
                 <p class="lead">Known for my innovative thinking, quick learning ability, and keen observation, I bring a unique blend of technical proficiency and creative problem-solving to every project. I am not only passionate about the intricacies of computer science but also deeply interested in diverse fields such as mediation, electronics, design, history, law, and entrepreneurship. This broad range of interests enhances my ability to approach challenges from different perspectives, fostering a well-rounded and adaptive mindset.</p>
@@ -335,11 +317,49 @@
               <div class="col-md-3 d-flex justify-content-center">
                 <img src="assets/images/jacks/jack.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="200" style="transform: rotate(0deg);">
               </div>
-            </div>      
+            </div>   
+              <div class="row g-5 sticky-top" style="top: -3rem;">
+                <div class="col-md-10">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="align-items: center;">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary-emphasis">Wilfred Laurier University</strong>
+                    <h3 class="mb-0">B.Sc. Computer Science</h3>
+                    <div class="mb-1 text-body-secondary">Sep 2022-May 2026</div>
+                    <p class="card-text mb-auto">Bachelor of Science in Computer Science with concentration in Big Data and Minor in Economics</p>
+                    <a href="https://www.wlu.ca/programs/science/undergraduate/computer-science-bsc/index.html" target="_blank" class="icon-link gap-1 icon-link-hover stretched-link">
+                      Continue reading
+                      <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block" style="padding: 20px; width: 25%;">
+                    <img class="bd-placeholder-img" width="100%" src="https://www.wlu.ca/_ato/dist/img/laurier-short.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative " style="align-items: center;">
+                  <div class="col-auto d-none d-lg-block" style="padding: 20px;width: 13%; overflow: hidden;"> 
+                    <img class="bd-placeholder-img" width="200" src="https://www.conestogac.on.ca/_content/CorporateWebsiteWebLibrary/images/conestoga-logo.svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  </div>
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success-emphasis">Conestoga College</strong>
+                    <h3 class="mb-0">Mechanical Eng: Automated Manufacturing</h3>
+                    <div class="mb-1 text-body-secondary">Sept 2016-August 2019</div>
+                    <p class="mb-auto">Advance Diploma in Mechanical Engineering with concentration in Automated Manufacturing</p>
+                    <a href="https://www.conestogac.on.ca/fulltime/mechanical-engineering-technology-automated-manufacturing" target="_blank" class="icon-link gap-1 icon-link-hover stretched-link">
+                      Continue reading
+                      <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                  </div>
+                </div>
+            </div> 
+              </div>
+
           </div>
       
+          <!-- dd -->
           <div class="col-md-4">
-            <div class="position-sticky" style="top: 2rem;">
+            <div class="position-sticky" style="top: -1.0rem;">
               <div>
                 <h4 class="fst-italic">Experience & Exposure</h4>
                 <ul class="list-unstyled">
@@ -377,25 +397,24 @@
               </div>
             </div>
           </div>
+
         </div>
 
-        <hr class="featurette-divider">
 
-       
-
-
-        
-        
-        
-        
       </main>
+     
     </div>
   </div>
    <!-- about me -->
 
-<main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
+  <div class="container-fluid d-flex justify-content-center" style="height:95%; z-index: -10; position: fixed;" id="image">
+    <img class="" src="assets/images/code/img2.png" alt="">
+  </div>
+<div class="container" style="height: 70vh;">
 
+</div>
+<main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0" id="main">
     <!-- cover page -->
   <div class="px-4 pt-5 my-5 text-center" id="home">
     <h1 class="display-4 fw-bold text-body-emphasis">Welcome To My Corner of The Digital World!</h1>
@@ -407,10 +426,14 @@
         <img src="assets/images/code/i.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
       </div>
     </div>
+    <div class="container mt-5" style="height: 15vh;">
+      
+    </div>
   </div>
   <div class="b-example-divider"></div>
 
 
+ 
 
   
 <!-- consont -->
@@ -673,10 +696,9 @@
 
       </div>
     </div>
+<div class="b-example-divider"></div>
 
-
-  <div class="b-example-divider"></div>
-
+  
   <!-- main Project Container -->
   
   <div class="container my-5" id="main-Project">
@@ -832,9 +854,9 @@
 
 <!-- footer -->
 <div class="container">
-  <div class="row py-2">
-    <ul class="nav d-flex justify-content-center fs-5 fw-bold mb-1" style="gap: 40px;">
-      <li class="nav-item nav-link p-0 text-success-emphasis">ਜਸ਼ਨਦੀਪ ਸਿੰਘ</li>
+  <div class="row py-2 mt-3">
+    <ul class="nav d-flex justify-content-center fs-5 fw-bold mb-1" style="gap: 50px;">
+      <li class="nav-item nav-link p-0 text-success-emphasis"></a>ਜਸ਼ਨਦੀਪ ਸਿੰਘ</li>
       <li class="nav-item nav-link p-0 text-success-emphasis">जशनदीप सिंह</li>
       <li class="nav-item nav-link p-0 text-success-emphasis">جشندیپ سنگھ</li>
     </ul>
@@ -892,13 +914,15 @@
         <div class="col-md-5 offset-md-3 mb-3">
           <form>
             <h5>Get In Touch!</h5>
-            <p>I'll send greetings on Chirtmas and Year...</p>
+            <p>I'll send greetings on Chirtmas and New Year...</p>
             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
               <label for="newsletter1" class="visually-hidden">Email address</label>
               <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
               <button class="btn btn-primary" type="button">Subscribe</button>
             </div>
           </form>
+          <div class="d-flex justify-content-end mt-5"> <img class="img-thumbnail" width="200" src="assets/images/code/qrCode.png" alt=""></div>
+          
         </div>
       </div>
   
