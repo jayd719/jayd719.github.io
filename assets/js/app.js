@@ -44,18 +44,16 @@ nav.style.opacity = 0;
 document.addEventListener("scroll", (event) => {
   let position = window.scrollY;
 
-  if (position < 400) {
-    main.style.opacity = position / 300;
-    nav.style.opacity = position / 400;
-    imageCon.style.opacity = 1 - position / 550;
-    imageCon.style.left = `${position}px`;
+  main.style.opacity = position / 300;
+  nav.style.opacity = position / 400;
+  imageCon.style.opacity = 1 - position / 550;
+  imageCon.style.left = `${position}px`;
 
-    imageCon.style.scale = 1 + position / 900;
-  }
+  imageCon.style.scale = 1 + position / 900;
 
-  if (position > 2) {
-    moveJacks();
-  }
+  // if (position > 2) {
+  //   moveJacks();
+  // }
 
   console.log(position);
 });
@@ -79,7 +77,7 @@ function jacks(numberOfJacks) {
     document.body.appendChild(img);
   }
 }
-jacks(12);
+// jacks(12);
 function moveJacks() {
   let jacks = document.querySelectorAll("#jack-one");
   for (j = 0; j < jacks.length; j++) {
