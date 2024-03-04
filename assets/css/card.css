@@ -28,8 +28,8 @@
     margin: 20px;
     background-color: transparent;
 }
-.badge img{
-    width: 60px;
+.badge1 img{
+    width: 50%;
 }
 
 .list-cont li:nth-child(2n){
