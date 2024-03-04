@@ -24,13 +24,14 @@ function dancingBot(h, b) {
   mainContainer.style.left = "100px";
   let img = document.createElement("img");
   img.width = 100;
-  img.src = "assets/images/code/icons8-robot-100.png";
+  img.src = "assets/images/j.png";
   mainContainer.appendChild(img);
   document.body.appendChild(mainContainer);
   console.log(mainContainer);
 }
 
-// let bot = document.getElementById("bot");
+
+let bot = document.getElementById("bot");
 // setInterval(function () {
 //   bot.style.top = `${Math.floor(Math.random() * 1000)}px`;
 //   bot.style.left = `${Math.floor(Math.random() * 1000)}px`;
@@ -89,3 +90,14 @@ function moveJacks() {
 }
 
 
+
+
+// let done = false
+// document.body.addEventListener('mouseover',()=>{
+//   if(!done){
+//     window.location = '#home';
+//   }
+//   done =true;
+
+
+// })

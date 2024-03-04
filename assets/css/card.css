@@ -46,11 +46,23 @@ margin-right: 20%;
 
 .bot{
   position: absolute;
-  transition: 2s;
+  transition: 10s;
 }
 
 #image img{
   filter: brightness(.9);
+  animation: slide_top .6s forwards;
+}
+
+@keyframes slide_top {
+  from{
+    filter: brightness(.6);
+    transform: translateY(25%) scale(80%);
+    opacity: 0;
+  }to{
+    transform: translateY(0px);
+    opacity: 100;
+  }
 }
 #jack-one {
   /* size */
