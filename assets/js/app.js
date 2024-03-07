@@ -92,6 +92,10 @@ function moveJacks() {
 
 
 
+let aboutsections = document.getElementById('offcanvasTop')
+
+
+
 // let done = false
 // document.body.addEventListener('mouseover',()=>{
 //   if(!done){
