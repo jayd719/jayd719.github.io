@@ -249,7 +249,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body" style="text-align: center;">
-        <img src="assets/images/j.png" alt="" style="width: 50%; margin-top: 20%;"> 
+        <img src="assets/images/j.png" class="name-image-before" alt="" style="width: 50%; margin-top: 20%;"> 
         <div style="margin:20% 0%;">
           <h6 class="display-6" style="font-weight:600 ;">Feel free to reach out...</h6>
           <h6 class="display-7">I'd love to hear from you!</h6>
@@ -586,7 +586,7 @@
       
           <!-- skills -->
           <div class="container px-4 py-5">
-            <h2 class="display-6 fw-bold border-bottom text-center" id="icon-grid">Technologies I'm Fimiliar With</h2>
+            <h2 class="display-6 fw-bold border-bottom text-center name-image-before" id="icon-grid">Technologies I'm Fimiliar With</h2>
         
             <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
               <div class="col d-flex flex-column gap-2">
@@ -818,7 +818,7 @@
     </div><!-- /.row -->
   </div>
 
-  <video width="100%" class="mt-5" autoplay muted loop playback="3">
+  <video width="100%" class="mt-5 name-image-before" autoplay muted loop playback="3">
     <source src="assets/images/videios/MachSim_Video_20231107_101540.mp4" type="video/mp4">
   Your browser does not support the video tag.
   </video>
@@ -1048,7 +1048,28 @@
           }
       });
     });
+
+
+    $(window).scroll(function() {
+      $(".name-image-before").each(function(){
+        var pos = $(this).offset().top;
+  
+        var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("name-image");
+          }
+      });
+    });
+
+
+
+
+
   })
+
+
+
+  
   </script>
 
 <script src="assets/js/plotter.js"></script>  
