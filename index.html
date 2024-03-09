@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <title>I am JD</title>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -27,6 +29,7 @@
     <link rel="stylesheet" href="assets/css/timeline.css">
     <link rel="stylesheet" href="assets/css/card.css">
     <link rel="stylesheet" href="assets/css/loader.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
     <link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'> -->
     <!-- <link rel="stylesheet" href="assets/css/bootstrap4-neon-glow.css"> -->
@@ -35,9 +38,36 @@
 
 
 
+<style>
 
-
-    <style>
+.slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
       .card-cover{
         display: flex;
         align-items: center;
@@ -119,7 +149,7 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
-    </style>
+    </style> 
 
 
 
@@ -440,7 +470,7 @@
   <!-- icons -->
   <div class="b-example-divider h-100 p-5" >
     <div class="container mt-5 mb-5 d-flex justify-content-center">
-      <div class="row row-cols-2 row-cols-sm-4 row-cols-md-5 row-cols-lg-6 g-5 py-6 badge1 text-center">
+      <div class="row row-cols-2 row-cols-sm-4 row-cols-md-5 row-cols-lg-6 g-5 py-6 badge1 text-center slideanim">
         <div class="col">
             <img class="" src="assets/images/logos/python.png" alt="">
         </div>
@@ -492,12 +522,12 @@
   <div class="container py-4">
     <header class="pb-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-        <span class="fs-5">From Alloys <span>To</span> Algorithms</span>
+        <span class="fs-5 slideanim">From Alloys <span>To</span> Algorithms</span>
       </a>
     </header>
 
     <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-      <div class="container-fluid py-5">
+      <div class="container-fluid py-5 slideanim">
         <h1 class="display-5 fw-bold">CNCs I Have Programmed For</h1>
         <p class="col-md-12 fs-5">As a Manufacturing Engineer, I've had the privilege of working with a diverse range of CNC machines, from mills to vertical lathes equipped with live tools. My experience covers both 3-axis and 5-axis mills.</p>
         <!-- cnc Container -->
@@ -712,7 +742,7 @@
 
   
   <!-- main Project Container -->
-  <div class="container my-5" id="main-Project">
+  <div class="container my-5 slideanim" id="main-Project">
     <header class="pb-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
         <span class="fs-4">I Call It Live</span>
@@ -767,9 +797,9 @@
   <div class="b-example-divider"></div>
 
   <div class="container marketing">
-    <h2 class="featurette-heading fw-normal text-center lh-1 m-5 fs-1 te">In my journey, I've been fortunate to be involved in the production of nuclear components for Power Generation Stations in <span class="text-body-secondary">Canada </span>and <span class="text-body-secondary">worldwide.</span></h2>
+    <h2 class="featurette-heading fw-normal text-center lh-1 m-5 fs-1 te slideanim">In my journey, I've been fortunate to be involved in the production of nuclear components for Power Generation Stations in <span class="text-body-secondary">Canada </span>and <span class="text-body-secondary">worldwide.</span></h2>
     <!-- Three columns of text below the carousel -->
-    <div class="row mt-5">
+    <div class="row mt-5 slideanim">
       <div class="col-lg-4">
         <img class="bd-placeholder-img rounded-1" width="140" height="140" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/images/code/IMG_1385.jpg">
         <h2 class="fw-normal">3D Modelling</h2>
@@ -796,7 +826,7 @@
   <div class="b-example-divider"></div>
 
   <!-- projects -->
-  <div class="container py-5" id="projects">
+  <div class="container py-5 slideanim" id="projects">
     <header class="pb-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
         <span class="fs-4">Some Projects...</span>
@@ -894,7 +924,7 @@
 
 
 <!-- footer -->
-<div class="container-fluid">
+<div class="container-fluid slideanim">
   <div class="container">
     <div class="row py-2 mt-3">
       <ul class="nav d-flex justify-content-center fs-5 fw-bold mb-1" style="gap: 50px;">
@@ -984,7 +1014,42 @@
     </div> -->
 </div>
 
-
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+    
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+  
+        var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+      });
+    });
+  })
+  </script>
 
 <script src="assets/js/plotter.js"></script>  
 <script src="assets/js/app.js"></script>  
