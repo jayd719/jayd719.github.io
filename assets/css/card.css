@@ -1,3 +1,6 @@
+.eml:hover{
+cursor: pointer;
+}
 .card-cover {
   /* transform: rotateY(50deg) skew(1deg); */
   filter: grayscale(.3) brightness(.7);

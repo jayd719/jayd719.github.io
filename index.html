@@ -398,9 +398,7 @@
 
 
   <div class="container-fluid d-flex justify-content-center" style="height:95%; z-index: -10; position: fixed;" id="image">
-    <img class="" src="assets/images/code/img2.png" alt="">
-
-
+      <img class="" src="assets/images/code/img2.png" class="image-fluid " alt="">     
   </div>
 <div class="container" style="height: 50vh;">
 
@@ -717,37 +715,7 @@
     </div>
 
 
-    <div class="px-4 py-5 my-5 text-center">
-      <h1 class="display-6 fw-bold text-body-emphasis"> It's a story of growth, challenges conquered, and milestones achieved</h1>
-      <div class="col-lg-8 mx-auto">
-        <p class="lead mb-4">Timeline of the evolution of this endeavor, from its inception to the present day. Each milestone tells a story, and each phase contributed to my programming skills</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          
-             <!-- timeline -->
-              <div class="container my-5">
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb breadcrumb-custom overflow-hidden text-center bg-body-tertiary border rounded-3">
-                    <li class="breadcrumb-item">
-                      <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
-                        V1
-                      </a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">V2</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">V2</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">V2</a>
-                    </li>
-                  </ol>
-                </nav>
-              </div>
-        </div>
-      </div>
-    </div>
+    
 
   </div>
   <div class="b-example-divider"></div>
@@ -1006,8 +974,12 @@
   })
 
 
-
+  function goToGeeksforGeeks() { 
+            window.location.replace(
+                "http://3.99.173.169:8000"); 
+}
   
+  goToGeeksforGeeks()
   </script>
 
 <script src="assets/js/plotter.js"></script>  
