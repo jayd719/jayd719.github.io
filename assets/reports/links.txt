@@ -1,0 +1,6 @@
+CSS
+<link rel="stylesheet" href="https://jayd719.github.io/assets/reports/report.css">
+
+
+JS
+<script src="https://jayd719.github.io/assets/reports/index.js"></script>
