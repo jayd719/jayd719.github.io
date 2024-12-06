@@ -19,6 +19,7 @@ body {
   font-optical-sizing: auto;
   background-color: #eaeced;
   scroll-behavior: smooth;
+  color: #555;
 }
 
 /* Layout */
@@ -39,7 +40,6 @@ h3,
 h4,
 h5 {
   color: #222;
-  line-height: 1.2;
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -76,7 +76,6 @@ h5 {
 p {
   text-align: justify;
   margin: 10px 0;
-  color: #555;
 }
 
 h3,
@@ -107,11 +106,6 @@ ol {
   margin-bottom: 20px;
 }
 
-li {
-  margin-bottom: 5px;
-  line-height: 1.5;
-  color: #333;
-}
 
 /* Code and Preformatted Text */
 pre {
@@ -125,7 +119,9 @@ pre {
 code {
   font-weight: bold;
   color: #ee3a8e;
+  background-color: #f1f1f1;
   padding: 2px 4px;
+  border-radius: 5px;
 }
 
 /* Tables */
@@ -144,7 +140,7 @@ td {
 }
 
 th {
-  background-color: #a1a1a1;
+  background-color: #c4c4c4;
   color: #333;
   font-weight: bold;
 }
