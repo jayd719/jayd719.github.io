@@ -13,29 +13,29 @@ function generateIndex(containerId = "index") {
         container.id = containerId;
         document.body.insertBefore(container, document.body.firstChild);
     }
-    container.innerHTML = "<h3 style='margin-top:15px;'>Table of Contents</h3>";
+    container.innerHTML = `<h1 class="py-5 font-bold text-2xl text-secondary">${document.querySelector("h1").innerText}</h1>
+    <h3 style='margin-top:15px;'>Table of Contents</h3>`;
 
     const indexList = document.createElement("ul");
-    indexList.style.padding=0
-    indexList.style.listStyle="none"
+    indexList.className = "menu"
     container.appendChild(indexList);
 
     headings.forEach(heading => {
-        const level = parseInt(heading.tagName[1]); 
+        const level = parseInt(heading.tagName[1]);
         const listItem = document.createElement("li");
-        
+
         if (!heading.id) {
             heading.id = `91oz.-${Math.random().toString(36).substr(2, 9)}`;
         }
         const link = document.createElement("a");
         link.href = `#${heading.id}`;
+        link.className = "nav-link"
         link.textContent = heading.textContent;
         listItem.appendChild(link);
-        listItem.style.marginLeft = `${(level - 1) * 20}px`;
+        listItem.style.marginLeft = `${(level - 1) * 10}px`;
 
         indexList.appendChild(listItem);
     });
 }
 generateIndex();
-
 
