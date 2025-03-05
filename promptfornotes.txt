@@ -1,0 +1,9 @@
+Create detailed, structured notes on Decision Trees. The notes should be well-organized and include:
+
+Introduction – A brief overview of the topic.
+Key Concepts – Core principles, definitions, and explanations.
+Mathematical/Technical Details (if applicable) – Any formulas, derivations, or algorithms.
+Applications – Real-world use cases and practical examples.
+Challenges & Limitations – Issues, drawbacks, and areas for improvement.
+Additional Insights – Any related information, comparisons, or future trends.
+The explanation should be clear, concise, and accessible for someone with my level of expertise. If possible, include diagrams, code snippets, or examples where relevant
