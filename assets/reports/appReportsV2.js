@@ -37,7 +37,7 @@ function generateIndex(containerId = "index") {
 
         indexList.appendChild(listItem);
     });
-    container.classList.add("lg:w-96", "overflow-y-scroll", "pl-2", "border", "print:border-0")
+    container.classList.add("lg:w-48", "overflow-y-scroll", "pl-2", "border", "print:border-0")
 }
 
 
