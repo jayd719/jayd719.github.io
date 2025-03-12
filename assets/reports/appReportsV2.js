@@ -114,5 +114,4 @@ setTimeout(() => {
 }, 100);
 
 document.querySelector("main").className = "container mx-auto px-4 py-8 overflow-y-scroll print:px-0"
-generateIndex();
 document.body.classList.add("lg:flex", "print:block", "h-screen", "text-sm")
