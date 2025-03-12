@@ -111,5 +111,8 @@ loadStylesheet("https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css")
 document.documentElement.setAttribute("data-theme", "light");
 setTimeout(() => {
     updateCSS_ALL()
-}, 50);
-document.documentElement.setAttribute("data-theme", "corporate");   
+}, 100);
+
+document.querySelector("main").className = "container mx-auto px-4 py-8 overflow-y-scroll print:px-0"
+generateIndex();
+document.body.classList.add("lg:flex", "print:block", "h-screen", "text-sm")
