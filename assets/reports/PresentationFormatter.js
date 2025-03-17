@@ -17,18 +17,20 @@ document.querySelectorAll("video").forEach(element => {
 
 function CreatePresentation() {
 
-    const h1 = "font-title relative z-2 mx-auto text-9xl leading-none font-black will-change-auto motion-reduce:transform-none! mb-20"
+    const h1 = "font-title relative z-2 mx-auto text-7xl lg:text-8xl leading-none font-black will-change-auto motion-reduce:transform-none! mb-20"
     const h2 = "text-[clamp(2.5rem,6vw,4.5rem)] leading-none font-light mt-[35%] mb-10 snap-start"
     const h3 = "text-4xl leading-none font-light mt-20 mb-5 snap-start"
+    const h4 = "text-2xl leading-none font-light mt-20 mb-5 snap-start"
     const p = "text-base-content/70 font-title font-light md:text-2xl mb-6 mt-2 text-justify"
     const list = "grid grid-cols-1 lg:grid-cols-2 gap-20"
-    const ul = "list-disc pl-10 mb-10"
-    const ol = "list-decimal pl-10 mb-10"
+    const ul = "list-disc lg:pl-10 mb-10"
+    const ol = "list-decimal lg:pl-10 mb-10"
     const li = "text-base-content/70 font-title font-light md:text-lg text-justify"
 
     updateCSS(['h1'], h1.split(" "));
     updateCSS(['h2'], h2.split(" "));
     updateCSS(['h3'], h3.split(" "));
+    updateCSS(['h4'], h4.split(" "));
     updateCSS(['p'], p.split(" "));
     updateCSS(["ol"], list.split(" "));
     updateCSS(['ul'], ul.split(" "));
@@ -51,7 +53,7 @@ function CreatePresentation() {
 
 function updateIndex() {
     const index = document.getElementById("index")
-    index.classList.add("fixed", "h-screen", "bg-transparent", "opacity-10", "hover:opacity-100", "duration-200",)
+    index.classList.add("hidden", "lg:grid", "lg:fixed", "h-screen", "bg-transparent", "opacity-5", "hover:opacity-100", "duration-200", "border-0",)
     // console.log(index)
 
 
@@ -75,5 +77,5 @@ setTimeout(() => {
     updateIndex()
 }, 200);
 
-document.querySelector("main").className = "container mx-auto p-20 transition duration-500 translate-x-20 overflow-y-scroll snap-y snap-mandatory h-screen"
+document.querySelector("main").className = "container mx-auto p-5 lg:p-20 transition duration-500 lg:translate-x-20 overflow-y-scroll snap-y snap-mandatory h-screen"
 
