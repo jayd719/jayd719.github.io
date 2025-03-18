@@ -4,7 +4,7 @@ const projects = [
         title: "Video Highlight Generator",
         description: "Developed video processing application during the Laurier Analytics Hackathon hosted at Google Waterloo to automate the process of generating highlight clips from sports videos",
         link: "/pages/LaurierAnalytics2025",
-        Tools: ["Python", "OpenCV", "Tesseract OCR", "FFmpeg", "Multi - Threading"],
+        Tools: ["Python", "OpenCV", "Tesseract", "FFmpeg"],
         layout: "lg:col-span-2",
     },
     {
