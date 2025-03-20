@@ -17,15 +17,16 @@ document.querySelectorAll("video").forEach(element => {
 
 function CreatePresentation() {
 
-    const h1 = "font-title relative z-2 mx-auto text-7xl lg:text-8xl leading-none font-black will-change-auto motion-reduce:transform-none! mb-20"
-    const h2 = "text-[clamp(2.5rem,6vw,4.5rem)] leading-none font-light mt-[35%] mb-10 snap-start"
-    const h3 = "text-4xl leading-none font-light mt-20 mb-5 snap-start"
-    const h4 = "text-2xl leading-none font-light mt-20 mb-5 snap-start"
-    const p = "text-base-content/70 font-title font-light md:text-2xl mb-6 mt-2 text-justify"
+    const h1 = "font-title relative z-2 mx-auto text-2xl lg:text-8xl leading-none font-black will-change-auto motion-reduce:transform-none! span-start"
+    const h2 = "text-xl leading-none snap-start"
+    const h3 = "text-xl font-bold leading-none snap-start mb-5"
+    const h4 = "text-md leading-none mt-2"
+    const p = "text-base-content/70 font-title font-light text-justify"
     const list = "grid grid-cols-1 lg:grid-cols-2 gap-20"
     const ul = "list-disc pl-2 lg:pl-10 mb-10"
     const ol = "list-decimal pl-2 lg:pl-10 mb-10"
-    const li = "text-base-content/70 font-title font-light md:text-lg text-justify"
+    const li = "text-base-content/70 font-title font-light text-justify"
+    const strong = "text-primary font-bold"
 
     updateCSS(['h1'], h1.split(" "));
     updateCSS(['h2'], h2.split(" "));
@@ -36,6 +37,7 @@ function CreatePresentation() {
     updateCSS(['ul'], ul.split(" "));
     updateCSS(['ol'], ol.split(" "));
     updateCSS(['li'], li.split(" "));
+    updateCSS(['strong'], strong.split(" "));
 
     updateCSS(['code'], ['bg-blue-50', 'p-1', 'rounded', 'font-bold', 'text-sm']);
     updateCSS(['pre'], ['bg-gray-100', 'p-4', 'rounded', 'overflow-x-auto', "mb-4"]);
@@ -48,7 +50,7 @@ function CreatePresentation() {
 
     updateCSS(['a'], ['text-blue-500', "hover:underline"]);
     updateCSS(['figcaption'], ['font-bold', "text-center", "mb-2"]);
-    updateCSS(['hr'], ['my-6', 'border-t', 'border-gray-200']);
+    updateCSS(['hr'], ['mb-20', 'border-t', 'border-gray-200']);
 }
 
 function updateIndex() {
@@ -69,13 +71,13 @@ function updateIndex() {
 
 loadScript("https://cdn.tailwindcss.com")
 loadStylesheet("https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css");
-document.documentElement.setAttribute("data-theme", "corporate");
+document.documentElement.setAttribute("data-theme", "lofi");
 setTimeout(() => {
     // updateCSS_ALL()
-    generateIndex()
     CreatePresentation()
+    generateIndex()
+
     updateIndex()
 }, 200);
 
 document.querySelector("main").className = "container mx-auto p-5 lg:p-20 transition duration-500 lg:translate-x-20 overflow-y-scroll snap-y snap-mandatory h-screen"
-
