@@ -1,6 +1,13 @@
 // Array of projects
 const projects = [
     {
+        title: "Video Highlight Generator",
+        description: "Developed video processing application during the Laurier Analytics Hackathon hosted at Google Waterloo to automate the process of generating highlight clips from sports videos",
+        link: "/pages/LaurierAnalytics2025",
+        Tools: ["Python", "OpenCV", "Tesseract", "FFmpeg"],
+        layout: "lg:col-span-2",
+    },
+    {
         title: "k-Nearest Neighbors Classifier:",
         description: "Developed a k-NN classifier from scratch using Euclidean and Manhattan distances, cross-validation, and hyperparameter tuning to find the best k for accurate predictions",
         link: "/pages/knn-1",
@@ -12,6 +19,13 @@ const projects = [
         description: " A tool for managing work orders, tracking progress, and ensuring seamless task organization and visibility.",
         link: "/work-order-tracker/tracker/",
         Tools: ["Python", "Django", "JavaScript", "MySQL"],
+        githubLink: "/pages/resume/1",
+    },
+    {
+        title: "Stock Market Analysis I",
+        description: "Stock market analysis using Yahoo Finance API, visualizing volume trends, price movements, statistical distributions, error handling, and technical insights",
+        link: "/pages/data-visualisation-1",
+        Tools: ["Numpy", "Pandas", "Matplotlib", "Yahoo Finance API"],
         githubLink: "/pages/resume/1",
     },
     {
@@ -85,7 +99,7 @@ function createProjectCard(title, description, link, tools, span = "") {
 
     // let baseColor = getColor_base();
     let css = "1"
-    let titleCss = "text-5xl font-normal tracking-tight font-title text-center font-bold mb-10 text-5xl"
+    let titleCss = "text-3xl font-normal tracking-tight font-title text-center font-bold mb-10 text-5xl"
     let descriptionCSs = "mt-4 text-2xl text-center text-zinc-500 dark:text-zinc-400 font-light"
     let toolCss = "bg-gray-300 p-2 rounded-full px-6 shadow-md text-center text-gray-800 hover:bg-gray-400 transition-all duration-300"
     let toolText = ""
